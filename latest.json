@@ -1,7 +1,7 @@
 {
-  "version": "0.15.7",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.7/CUNIMIG.exe",
-  "sha256": "25c6ea9d02e78dd23e5fda463a3b18a46f16ee18acc419e5731fe3dfb8d0ef94",
+  "version": "0.15.9",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.9/CUNIMIG.exe",
+  "sha256": "da41493bb3c3bf41bf4f9a789d01b743bf0aaf9221c91e1106609a9caf164194",
   "notes": "Nueva versión de CUNIMIG.",
   "mandatory": false
 }
