@@ -1,7 +1,7 @@
 {
   "version": "0.15.25",
   "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.25/CUNIMIG.exe",
-  "sha256": "843c139d752cf6dd12542e0af16794ac44f1e06f91c47397220c53323212d771",
+  "sha256": "b23490cc1d088ea3190bda8a2fea51362772f4e6167b9c2472f75e2e8ff08ee7",
   "notes": "• Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.\n• Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.\n• Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.\n• Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».\n• Gastos incorpora «Modificar categoría» para corregir nombres creados por error.\n• Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.\n• CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista, mostrando un aviso para elegir otro nombre.\n• Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse ni eliminarse.\n• Gastos incorpora «Eliminar categoría» para borrar categorías personalizadas creadas por error cuando todavía no tienen gastos asociados.\n• Si una categoría personalizada ya está siendo utilizada por uno o más gastos, CUNIMIG impide eliminarla y avisa de que primero deben reasignarse esos registros.",
   "changes": [
     "Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.",
