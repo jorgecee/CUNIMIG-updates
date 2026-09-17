@@ -1,7 +1,14 @@
 {
-  "version": "0.15.22",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.22/CUNIMIG.exe",
-  "sha256": "e719e714183fde7c1679c319bc56afa8d90e20682880ae2b47f86fecb321cb6a",
-  "notes": "Nueva versión de CUNIMIG.",
+  "version": "0.15.23",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.23/CUNIMIG.exe",
+  "sha256": "119cfdee5b8aa9eaa2a62106cec2dd66d892a857728deadb4211ac076ebe4295",
+  "notes": "• Al abrir por primera vez una nueva versión, CUNIMIG muestra una ventana con las novedades de esa versión.\n• La ventana de novedades se muestra una sola vez por versión en cada equipo.\n• Configuración incorpora un botón «Novedades / historial de versiones» para consultar los cambios documentados cuando se quiera.\n• En Configuración, justo debajo de la versión, aparece «Creador del programa: Jorge Pola Baliña».\n• PREPARAR_ACTUALIZACION obtiene automáticamente estas novedades y las incluye en latest.json para que también aparezcan antes de instalar la actualización.",
+  "changes": [
+    "Al abrir por primera vez una nueva versión, CUNIMIG muestra una ventana con las novedades de esa versión.",
+    "La ventana de novedades se muestra una sola vez por versión en cada equipo.",
+    "Configuración incorpora un botón «Novedades / historial de versiones» para consultar los cambios documentados cuando se quiera.",
+    "En Configuración, justo debajo de la versión, aparece «Creador del programa: Jorge Pola Baliña».",
+    "PREPARAR_ACTUALIZACION obtiene automáticamente estas novedades y las incluye en latest.json para que también aparezcan antes de instalar la actualización."
+  ],
   "mandatory": false
 }
