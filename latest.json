@@ -1,14 +1,17 @@
 {
-  "version": "0.15.23",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.23/CUNIMIG.exe",
-  "sha256": "119cfdee5b8aa9eaa2a62106cec2dd66d892a857728deadb4211ac076ebe4295",
-  "notes": "• Al abrir por primera vez una nueva versión, CUNIMIG muestra una ventana con las novedades de esa versión.\n• La ventana de novedades se muestra una sola vez por versión en cada equipo.\n• Configuración incorpora un botón «Novedades / historial de versiones» para consultar los cambios documentados cuando se quiera.\n• En Configuración, justo debajo de la versión, aparece «Creador del programa: Jorge Pola Baliña».\n• PREPARAR_ACTUALIZACION obtiene automáticamente estas novedades y las incluye en latest.json para que también aparezcan antes de instalar la actualización.",
+  "version": "0.15.25",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.25/CUNIMIG.exe",
+  "sha256": "dcd77ea6cbd8ded1e7be6739572c019cee48e1fd896275aa30416424839b5531",
+  "notes": "• Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.\n• Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.\n• Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.\n• Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».\n• Gastos incorpora «Modificar categoría» para corregir nombres creados por error.\n• Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.\n• Si el nuevo nombre ya existe, CUNIMIG permite fusionar ambas categorías para evitar duplicados.\n• Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse.",
   "changes": [
-    "Al abrir por primera vez una nueva versión, CUNIMIG muestra una ventana con las novedades de esa versión.",
-    "La ventana de novedades se muestra una sola vez por versión en cada equipo.",
-    "Configuración incorpora un botón «Novedades / historial de versiones» para consultar los cambios documentados cuando se quiera.",
-    "En Configuración, justo debajo de la versión, aparece «Creador del programa: Jorge Pola Baliña».",
-    "PREPARAR_ACTUALIZACION obtiene automáticamente estas novedades y las incluye en latest.json para que también aparezcan antes de instalar la actualización."
+    "Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.",
+    "Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.",
+    "Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.",
+    "Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».",
+    "Gastos incorpora «Modificar categoría» para corregir nombres creados por error.",
+    "Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.",
+    "Si el nuevo nombre ya existe, CUNIMIG permite fusionar ambas categorías para evitar duplicados.",
+    "Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse."
   ],
   "mandatory": false
 }
