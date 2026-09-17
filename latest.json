@@ -1,19 +1,102 @@
 {
-  "version": "0.15.25",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.25/CUNIMIG.exe",
-  "sha256": "b23490cc1d088ea3190bda8a2fea51362772f4e6167b9c2472f75e2e8ff08ee7",
-  "notes": "• Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.\n• Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.\n• Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.\n• Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».\n• Gastos incorpora «Modificar categoría» para corregir nombres creados por error.\n• Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.\n• CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista, mostrando un aviso para elegir otro nombre.\n• Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse ni eliminarse.\n• Gastos incorpora «Eliminar categoría» para borrar categorías personalizadas creadas por error cuando todavía no tienen gastos asociados.\n• Si una categoría personalizada ya está siendo utilizada por uno o más gastos, CUNIMIG impide eliminarla y avisa de que primero deben reasignarse esos registros.",
+  "version": "0.15.27",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.27/CUNIMIG.exe",
+  "sha256": "385889cfd961bdf5a288dfa4add6e469d3a2a373ffd5b73829fe003834399ae1",
+  "notes": "• Impresión avanzada unificada en las pantallas de registros: resultados filtrados actuales, todo el año o selección por fechas y bandas cuando corresponde.\n• El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias bandas.\n• Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.\n• Gastos cambia «Selección personalizada» por «Elegir fechas y bandas» y aclara cuándo se imprimen todas las bandas sin filtro.\n• Las impresiones muestran explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.\n• Los botones de impresión se han unificado visualmente como «Imprimir» en las secciones correspondientes.\n• Al saltar varias versiones, CUNIMIG muestra todos los cambios intermedios documentados desde la versión instalada hasta la nueva.\n• Tras instalar, el resumen acumulado se muestra una sola vez; las futuras actualizaciones también podrán enseñarlo antes de descargar.",
   "changes": [
-    "Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.",
-    "Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.",
-    "Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.",
-    "Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».",
-    "Gastos incorpora «Modificar categoría» para corregir nombres creados por error.",
-    "Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.",
-    "CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista, mostrando un aviso para elegir otro nombre.",
-    "Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse ni eliminarse.",
-    "Gastos incorpora «Eliminar categoría» para borrar categorías personalizadas creadas por error cuando todavía no tienen gastos asociados.",
-    "Si una categoría personalizada ya está siendo utilizada por uno o más gastos, CUNIMIG impide eliminarla y avisa de que primero deben reasignarse esos registros."
+    "Impresión avanzada unificada en las pantallas de registros: resultados filtrados actuales, todo el año o selección por fechas y bandas cuando corresponde.",
+    "El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias bandas.",
+    "Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.",
+    "Gastos cambia «Selección personalizada» por «Elegir fechas y bandas» y aclara cuándo se imprimen todas las bandas sin filtro.",
+    "Las impresiones muestran explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.",
+    "Los botones de impresión se han unificado visualmente como «Imprimir» en las secciones correspondientes.",
+    "Al saltar varias versiones, CUNIMIG muestra todos los cambios intermedios documentados desde la versión instalada hasta la nueva.",
+    "Tras instalar, el resumen acumulado se muestra una sola vez; las futuras actualizaciones también podrán enseñarlo antes de descargar."
+  ],
+  "release_history": [
+    {
+      "version": "0.15.27",
+      "changes": [
+        "Impresión avanzada unificada en las pantallas de registros: resultados filtrados, año completo o selección por fechas y bandas cuando corresponde.",
+        "El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias sin confundirse con un botón de «todas».",
+        "Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.",
+        "Las impresiones incluyen explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.",
+        "Al saltar varias versiones, CUNIMIG muestra conjuntamente todos los cambios documentados desde la versión instalada hasta la nueva.",
+        "Tras instalar una actualización, el resumen acumulado de novedades se muestra una sola vez; las futuras comprobaciones también podrán mostrarlo antes de descargar."
+      ]
+    },
+    {
+      "version": "0.15.26",
+      "changes": [
+        "Gastos incorpora filtro por una o varias bandas, filtro opcional por fechas y búsqueda combinable.",
+        "La impresión de Gastos permite elegir entre resultados filtrados, todo el año o un intervalo/bandas personalizados.",
+        "Las tarjetas de resumen son más compactas para aprovechar mejor el espacio en todo CUNIMIG.",
+        "El calendario diferencia sus encabezados con un tono beige/marrón claro para mejorar la lectura."
+      ]
+    },
+    {
+      "version": "0.15.25",
+      "changes": [
+        "Configuración ahora se adapta mejor a ventanas no maximizadas y dispone de desplazamiento vertical.",
+        "Economía > Gastos muestra todas las categorías reales creadas en Gastos, también las personalizadas.",
+        "Gastos permite renombrar categorías personalizadas y actualiza automáticamente los gastos históricos asociados.",
+        "CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista."
+      ]
+    },
+    {
+      "version": "0.15.24",
+      "changes": [
+        "Corregido el actualizador para no quedarse bloqueado esperando un PID con tasklist/findstr.",
+        "La instalación espera a que el ejecutable quede libre mediante reintentos directos y seguros del reemplazo.",
+        "El proceso de actualización se ejecuta oculto, sin dejar una ventana negra abierta.",
+        "Se genera un registro de actualización para facilitar el diagnóstico si Windows impide sustituir el ejecutable."
+      ]
+    },
+    {
+      "version": "0.15.23",
+      "changes": [
+        "Nueva ventana de Novedades al abrir por primera vez cada versión.",
+        "Historial de versiones accesible desde Configuración.",
+        "Se muestra el creador del programa en Configuración: Jorge Pola Baliña.",
+        "El preparador de actualizaciones incorpora automáticamente las novedades en latest.json."
+      ]
+    },
+    {
+      "version": "0.15.22",
+      "changes": [
+        "Actualizador reforzado para completar la instalación en un solo intento.",
+        "El instalador se ejecuta de forma independiente y espera a que el EXE anterior quede libre.",
+        "Reintentos automáticos si Windows mantiene el ejecutable bloqueado y restauración de seguridad si falla el reemplazo."
+      ]
+    },
+    {
+      "version": "0.15.21",
+      "changes": [
+        "Corrección del selector de Próxima vacunación para abrir el calendario en el mes y año actuales."
+      ]
+    },
+    {
+      "version": "0.15.18",
+      "changes": [
+        "Calendario: las tareas pueden marcarse como realizadas desde el recuadro del día seleccionado.",
+        "Vacunación: los campos de fecha opcional abren el calendario en el mes y año actuales."
+      ]
+    },
+    {
+      "version": "0.15.17",
+      "changes": [
+        "Gastos: Banda obligatoria y seleccionable entre las bandas del año.",
+        "Pienso: cantidad en KG y campos necesarios para medias e índice de conversión pasan a ser obligatorios.",
+        "Ventas: campos de kg/neto necesarios para cálculos medios pasan a ser obligatorios."
+      ]
+    },
+    {
+      "version": "0.15.16",
+      "changes": [
+        "Corrección de apertura de Sanidad > Vacunación.",
+        "Los scripts de desarrollo reutilizan automáticamente la clave pública oficial de CUNIMIG_ADMIN cuando está disponible."
+      ]
+    }
   ],
   "mandatory": false
 }
