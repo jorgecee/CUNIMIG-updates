@@ -1,8 +1,8 @@
 {
   "version": "0.15.25",
   "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.25/CUNIMIG.exe",
-  "sha256": "dcd77ea6cbd8ded1e7be6739572c019cee48e1fd896275aa30416424839b5531",
-  "notes": "• Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.\n• Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.\n• Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.\n• Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».\n• Gastos incorpora «Modificar categoría» para corregir nombres creados por error.\n• Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.\n• Si el nuevo nombre ya existe, CUNIMIG permite fusionar ambas categorías para evitar duplicados.\n• Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse.",
+  "sha256": "843c139d752cf6dd12542e0af16794ac44f1e06f91c47397220c53323212d771",
+  "notes": "• Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.\n• Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.\n• Economía > Gastos muestra todas las categorías reales disponibles, incluidas las categorías personalizadas creadas por el ganadero.\n• Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».\n• Gastos incorpora «Modificar categoría» para corregir nombres creados por error.\n• Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.\n• CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista, mostrando un aviso para elegir otro nombre.\n• Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse ni eliminarse.\n• Gastos incorpora «Eliminar categoría» para borrar categorías personalizadas creadas por error cuando todavía no tienen gastos asociados.\n• Si una categoría personalizada ya está siendo utilizada por uno o más gastos, CUNIMIG impide eliminarla y avisa de que primero deben reasignarse esos registros.",
   "changes": [
     "Configuración ahora dispone de desplazamiento vertical y adapta mejor sus bloques cuando la ventana no está maximizada.",
     "Las rutas y textos largos de Configuración se ajustan en varias líneas para no cortar opciones.",
@@ -10,8 +10,10 @@
     "Coste / kg también desglosa las categorías de gasto personalizadas en lugar de agruparlas como «Otras categorías».",
     "Gastos incorpora «Modificar categoría» para corregir nombres creados por error.",
     "Al renombrar una categoría se actualizan automáticamente los gastos asociados de todos los años.",
-    "Si el nuevo nombre ya existe, CUNIMIG permite fusionar ambas categorías para evitar duplicados.",
-    "Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse."
+    "CUNIMIG impide crear o renombrar una categoría con un nombre que ya exista, mostrando un aviso para elegir otro nombre.",
+    "Las categorías base de CUNIMIG permanecen protegidas y no pueden renombrarse ni eliminarse.",
+    "Gastos incorpora «Eliminar categoría» para borrar categorías personalizadas creadas por error cuando todavía no tienen gastos asociados.",
+    "Si una categoría personalizada ya está siendo utilizada por uno o más gastos, CUNIMIG impide eliminarla y avisa de que primero deben reasignarse esos registros."
   ],
   "mandatory": false
 }
