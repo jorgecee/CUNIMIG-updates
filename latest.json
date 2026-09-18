@@ -1,13 +1,27 @@
 {
-  "version": "0.15.29",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.29/CUNIMIG.exe",
-  "sha256": "55ddf5e4414504452cfcc4757a60c3023a9c528530b1343f8d10962be919b70a",
-  "notes": "• Hoja de banda incluye por defecto la ficha de control de explotación de CUNIMIG en castellano, lista para abrir e imprimir sin tener que subirla manualmente.\n• Si ya existe una hoja de banda personalizada para un año, CUNIMIG la conserva y no la sustituye.",
+  "version": "0.15.30",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.30/CUNIMIG.exe",
+  "sha256": "bafecf034327181f58cc6d269a0716cb1683f2e92807bd6b6a8025f1eb9a37c8",
+  "notes": "• ================\n• CORRECCIONES EN DOCUMENTOS DE INICIO\n• Facturar, Albarán y Hoja de banda pasan al mismo sistema multiarchivo que ICA y Guías.\n• Se pueden subir varios archivos a la vez, elegir uno de la lista, abrirlo, imprimirlo y eliminarlo.\n• Los archivos únicos que existían en versiones anteriores se migran automáticamente al nuevo sistema sin perderlos.\n• Hoja de banda añade automáticamente la ficha oficial de CUNIMIG en castellano como documento predeterminado.\n• La plantilla predeterminada se copia a la carpeta gestionada de la explotación y queda disponible para abrir e imprimir.\n• Si el usuario elimina expresamente la plantilla predeterminada, no vuelve a aparecer automáticamente.",
   "changes": [
-    "Hoja de banda incluye por defecto la ficha de control de explotación de CUNIMIG en castellano, lista para abrir e imprimir sin tener que subirla manualmente.",
-    "Si ya existe una hoja de banda personalizada para un año, CUNIMIG la conserva y no la sustituye."
+    "================",
+    "CORRECCIONES EN DOCUMENTOS DE INICIO",
+    "Facturar, Albarán y Hoja de banda pasan al mismo sistema multiarchivo que ICA y Guías.",
+    "Se pueden subir varios archivos a la vez, elegir uno de la lista, abrirlo, imprimirlo y eliminarlo.",
+    "Los archivos únicos que existían en versiones anteriores se migran automáticamente al nuevo sistema sin perderlos.",
+    "Hoja de banda añade automáticamente la ficha oficial de CUNIMIG en castellano como documento predeterminado.",
+    "La plantilla predeterminada se copia a la carpeta gestionada de la explotación y queda disponible para abrir e imprimir.",
+    "Si el usuario elimina expresamente la plantilla predeterminada, no vuelve a aparecer automáticamente."
   ],
   "release_history": [
+    {
+      "version": "0.15.30",
+      "changes": [
+        "Facturar, Albarán y Hoja de banda admiten ahora varios archivos por año, igual que ICA y Guías: puedes subir varios, elegir cuál abrir o imprimir y eliminar el seleccionado.",
+        "Hoja de banda incorpora automáticamente la ficha oficial de CUNIMIG en castellano como documento predeterminado, también al actualizar desde versiones anteriores.",
+        "Los documentos únicos existentes de Facturar, Albarán y Hoja de banda se migran automáticamente al nuevo sistema multiarchivo sin perderlos."
+      ]
+    },
     {
       "version": "0.15.29",
       "changes": [
