@@ -1,17 +1,62 @@
 {
-  "version": "0.15.35",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.35/CUNIMIG.exe",
-  "sha256": "8a1286e33630e4e3c213868c55107547d5a59447fa2a993d1405e734ed5bfc66",
-  "notes": "• INDICADORES PRODUCTIVOS\n• Reorganizada la pantalla en cuatro bloques: Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.\n• Añadido un resumen superior con Índice de conversión, Kg vendidos/jaula, Kg vendidos/dosis y Bajas totales.\n• Los indicadores se muestran en tarjetas compactas y homogéneas para facilitar la lectura.\n• Se muestra también Destetados por parto dentro del bloque Reproducción.\n• No se modifican las fórmulas productivas acordadas en las versiones anteriores.",
+  "version": "0.15.44",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.44/CUNIMIG.exe",
+  "sha256": "84623b95e60504ab03441e5a018f420c0b52db5aa5825db6d8d687e1eacf9186",
+  "notes": "• El panel lateral utiliza la imagen completa indicada por el usuario como fondo.\n• Se ha añadido la versión del programa en la parte inferior del panel lateral.\n• Ajuste visual sin cambios en cálculos ni datos.",
   "changes": [
-    "INDICADORES PRODUCTIVOS",
-    "Reorganizada la pantalla en cuatro bloques: Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.",
-    "Añadido un resumen superior con Índice de conversión, Kg vendidos/jaula, Kg vendidos/dosis y Bajas totales.",
-    "Los indicadores se muestran en tarjetas compactas y homogéneas para facilitar la lectura.",
-    "Se muestra también Destetados por parto dentro del bloque Reproducción.",
-    "No se modifican las fórmulas productivas acordadas en las versiones anteriores."
+    "El panel lateral utiliza la imagen completa indicada por el usuario como fondo.",
+    "Se ha añadido la versión del programa en la parte inferior del panel lateral.",
+    "Ajuste visual sin cambios en cálculos ni datos."
   ],
   "release_history": [
+    {
+      "version": "0.15.41",
+      "changes": [
+        "El panel lateral incorpora en su parte inferior la nueva imagen corporativa con fondo verde degradado, silueta de conejo, hierba y el lema «DATOS HOY, MEJORES RESULTADOS MAÑANA».",
+        "La versión del programa se muestra debajo de la imagen, centrada y vinculada automáticamente a la versión instalada.",
+        "Se mantiene intacto el resto de navegación y funcionamiento de CUNIMIG."
+      ]
+    },
+    {
+      "version": "0.15.40",
+      "changes": [
+        "El panel lateral se rehace para acercarse mucho más a la referencia elegida: mismo ambiente de degradado verde, conejo oscuro, hierba decorativa y lema inferior integrado.",
+        "La cabecera de Mortalidad en Indicadores productivos se reconstruye para eliminar definitivamente el hueco blanco y mantener la misma estructura visual que el resto de bloques.",
+        "Se mantienen el menú desplegable de Indicadores y las fórmulas ya aprobadas, centrándose esta versión en la fidelidad visual del lateral y en el ajuste del bloque de Mortalidad."
+      ]
+    },
+    {
+      "version": "0.15.39",
+      "changes": [
+        "Corregido el bloque Mortalidad de Indicadores productivos para que la cabecera quede pegada al borde superior, sin franja blanca, también en ventanas no maximizadas.",
+        "El panel lateral adopta un degradado verde más profundo y una decoración inferior con silueta de conejo, loma y hierba más fiel a la referencia visual elegida para CUNIMIG.",
+        "Se mantiene el estilo de resaltado de Indicadores y sus subapartados, sin modificar fórmulas ni datos productivos."
+      ]
+    },
+    {
+      "version": "0.15.38",
+      "changes": [
+        "Corregido un cierre al abrir CUNIMIG provocado por un conflicto de nombre entre el selector de métrica de Comparativa y el método interno metric() de Qt/PySide6.",
+        "Comparativa mantiene el mismo funcionamiento, pero el selector interno pasa a usar un nombre seguro para no interferir con el sistema gráfico de Qt."
+      ]
+    },
+    {
+      "version": "0.15.37",
+      "changes": [
+        "El panel lateral adopta un fondo verde oscuro más profundo, con silueta decorativa de conejo y hierba en la zona inferior, inspirado en la nueva identidad visual de CUNIMIG.",
+        "Indicadores pasa a funcionar como un grupo desplegable del menú lateral con accesos directos a Indicadores productivos, Indicadores económicos, Salud de la granja y Comparativa.",
+        "Indicadores económicos se incorpora como panel de análisis y ratios sin sustituir la sección Economía, que continúa siendo el área de gestión y registro económico.",
+        "Ajustada la alineación de las tarjetas de Producción y ventas, ampliados ligeramente los iconos y sustituido el icono de kg/jaula por una cuadrícula de jaulas."
+      ]
+    },
+    {
+      "version": "0.15.36",
+      "changes": [
+        "Rediseñado el panel lateral con degradado verde, navegación más clara y un detalle gráfico sutil del conejo de CUNIMIG.",
+        "Indicadores productivos adopta un panel visual por categorías con colores suaves e iconos para Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.",
+        "El resumen superior mantiene cuatro indicadores clave con tarjetas destacadas; no se han modificado las fórmulas productivas."
+      ]
+    },
     {
       "version": "0.15.35",
       "changes": [
