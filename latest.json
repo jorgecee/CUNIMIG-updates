@@ -1,7 +1,7 @@
 {
   "version": "0.15.33",
   "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.33/CUNIMIG.exe",
-  "sha256": "b3a98a9b2af536fce0fb13643b03eb8f770fde56bc9360711a57431bd15c9fd1",
+  "sha256": "537d4e93ba7a71dfd2a5f3c2d173dd8a6c9d7b545dccfde6c6d4c8662b738813",
   "notes": "• =================\n• INDICADORES PRODUCTIVOS\n• Corregido «Kg vendidos por dosis de semen».\n• Fórmula definitiva: (Kg 1ª + Kg equivalentes de 2ª + Kg particulares + Kg equivalentes de abuelas) / Nº dosis.\n• Kg equivalentes de abuelas = suma banda a banda de Nº abuelas × Peso medio abuela.\n• El peso medio de abuela se toma del nuevo campo de Bandas, por lo que ya no depende de un valor fijo de 2,1 kg.\n• Si Abuelas = 0 o Peso medio abuela = 0 kg, las abuelas aportan 0 kg y no afectan al indicador.\n• BANDAS\n• Se mantiene el campo «Peso medio abuela (kg)» disponible al crear o editar una banda.",
   "changes": [
     "=================",
