@@ -1,7 +1,7 @@
 {
   "version": "0.15.31",
   "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.31/CUNIMIG.exe",
-  "sha256": "effeacdc33b94f3193c9de76455c120a04163bafa926b5855a796f0cd9e87a54",
+  "sha256": "c149273c79f01642e14e5d2908253d75c6b9f37f0698cb064c63ab4f1bfcc154",
   "notes": "• En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación».",
   "changes": [
     "En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación»."
