@@ -1,12 +1,37 @@
 {
-  "version": "0.15.31",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.31/CUNIMIG.exe",
-  "sha256": "c149273c79f01642e14e5d2908253d75c6b9f37f0698cb064c63ab4f1bfcc154",
-  "notes": "• En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación».",
+  "version": "0.15.33",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.33/CUNIMIG.exe",
+  "sha256": "b3a98a9b2af536fce0fb13643b03eb8f770fde56bc9360711a57431bd15c9fd1",
+  "notes": "• =================\n• INDICADORES PRODUCTIVOS\n• Corregido «Kg vendidos por dosis de semen».\n• Fórmula definitiva: (Kg 1ª + Kg equivalentes de 2ª + Kg particulares + Kg equivalentes de abuelas) / Nº dosis.\n• Kg equivalentes de abuelas = suma banda a banda de Nº abuelas × Peso medio abuela.\n• El peso medio de abuela se toma del nuevo campo de Bandas, por lo que ya no depende de un valor fijo de 2,1 kg.\n• Si Abuelas = 0 o Peso medio abuela = 0 kg, las abuelas aportan 0 kg y no afectan al indicador.\n• BANDAS\n• Se mantiene el campo «Peso medio abuela (kg)» disponible al crear o editar una banda.",
   "changes": [
-    "En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación»."
+    "=================",
+    "INDICADORES PRODUCTIVOS",
+    "Corregido «Kg vendidos por dosis de semen».",
+    "Fórmula definitiva: (Kg 1ª + Kg equivalentes de 2ª + Kg particulares + Kg equivalentes de abuelas) / Nº dosis.",
+    "Kg equivalentes de abuelas = suma banda a banda de Nº abuelas × Peso medio abuela.",
+    "El peso medio de abuela se toma del nuevo campo de Bandas, por lo que ya no depende de un valor fijo de 2,1 kg.",
+    "Si Abuelas = 0 o Peso medio abuela = 0 kg, las abuelas aportan 0 kg y no afectan al indicador.",
+    "BANDAS",
+    "Se mantiene el campo «Peso medio abuela (kg)» disponible al crear o editar una banda."
   ],
   "release_history": [
+    {
+      "version": "0.15.33",
+      "changes": [
+        "Kg vendidos por dosis de semen utiliza ahora los kg productivos equivalentes: kg de 1ª + kg equivalentes de 2ª + kg de particulares + kg equivalentes de abuelas.",
+        "Los kg equivalentes de abuelas se calculan banda a banda con Nº abuelas × Peso medio abuela introducido por el usuario; si Abuelas = 0 o Peso medio = 0, aportan 0 kg."
+      ]
+    },
+    {
+      "version": "0.15.32",
+      "changes": [
+        "Bandas incorpora el nuevo campo «Peso medio abuela (kg)» justo después de «Abuelas»; si no se trabaja con abuelas, 0 × 0 kg no afecta a ningún cálculo.",
+        "Indicadores productivos amplía sus métricas e incorpora ventas particulares en kilos y animales vendidos cuando corresponde.",
+        "Los kg de 2ª se convierten a kg equivalentes de 1ª mediante Neto 2ª ÷ precio medio del kg de 1ª.",
+        "El índice de conversión utiliza los kg equivalentes vendidos más los kg equivalentes de abuelas calculados banda a banda con su peso medio real.",
+        "La mortalidad total nacimiento→venta se calcula directamente, descontando las abuelas de la base y sin sumar porcentajes de fases."
+      ]
+    },
     {
       "version": "0.15.31",
       "changes": [
