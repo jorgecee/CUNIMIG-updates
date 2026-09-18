@@ -1,20 +1,21 @@
 {
-  "version": "0.15.33",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.33/CUNIMIG.exe",
-  "sha256": "537d4e93ba7a71dfd2a5f3c2d173dd8a6c9d7b545dccfde6c6d4c8662b738813",
-  "notes": "• =================\n• INDICADORES PRODUCTIVOS\n• Corregido «Kg vendidos por dosis de semen».\n• Fórmula definitiva: (Kg 1ª + Kg equivalentes de 2ª + Kg particulares + Kg equivalentes de abuelas) / Nº dosis.\n• Kg equivalentes de abuelas = suma banda a banda de Nº abuelas × Peso medio abuela.\n• El peso medio de abuela se toma del nuevo campo de Bandas, por lo que ya no depende de un valor fijo de 2,1 kg.\n• Si Abuelas = 0 o Peso medio abuela = 0 kg, las abuelas aportan 0 kg y no afectan al indicador.\n• BANDAS\n• Se mantiene el campo «Peso medio abuela (kg)» disponible al crear o editar una banda.",
+  "version": "0.15.34",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.34/CUNIMIG.exe",
+  "sha256": "23351ba2a1d68d9311cacf05b6575092af9140344a46e8b287b25667aef61a95",
+  "notes": "• Corregida la publicación de actualizaciones para evitar errores SHA-256 cuando una misma versión se recompila.\n• Cada versión publicada conserva su CUNIMIG.exe; una republicación de la misma versión no sustituye el ejecutable.\n• latest.json se genera con la huella SHA-256 del archivo que está realmente publicado en la Release de GitHub.",
   "changes": [
-    "=================",
-    "INDICADORES PRODUCTIVOS",
-    "Corregido «Kg vendidos por dosis de semen».",
-    "Fórmula definitiva: (Kg 1ª + Kg equivalentes de 2ª + Kg particulares + Kg equivalentes de abuelas) / Nº dosis.",
-    "Kg equivalentes de abuelas = suma banda a banda de Nº abuelas × Peso medio abuela.",
-    "El peso medio de abuela se toma del nuevo campo de Bandas, por lo que ya no depende de un valor fijo de 2,1 kg.",
-    "Si Abuelas = 0 o Peso medio abuela = 0 kg, las abuelas aportan 0 kg y no afectan al indicador.",
-    "BANDAS",
-    "Se mantiene el campo «Peso medio abuela (kg)» disponible al crear o editar una banda."
+    "Corregida la publicación de actualizaciones para evitar errores SHA-256 cuando una misma versión se recompila.",
+    "Cada versión publicada conserva su CUNIMIG.exe; una republicación de la misma versión no sustituye el ejecutable.",
+    "latest.json se genera con la huella SHA-256 del archivo que está realmente publicado en la Release de GitHub."
   ],
   "release_history": [
+    {
+      "version": "0.15.34",
+      "changes": [
+        "Corregida la publicación de actualizaciones para mantener estable el archivo de una versión ya publicada y evitar errores de comprobación SHA-256.",
+        "El publicador verifica la huella del archivo realmente alojado en GitHub antes de actualizar latest.json; si una versión ya está publicada, no sustituye su EXE por otro recompilado con la misma versión."
+      ]
+    },
     {
       "version": "0.15.33",
       "changes": [
