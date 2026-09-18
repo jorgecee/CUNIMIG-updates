@@ -1,14 +1,25 @@
 {
-  "version": "0.15.34",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.34/CUNIMIG.exe",
-  "sha256": "23351ba2a1d68d9311cacf05b6575092af9140344a46e8b287b25667aef61a95",
-  "notes": "• Corregida la publicación de actualizaciones para evitar errores SHA-256 cuando una misma versión se recompila.\n• Cada versión publicada conserva su CUNIMIG.exe; una republicación de la misma versión no sustituye el ejecutable.\n• latest.json se genera con la huella SHA-256 del archivo que está realmente publicado en la Release de GitHub.",
+  "version": "0.15.35",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.35/CUNIMIG.exe",
+  "sha256": "8a1286e33630e4e3c213868c55107547d5a59447fa2a993d1405e734ed5bfc66",
+  "notes": "• INDICADORES PRODUCTIVOS\n• Reorganizada la pantalla en cuatro bloques: Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.\n• Añadido un resumen superior con Índice de conversión, Kg vendidos/jaula, Kg vendidos/dosis y Bajas totales.\n• Los indicadores se muestran en tarjetas compactas y homogéneas para facilitar la lectura.\n• Se muestra también Destetados por parto dentro del bloque Reproducción.\n• No se modifican las fórmulas productivas acordadas en las versiones anteriores.",
   "changes": [
-    "Corregida la publicación de actualizaciones para evitar errores SHA-256 cuando una misma versión se recompila.",
-    "Cada versión publicada conserva su CUNIMIG.exe; una republicación de la misma versión no sustituye el ejecutable.",
-    "latest.json se genera con la huella SHA-256 del archivo que está realmente publicado en la Release de GitHub."
+    "INDICADORES PRODUCTIVOS",
+    "Reorganizada la pantalla en cuatro bloques: Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.",
+    "Añadido un resumen superior con Índice de conversión, Kg vendidos/jaula, Kg vendidos/dosis y Bajas totales.",
+    "Los indicadores se muestran en tarjetas compactas y homogéneas para facilitar la lectura.",
+    "Se muestra también Destetados por parto dentro del bloque Reproducción.",
+    "No se modifican las fórmulas productivas acordadas en las versiones anteriores."
   ],
   "release_history": [
+    {
+      "version": "0.15.35",
+      "changes": [
+        "Reorganizada la pantalla Indicadores productivos en bloques de Reproducción, Mortalidad, Producción y ventas, y Alimentación y costes.",
+        "Añadido un resumen superior con cuatro indicadores clave del año: índice de conversión, kg vendidos por jaula, kg vendidos por dosis y bajas totales nacimiento→venta.",
+        "Los indicadores se muestran ahora en tarjetas compactas y homogéneas para facilitar la lectura sin modificar las fórmulas ya acordadas."
+      ]
+    },
     {
       "version": "0.15.34",
       "changes": [
