@@ -1,19 +1,18 @@
 {
-  "version": "0.15.30",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.30/CUNIMIG.exe",
-  "sha256": "bafecf034327181f58cc6d269a0716cb1683f2e92807bd6b6a8025f1eb9a37c8",
-  "notes": "• ================\n• CORRECCIONES EN DOCUMENTOS DE INICIO\n• Facturar, Albarán y Hoja de banda pasan al mismo sistema multiarchivo que ICA y Guías.\n• Se pueden subir varios archivos a la vez, elegir uno de la lista, abrirlo, imprimirlo y eliminarlo.\n• Los archivos únicos que existían en versiones anteriores se migran automáticamente al nuevo sistema sin perderlos.\n• Hoja de banda añade automáticamente la ficha oficial de CUNIMIG en castellano como documento predeterminado.\n• La plantilla predeterminada se copia a la carpeta gestionada de la explotación y queda disponible para abrir e imprimir.\n• Si el usuario elimina expresamente la plantilla predeterminada, no vuelve a aparecer automáticamente.",
+  "version": "0.15.31",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.31/CUNIMIG.exe",
+  "sha256": "effeacdc33b94f3193c9de76455c120a04163bafa926b5855a796f0cd9e87a54",
+  "notes": "• En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación».",
   "changes": [
-    "================",
-    "CORRECCIONES EN DOCUMENTOS DE INICIO",
-    "Facturar, Albarán y Hoja de banda pasan al mismo sistema multiarchivo que ICA y Guías.",
-    "Se pueden subir varios archivos a la vez, elegir uno de la lista, abrirlo, imprimirlo y eliminarlo.",
-    "Los archivos únicos que existían en versiones anteriores se migran automáticamente al nuevo sistema sin perderlos.",
-    "Hoja de banda añade automáticamente la ficha oficial de CUNIMIG en castellano como documento predeterminado.",
-    "La plantilla predeterminada se copia a la carpeta gestionada de la explotación y queda disponible para abrir e imprimir.",
-    "Si el usuario elimina expresamente la plantilla predeterminada, no vuelve a aparecer automáticamente."
+    "En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación»."
   ],
   "release_history": [
+    {
+      "version": "0.15.31",
+      "changes": [
+        "En el menú Inicio, el acceso «Hoja de banda» pasa a mostrarse como «Ficha control de explotación»."
+      ]
+    },
     {
       "version": "0.15.30",
       "changes": [
