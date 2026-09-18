@@ -1,19 +1,26 @@
 {
-  "version": "0.15.27",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.27/CUNIMIG.exe",
-  "sha256": "385889cfd961bdf5a288dfa4add6e469d3a2a373ffd5b73829fe003834399ae1",
-  "notes": "• Impresión avanzada unificada en las pantallas de registros: resultados filtrados actuales, todo el año o selección por fechas y bandas cuando corresponde.\n• El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias bandas.\n• Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.\n• Gastos cambia «Selección personalizada» por «Elegir fechas y bandas» y aclara cuándo se imprimen todas las bandas sin filtro.\n• Las impresiones muestran explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.\n• Los botones de impresión se han unificado visualmente como «Imprimir» en las secciones correspondientes.\n• Al saltar varias versiones, CUNIMIG muestra todos los cambios intermedios documentados desde la versión instalada hasta la nueva.\n• Tras instalar, el resumen acumulado se muestra una sola vez; las futuras actualizaciones también podrán enseñarlo antes de descargar.",
+  "version": "0.15.29",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.29/CUNIMIG.exe",
+  "sha256": "55ddf5e4414504452cfcc4757a60c3023a9c528530b1343f8d10962be919b70a",
+  "notes": "• Hoja de banda incluye por defecto la ficha de control de explotación de CUNIMIG en castellano, lista para abrir e imprimir sin tener que subirla manualmente.\n• Si ya existe una hoja de banda personalizada para un año, CUNIMIG la conserva y no la sustituye.",
   "changes": [
-    "Impresión avanzada unificada en las pantallas de registros: resultados filtrados actuales, todo el año o selección por fechas y bandas cuando corresponde.",
-    "El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias bandas.",
-    "Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.",
-    "Gastos cambia «Selección personalizada» por «Elegir fechas y bandas» y aclara cuándo se imprimen todas las bandas sin filtro.",
-    "Las impresiones muestran explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.",
-    "Los botones de impresión se han unificado visualmente como «Imprimir» en las secciones correspondientes.",
-    "Al saltar varias versiones, CUNIMIG muestra todos los cambios intermedios documentados desde la versión instalada hasta la nueva.",
-    "Tras instalar, el resumen acumulado se muestra una sola vez; las futuras actualizaciones también podrán enseñarlo antes de descargar."
+    "Hoja de banda incluye por defecto la ficha de control de explotación de CUNIMIG en castellano, lista para abrir e imprimir sin tener que subirla manualmente.",
+    "Si ya existe una hoja de banda personalizada para un año, CUNIMIG la conserva y no la sustituye."
   ],
   "release_history": [
+    {
+      "version": "0.15.29",
+      "changes": [
+        "Hoja de banda incluye por defecto la ficha de control de explotación de CUNIMIG en castellano, lista para abrir e imprimir sin tener que subirla manualmente.",
+        "Si ya existe una hoja de banda personalizada para un año, CUNIMIG la conserva y no la sustituye."
+      ]
+    },
+    {
+      "version": "0.15.28",
+      "changes": [
+        "Mejorada la visibilidad del selector «Fechas» en Gastos: la casilla sin marcar ahora se muestra con fondo blanco y un borde más definido."
+      ]
+    },
     {
       "version": "0.15.27",
       "changes": [
