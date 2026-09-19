@@ -1,16 +1,179 @@
 {
-  "version": "0.15.83",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.83/CUNIMIG.exe",
-  "sha256": "ebab52c2fc3c51e2c6e3971b77c0b0eed12add8c3cc5fe4b2724bf6cfbaa8597",
-  "notes": "• Reordenado definitivo de Economía → Resultados económicos.\n• Columna izquierda: Gastos y, debajo, Análisis avanzado.\n• Columna derecha: Ingresos, debajo IVA / Fiscalidad y debajo Resultado.\n• Gastos e Ingresos quedan enfrentados en la parte superior.\n• Sin cambios en fórmulas ni cálculos económicos.",
+  "version": "0.15.104",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.104/CUNIMIG.exe",
+  "sha256": "f2e0c6b1a5f8db88e6dbc3a6a40247ae3db706bcdd285d92a3ff317c16476cdd",
+  "notes": "• main.py deja de ser la única fuente del programa.\n• cunimig/app_meta.py: versión, creador, historial y canal de actualizaciones.\n• cunimig/formatting.py: fechas, números, euros, porcentajes y redondeos monetarios de presentación.\n• cunimig/ui_theme.py: tema visual, roles de campos y helpers de layouts adaptativos.\n• CREAR_EXE.bat comprueba la estructura y fuerza a PyInstaller a incluir todos los submódulos de cunimig.\n• preparar_actualizacion.py y COMPROBAR_PUBLICACION_GITHUB.bat leen la versión desde app_meta.py.\n• publicar_github_directo.py ejecuta la verificación estructural antes de publicar.\n• El cliente sigue recibiendo un único CUNIMIG.exe; no necesita instalar ni copiar módulos manualmente.\n• No se modifican fórmulas, datos ni base de datos.",
   "changes": [
-    "Reordenado definitivo de Economía → Resultados económicos.",
-    "Columna izquierda: Gastos y, debajo, Análisis avanzado.",
-    "Columna derecha: Ingresos, debajo IVA / Fiscalidad y debajo Resultado.",
-    "Gastos e Ingresos quedan enfrentados en la parte superior.",
-    "Sin cambios en fórmulas ni cálculos económicos."
+    "main.py deja de ser la única fuente del programa.",
+    "cunimig/app_meta.py: versión, creador, historial y canal de actualizaciones.",
+    "cunimig/formatting.py: fechas, números, euros, porcentajes y redondeos monetarios de presentación.",
+    "cunimig/ui_theme.py: tema visual, roles de campos y helpers de layouts adaptativos.",
+    "CREAR_EXE.bat comprueba la estructura y fuerza a PyInstaller a incluir todos los submódulos de cunimig.",
+    "preparar_actualizacion.py y COMPROBAR_PUBLICACION_GITHUB.bat leen la versión desde app_meta.py.",
+    "publicar_github_directo.py ejecuta la verificación estructural antes de publicar.",
+    "El cliente sigue recibiendo un único CUNIMIG.exe; no necesita instalar ni copiar módulos manualmente.",
+    "No se modifican fórmulas, datos ni base de datos."
   ],
   "release_history": [
+    {
+      "version": "0.15.104",
+      "changes": [
+        "Punto 12: comienza la división del antiguo main.py en módulos internos independientes.",
+        "Metadatos, versión e historial de cambios pasan a cunimig/app_meta.py.",
+        "Formato de fechas, números, importes y porcentajes pasa a cunimig/formatting.py.",
+        "Tema visual, roles de campos y helpers de layouts adaptativos pasan a cunimig/ui_theme.py.",
+        "El creador de EXE fuerza la inclusión del paquete cunimig completo mediante PyInstaller.",
+        "El preparador y comprobador de actualizaciones leen APP_VERSION e historial desde el nuevo módulo de metadatos.",
+        "Se añade una verificación estructural previa al EXE para impedir publicar una compilación incompleta si falta algún módulo.",
+        "No se modifican fórmulas, base de datos ni comportamiento funcional del programa."
+      ]
+    },
+    {
+      "version": "0.15.103",
+      "changes": [
+        "Economía → Resultados económicos vuelve a usar dos columnas independientes para evitar grandes huecos verticales.",
+        "La columna derecha apila Ingresos, IVA/Fiscalidad y Resultado inmediatamente uno debajo de otro.",
+        "La columna izquierda mantiene Gastos y Análisis avanzado sin obligar a la derecha a respetar sus alturas.",
+        "En ventanas estrechas ambas columnas se apilan verticalmente para conservar la adaptación de v0.15.102.",
+        "No se modifican fórmulas, datos ni contenido de los bloques."
+      ]
+    },
+    {
+      "version": "0.15.102",
+      "changes": [
+        "Punto 11: las pantallas complejas se adaptan mejor a resoluciones y tamaños de ventana distintos.",
+        "La ventana principal puede utilizarse desde 940×650 y su tamaño inicial se ajusta a la pantalla disponible.",
+        "Inicio apila automáticamente logo y datos de explotación en ventanas estrechas; los accesos rápidos pasan de 5 a 4, 3 o 2 columnas.",
+        "Indicadores productivos y económicos reorganizan tarjetas y bloques automáticamente al reducir el ancho.",
+        "Resultados económicos pasa de dos columnas a una sola columna cuando el espacio es reducido.",
+        "Gastos adapta el cuadre superior y las tarjetas de categorías a menos columnas.",
+        "Panel de salud, Inversiones y Financiación reorganizan sus tarjetas resumen en varias filas.",
+        "Los diálogos grandes de vacunación y financiación reducen sus mínimos para encajar mejor en pantallas de 1024×768.",
+        "No se modifican fórmulas ni datos."
+      ]
+    },
+    {
+      "version": "0.15.101",
+      "changes": [
+        "Punto 10: CUNIMIG diferencia de forma sistemática los campos editables, calculados y bloqueados.",
+        "Campos editables: fondo blanco; calculados o bloqueados: fondo gris claro.",
+        "Los formularios genéricos muestran una pequeña leyenda visual y marcan automáticamente IVA, total y otros valores derivados.",
+        "Bandas identifica Kg/dosis como cálculo automático y el resto de entradas como editables.",
+        "Inversiones distingue IVA, total, base amortizable, cuota anual y pendiente por financiar como valores calculados.",
+        "Financiación distingue la cuota mensual prevista como cálculo y los términos bloqueados por cuotas pagadas como campos protegidos.",
+        "Inicio diferencia los datos de explotación editables por administrador de los bloqueados para empleados.",
+        "No se modifica ninguna fórmula; solo la presentación y el estado visual de los campos."
+      ]
+    },
+    {
+      "version": "0.15.100",
+      "changes": [
+        "Corrige un error de arranque introducido al añadir el scroll de Gastos: Bandas y las páginas CRUD genéricas ya no intentan usar content_layout.",
+        "El scroll interno queda limitado exclusivamente a la pantalla Gastos.",
+        "La tabla de Gastos conserva la mayor altura mínima para mostrar varias filas.",
+        "No se modifican fórmulas, datos ni los iconos corregidos en v0.15.99."
+      ]
+    },
+    {
+      "version": "0.15.99",
+      "changes": [
+        "Indicadores económicos: se corrigen todos los recuadros de icono que aparecían vacíos.",
+        "Reserva e inversiones utilizan el icono existente de Economía.",
+        "Deuda, financiación e intereses utilizan iconos existentes de Gastos/Economía según el concepto.",
+        "También se corrigen los iconos de cabecera de los bloques Capacidad y reserva y Deuda y financiación.",
+        "No se modifican fórmulas, datos ni distribución de la pantalla."
+      ]
+    },
+    {
+      "version": "0.15.98",
+      "changes": [
+        "Gastos: se completan los iconos del bloque de cuadre económico usando iconos existentes del programa.",
+        "Gastos: se elimina la explicación larga en verde del cuadre económico para dejar la cabecera más limpia.",
+        "Gastos: la zona inferior de detalle, filtros y tabla pasa a mostrarse dentro de un scroll interno para poder recorrer la página cómodamente.",
+        "Gastos: la tabla dispone de más altura mínima visible para mostrar varias filas del detalle de movimientos."
+      ]
+    },
+    {
+      "version": "0.15.97",
+      "changes": [
+        "Corrige la inicialización de los roles visuales en Indicadores productivos.",
+        "year_chip y summary_title reciben el estilo antes de guardarse como atributos self.*, evitando AttributeError durante el arranque.",
+        "Se añade una comprobación estática específica para detectar llamadas apply_ui_role(self.x) realizadas antes de crear self.x dentro de un __init__.",
+        "No se modifican fórmulas, datos ni diseño; es una corrección técnica de arranque."
+      ]
+    },
+    {
+      "version": "0.15.96",
+      "changes": [
+        "Corrección adicional del sistema visual: los widgets creados como atributos self.* se pasan correctamente a apply_ui_role.",
+        "Se corrige específicamente el error NameError de year_chip en Economía y se revisan automáticamente llamadas similares.",
+        "No se modifican fórmulas ni datos; es una corrección técnica de arranque sobre v0.15.95."
+      ]
+    },
+    {
+      "version": "0.15.95",
+      "changes": [
+        "Corrección de arranque introducida en v0.15.94: apply_ui_role es una función global y ya no se invoca como método de las páginas.",
+        "Se revisan todas las llamadas al nuevo sistema visual para evitar AttributeError al abrir Economía y otras pantallas.",
+        "No se modifica el diseño aprobado ni las fórmulas; es una corrección técnica de la v0.15.94."
+      ]
+    },
+    {
+      "version": "0.15.94",
+      "changes": [
+        "Nuevo sistema visual centralizado para CUNIMIG: colores, estados y componentes comunes se definen en un único tema.",
+        "Botones principal, secundario y peligro incorporan estados hover y disabled coherentes en toda la aplicación.",
+        "Campos editables, campos calculados/solo lectura y campos deshabilitados quedan visualmente diferenciados de forma global.",
+        "Ventanas emergentes, cuadros de mensaje, tablas, tarjetas resumen, chips de año, notas y paneles informativos comparten ahora el mismo lenguaje visual.",
+        "Financiación deja de mantener un tema de diálogo independiente y utiliza el sistema visual común.",
+        "Se migran los estilos repetidos de año, textos auxiliares, scrolls transparentes, títulos de panel y avisos a roles visuales reutilizables.",
+        "El menú lateral conserva exactamente su diseño actual y no se modifica."
+      ]
+    },
+    {
+      "version": "0.15.93",
+      "changes": [
+        "Informes se rediseña por completo con una presentación profesional en PDF horizontal.",
+        "El Resumen anual completo incorpora identificación de explotación, resumen ejecutivo, calidad de datos, producción, economía, reserva, inversiones, financiación y alertas.",
+        "El Informe productivo añade ámbito de bandas completas, salud productiva, indicadores, detalle por banda y comparativa con el ejercicio anterior.",
+        "El Informe económico incorpora el cuadre Gastos registrados + Amortización + Intereses/comisiones = Total gastos económicos.",
+        "Los nuevos conceptos de Reserva, Coste objetivo con reserva, Margen disponible con reserva, inversiones y deuda aparecen ya en los informes.",
+        "Todos los ratios €/kg del informe usan 2 decimales en pantalla impresa, manteniendo la precisión interna.",
+        "Las tablas repiten cabecera cuando el motor de impresión lo permite y se evitan cortes internos de filas y bloques.",
+        "El PDF incluye versión de CUNIMIG, estado del ejercicio y fecha/hora de generación."
+      ]
+    },
+    {
+      "version": "0.15.92",
+      "changes": [
+        "Economía → Resultados económicos → Análisis avanzado muestra ahora todos los importes €/kg con 2 decimales.",
+        "La impresión de Resultados económicos utiliza el mismo formato de 2 decimales en Análisis avanzado.",
+        "No se modifica la precisión interna de los cálculos; solo la presentación visual."
+      ]
+    },
+    {
+      "version": "0.15.91",
+      "changes": [
+        "Indicadores económicos deja de repetir la pantalla Economía y pasa a funcionar como panel de análisis.",
+        "Nuevo resumen con Resultado económico, Coste real/kg, Margen económico/kg y Margen disponible con reserva/kg.",
+        "Nueva comparación automática con el ejercicio anterior para precio de venta, coste real, margen económico y resultado.",
+        "Nueva lectura de estructura del coste: peso del pienso, sanidad, amortización y gastos financieros sobre el Total gastos económicos.",
+        "Nuevo bloque de capacidad y reserva con beneficio disponible, reserva generada, saldo acumulado y porcentaje de la inversión anual cubierto con reserva utilizada.",
+        "Nuevo bloque de deuda y financiación con financiación nueva, capital devuelto, deuda pendiente, variación de deuda y gasto financiero.",
+        "Se mantienen los ratios por hembra, pero agrupados como productividad económica.",
+        "La terminología visible pasa de Margen neto a Margen económico, manteniendo las claves antiguas solo por compatibilidad interna."
+      ]
+    },
+    {
+      "version": "0.15.90",
+      "changes": [
+        "Gastos incorpora un bloque fijo de cuadre económico anual que separa gastos registrados, amortización de inversiones, intereses/comisiones y Total gastos económicos.",
+        "El Total gastos económicos de Gastos y el de Economía usan exactamente la misma fórmula y la misma fuente de datos.",
+        "El resumen filtrado de Gastos deja de llamarse Total gastos cuando solo representa una selección, evitando confundirlo con el total económico anual.",
+        "Economía → Resultados económicos muestra el subtotal de gastos registrados antes de añadir amortización e intereses/comisiones, permitiendo seguir el origen de cada euro.",
+        "La compra de una inversión y el capital devuelto de los préstamos siguen fuera del gasto económico; únicamente entran la amortización y los gastos financieros correspondientes."
+      ]
+    },
     {
       "version": "0.15.76",
       "changes": [
@@ -289,7 +452,7 @@
       "changes": [
         "Impresión avanzada unificada en las pantallas de registros: resultados filtrados, año completo o selección por fechas y bandas cuando corresponde.",
         "El selector de bandas de impresión muestra claramente «Seleccionar bandas…» y permite elegir varias sin confundirse con un botón de «todas».",
-        "Ventas, Sanidad, Bandas, Inseminaciones, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.",
+        "Ventas, Gastos (incluida Inseminación), Sanidad, Bandas, Muestras, Cadáveres, Visitas y Libro de registro comparten el nuevo sistema de impresión.",
         "Las impresiones incluyen explotación, CEA y el criterio aplicado en el encabezado cuando esos datos están disponibles.",
         "Al saltar varias versiones, CUNIMIG muestra conjuntamente todos los cambios documentados desde la versión instalada hasta la nueva.",
         "Tras instalar una actualización, el resumen acumulado de novedades se muestra una sola vez; las futuras comprobaciones también podrán mostrarlo antes de descargar."
