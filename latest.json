@@ -1,20 +1,57 @@
 {
-  "version": "0.15.104",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.104/CUNIMIG.exe",
-  "sha256": "f2e0c6b1a5f8db88e6dbc3a6a40247ae3db706bcdd285d92a3ff317c16476cdd",
-  "notes": "• main.py deja de ser la única fuente del programa.\n• cunimig/app_meta.py: versión, creador, historial y canal de actualizaciones.\n• cunimig/formatting.py: fechas, números, euros, porcentajes y redondeos monetarios de presentación.\n• cunimig/ui_theme.py: tema visual, roles de campos y helpers de layouts adaptativos.\n• CREAR_EXE.bat comprueba la estructura y fuerza a PyInstaller a incluir todos los submódulos de cunimig.\n• preparar_actualizacion.py y COMPROBAR_PUBLICACION_GITHUB.bat leen la versión desde app_meta.py.\n• publicar_github_directo.py ejecuta la verificación estructural antes de publicar.\n• El cliente sigue recibiendo un único CUNIMIG.exe; no necesita instalar ni copiar módulos manualmente.\n• No se modifican fórmulas, datos ni base de datos.",
+  "version": "0.15.107",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.107/CUNIMIG.exe",
+  "sha256": "f38a4e2535463e4e88bd5c163c312531359d07398743f5e2afa891fb2b6c1178",
+  "notes": "• Punto 15: los cálculos monetarios críticos pasan a trabajar con Decimal y céntimos enteros para evitar errores acumulados de float.\n• Se incorporan helpers money_sum, money_add y money_subtract: cada importe se normaliza a céntimos antes de sumar o restar.\n• Los totales principales de Economía dejan de depender de SUM() sobre columnas REAL de SQLite y se agregan fila a fila en céntimos.\n• Ingresos, gastos registrados, IVA, retenciones, inversiones, financiación y saldos de préstamos usan la nueva aritmética monetaria.\n• La base amortizable, importe a financiar, reserva y cuadro francés de préstamos trabajan internamente en céntimos/Decimal.\n• Se mantiene el esquema REAL de las bases existentes por compatibilidad; los valores se normalizan al entrar en los cálculos, evitando una migración destructiva.\n• Las pruebas automáticas incluyen ahora casos clásicos de precisión como 0,1 + 0,2 y miles de importes de un céntimo.\n• No se modifican los criterios económicos acordados; solo la precisión y consistencia de la aritmética monetaria.",
   "changes": [
-    "main.py deja de ser la única fuente del programa.",
-    "cunimig/app_meta.py: versión, creador, historial y canal de actualizaciones.",
-    "cunimig/formatting.py: fechas, números, euros, porcentajes y redondeos monetarios de presentación.",
-    "cunimig/ui_theme.py: tema visual, roles de campos y helpers de layouts adaptativos.",
-    "CREAR_EXE.bat comprueba la estructura y fuerza a PyInstaller a incluir todos los submódulos de cunimig.",
-    "preparar_actualizacion.py y COMPROBAR_PUBLICACION_GITHUB.bat leen la versión desde app_meta.py.",
-    "publicar_github_directo.py ejecuta la verificación estructural antes de publicar.",
-    "El cliente sigue recibiendo un único CUNIMIG.exe; no necesita instalar ni copiar módulos manualmente.",
-    "No se modifican fórmulas, datos ni base de datos."
+    "Punto 15: los cálculos monetarios críticos pasan a trabajar con Decimal y céntimos enteros para evitar errores acumulados de float.",
+    "Se incorporan helpers money_sum, money_add y money_subtract: cada importe se normaliza a céntimos antes de sumar o restar.",
+    "Los totales principales de Economía dejan de depender de SUM() sobre columnas REAL de SQLite y se agregan fila a fila en céntimos.",
+    "Ingresos, gastos registrados, IVA, retenciones, inversiones, financiación y saldos de préstamos usan la nueva aritmética monetaria.",
+    "La base amortizable, importe a financiar, reserva y cuadro francés de préstamos trabajan internamente en céntimos/Decimal.",
+    "Se mantiene el esquema REAL de las bases existentes por compatibilidad; los valores se normalizan al entrar en los cálculos, evitando una migración destructiva.",
+    "Las pruebas automáticas incluyen ahora casos clásicos de precisión como 0,1 + 0,2 y miles de importes de un céntimo.",
+    "No se modifican los criterios económicos acordados; solo la precisión y consistencia de la aritmética monetaria."
   ],
   "release_history": [
+    {
+      "version": "0.15.107",
+      "changes": [
+        "Punto 15: los cálculos monetarios críticos pasan a trabajar con Decimal y céntimos enteros para evitar errores acumulados de float.",
+        "Se incorporan helpers money_sum, money_add y money_subtract: cada importe se normaliza a céntimos antes de sumar o restar.",
+        "Los totales principales de Economía dejan de depender de SUM() sobre columnas REAL de SQLite y se agregan fila a fila en céntimos.",
+        "Ingresos, gastos registrados, IVA, retenciones, inversiones, financiación y saldos de préstamos usan la nueva aritmética monetaria.",
+        "La base amortizable, importe a financiar, reserva y cuadro francés de préstamos trabajan internamente en céntimos/Decimal.",
+        "Se mantiene el esquema REAL de las bases existentes por compatibilidad; los valores se normalizan al entrar en los cálculos, evitando una migración destructiva.",
+        "Las pruebas automáticas incluyen ahora casos clásicos de precisión como 0,1 + 0,2 y miles de importes de un céntimo.",
+        "No se modifican los criterios económicos acordados; solo la precisión y consistencia de la aritmética monetaria."
+      ]
+    },
+    {
+      "version": "0.15.106",
+      "changes": [
+        "Punto 14: se refuerza la integridad de la base de datos y las operaciones críticas pasan a ser atómicas.",
+        "Todas las conexiones normales de CUNIMIG activan PRAGMA foreign_keys y un busy_timeout de 5 segundos.",
+        "Las tablas nuevas de amortizaciones, cuotas, préstamos, inversiones y adjuntos incorporan claves foráneas cuando SQLite permite crearlas directamente.",
+        "Las bases históricas reciben guardas equivalentes mediante triggers para impedir nuevos registros huérfanos y aplicar cascadas/SET NULL seguros.",
+        "Los enlaces opcionales huérfanos de préstamo→inversión, inversión→gasto y gasto→banda se reparan a NULL durante la migración sin borrar el registro.",
+        "Alta/edición/borrado de inversiones y alta/edición/borrado de préstamos se ejecutan dentro de transacciones: si falla un paso, se revierte el conjunto completo.",
+        "Se añaden pruebas automáticas de rollback/commit e integridad relacional; el verificador las ejecuta antes de crear o publicar el EXE.",
+        "No se cambian fórmulas económicas o productivas."
+      ]
+    },
+    {
+      "version": "0.15.105",
+      "changes": [
+        "Punto 13: se añaden pruebas automáticas sobre las fórmulas críticas de CUNIMIG.",
+        "Las fórmulas puras se centralizan en cunimig/formulas.py y son las mismas que utiliza el programa real.",
+        "Se prueban kg equivalentes de 2ª, precio medio, márgenes/coste por kg, reserva, abuelas, kg/dosis, mortalidad e índice de conversión.",
+        "También se prueban base amortizable, importe a financiar, cuota de préstamo y cuadro francés con capital cuadrado exactamente a céntimos.",
+        "verificar_estructura_modular.py ejecuta las pruebas automáticamente; si alguna falla, se bloquea la creación/publicación del EXE.",
+        "Se incluye EJECUTAR_PRUEBAS_FORMULAS.bat para poder lanzar las comprobaciones manualmente.",
+        "No se cambian los criterios acordados de las fórmulas; se centralizan y quedan protegidos contra regresiones."
+      ]
+    },
     {
       "version": "0.15.104",
       "changes": [
