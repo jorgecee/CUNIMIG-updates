@@ -1,15 +1,33 @@
 {
-  "version": "0.15.50",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.50/CUNIMIG.exe",
-  "sha256": "a6872e77b9957b91838a84d264786280e81b000f888eb70a132c1eb329f86f6a",
-  "notes": "• Corregido de forma robusta el resaltado del menú lateral.\n• El botón activo y el subbotón activo de Indicadores reciben ahora un estilo local con fondo verde-azulado/turquesa, borde redondeado y línea lateral cian.\n• El efecto hover se aplica también mediante estilo local, evitando que el QScrollArea lo anule.\n• Se conserva el fondo limpio, el scroll gris corto y una única versión inferior.",
+  "version": "0.15.52",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.52/CUNIMIG.exe",
+  "sha256": "8f2cfee3e8d07d9a7ef7017c6eaf3e767590440a55613886d6d0f2e7701e1b74",
+  "notes": "• Corregida la coherencia de las bajas por banda cuando existen ventas particulares.\n• Las ventas particulares asociadas a una banda se incluyen ahora en \"Gazapos vendidos totales\" de esa banda para calcular:\n• * Bajas de cebo = (Destetados - Gazapos vendidos totales - Abuelas) / Destetados x 100.\n• * Bajas totales = (Nacidos vivos - Gazapos vendidos totales - Abuelas) / Nacidos vivos x 100.\n• El resumen anual ya incluía correctamente las ventas particulares; ahora la tabla de Bandas y su impresión usan el mismo criterio.\n• Se mantienen los cambios de v0.15.51: fórmula de bajas con abuelas y nuevo indicador \"Kg vendidos / parto\".",
   "changes": [
-    "Corregido de forma robusta el resaltado del menú lateral.",
-    "El botón activo y el subbotón activo de Indicadores reciben ahora un estilo local con fondo verde-azulado/turquesa, borde redondeado y línea lateral cian.",
-    "El efecto hover se aplica también mediante estilo local, evitando que el QScrollArea lo anule.",
-    "Se conserva el fondo limpio, el scroll gris corto y una única versión inferior."
+    "Corregida la coherencia de las bajas por banda cuando existen ventas particulares.",
+    "Las ventas particulares asociadas a una banda se incluyen ahora en \"Gazapos vendidos totales\" de esa banda para calcular:",
+    "* Bajas de cebo = (Destetados - Gazapos vendidos totales - Abuelas) / Destetados x 100.",
+    "* Bajas totales = (Nacidos vivos - Gazapos vendidos totales - Abuelas) / Nacidos vivos x 100.",
+    "El resumen anual ya incluía correctamente las ventas particulares; ahora la tabla de Bandas y su impresión usan el mismo criterio.",
+    "Se mantienen los cambios de v0.15.51: fórmula de bajas con abuelas y nuevo indicador \"Kg vendidos / parto\"."
   ],
   "release_history": [
+    {
+      "version": "0.15.52",
+      "changes": [
+        "Corregida la coherencia de bajas por banda: las ventas particulares de cada banda se descuentan también en Bajas cebo y Bajas total de la tabla de Bandas y en su impresión.",
+        "El resumen anual mantiene Gazapos vendidos totales = 1ª + 2ª/raquíticos + particulares; por tanto las bajas del resumen y las bajas por banda parten ahora del mismo criterio."
+      ]
+    },
+    {
+      "version": "0.15.51",
+      "changes": [
+        "Corregido el % de bajas totales nacimiento→venta: las abuelas se restan de las pérdidas porque siguen vivas como reposición, pero permanecen dentro de los nacidos vivos del denominador.",
+        "Se mantiene el cálculo de bajas de cebo: (Destetados − Gazapos vendidos totales − Abuelas) ÷ Destetados × 100.",
+        "La misma fórmula de bajas totales se aplica de forma coherente en Indicadores, Bandas, tarjetas/resúmenes y comparativas internas.",
+        "Añadido «Kg vendidos / parto» en Indicadores → Producción y ventas, calculado como kg equivalentes realmente vendidos ÷ número de partos."
+      ]
+    },
     {
       "version": "0.15.41",
       "changes": [
