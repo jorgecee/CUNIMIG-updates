@@ -1,13 +1,14 @@
 {
-  "version": "0.15.80",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.80/CUNIMIG.exe",
-  "sha256": "5e63d4ccd052d198b3a837ed7148438a67f6a5773723bd8e4c075e5c8db98926",
-  "notes": "• Eliminado Tesorería del menú de Economía.\n• Economía queda con: Resultados económicos, Coste / kg, Financiación, Inversiones y Fondo de reservas.\n• Se conservan internamente las tablas/datos de tesorería por seguridad y compatibilidad, pero no se muestran en la navegación.\n• Sin cambios en fórmulas de resultados, coste/kg, financiación, inversiones, amortizaciones ni fondo de reservas.",
+  "version": "0.15.83",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.83/CUNIMIG.exe",
+  "sha256": "ebab52c2fc3c51e2c6e3971b77c0b0eed12add8c3cc5fe4b2724bf6cfbaa8597",
+  "notes": "• Reordenado definitivo de Economía → Resultados económicos.\n• Columna izquierda: Gastos y, debajo, Análisis avanzado.\n• Columna derecha: Ingresos, debajo IVA / Fiscalidad y debajo Resultado.\n• Gastos e Ingresos quedan enfrentados en la parte superior.\n• Sin cambios en fórmulas ni cálculos económicos.",
   "changes": [
-    "Eliminado Tesorería del menú de Economía.",
-    "Economía queda con: Resultados económicos, Coste / kg, Financiación, Inversiones y Fondo de reservas.",
-    "Se conservan internamente las tablas/datos de tesorería por seguridad y compatibilidad, pero no se muestran en la navegación.",
-    "Sin cambios en fórmulas de resultados, coste/kg, financiación, inversiones, amortizaciones ni fondo de reservas."
+    "Reordenado definitivo de Economía → Resultados económicos.",
+    "Columna izquierda: Gastos y, debajo, Análisis avanzado.",
+    "Columna derecha: Ingresos, debajo IVA / Fiscalidad y debajo Resultado.",
+    "Gastos e Ingresos quedan enfrentados en la parte superior.",
+    "Sin cambios en fórmulas ni cálculos económicos."
   ],
   "release_history": [
     {
