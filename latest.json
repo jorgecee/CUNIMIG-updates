@@ -1,32 +1,24 @@
 {
-  "version": "0.15.61",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.61/CUNIMIG.exe",
-  "sha256": "9bc4af9d3e4d0b1f81523e3268c3dfeac3a9469b749b0c37eaf282c16308f425",
-  "notes": "• CAMBIOS PRINCIPALES\n• Gastos pasa a ser el punto único para registrar movimientos económicos: gasto corriente o inversión.\n• Las inversiones se registran desde Gastos y aparecen en el mismo listado, pero su importe no se suma como gasto corriente en los resultados económicos.\n• Al registrar una inversión se pueden indicar: banda opcional, concepto, fecha, factura, proveedor, importe neto, IVA, total, tipo, valor residual, fondo utilizado y observaciones.\n• Se puede elegir entre dos métodos de amortización:\n• * Automática por años: CUNIMIG reparte la base amortizable entre la vida útil indicada.\n• * Manual por ejercicio: el ganadero decide cuánto amortizar cada año.\n• Gastos incorpora el botón «Amortizaciones» para ajustar la amortización manual del año seleccionado.\n• CUNIMIG arrastra automáticamente a cada ejercicio el importe pendiente de amortizar de inversiones de años anteriores.\n• Economía muestra ahora el pendiente procedente de años anteriores, la amortización automática, la amortización manual de inversiones y el pendiente al cierre.\n• El historial de Inversiones en Economía pasa a ser informativo. Las altas y modificaciones se realizan desde Gastos.\n• Las inversiones creadas con la v0.15.60 se enlazan automáticamente con Gastos al actualizar, sin duplicar su importe en los resultados.\n• Se mantiene separado el Fondo para futuras inversiones por kg vendido.\n• CRITERIO ECONÓMICO\n• El importe de compra de una inversión se registra como salida/inversión, pero no se suma íntegramente a los gastos corrientes del año. En los resultados entra únicamente la amortización correspondiente al ejercicio.\n• Ejemplo:\n• Inversión: 30.000 €\n• Vida útil: 10 años\n• Amortización automática: 3.000 €/año\n• En el segundo año, CUNIMIG parte de 27.000 € pendientes, imputa otros 3.000 € y deja 24.000 € pendientes al cierre.\n• En amortización manual, el saldo no amortizado también se conserva y pasa al año siguiente hasta agotarse.",
+  "version": "0.15.62",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.62/CUNIMIG.exe",
+  "sha256": "a32b4b84251a1931d43317d2d0345830f1cc3e84d9ec4d89f1270de5dbc2c45c",
+  "notes": "• El importe del Fondo para futuras inversiones queda ahora claramente recuadrado y señalado como dato editable.\n• Campo de €/kg más grande, con borde verde y ejemplo visible (0,150 €/kg).\n• El botón Guardar importe pasa a destacarse como acción principal.\n• La confirmación tras guardar usa una ventana con fondo blanco y texto oscuro para evitar que aparezca en negro.\n• No se modifican las fórmulas del fondo, las inversiones ni las amortizaciones.",
   "changes": [
-    "CAMBIOS PRINCIPALES",
-    "Gastos pasa a ser el punto único para registrar movimientos económicos: gasto corriente o inversión.",
-    "Las inversiones se registran desde Gastos y aparecen en el mismo listado, pero su importe no se suma como gasto corriente en los resultados económicos.",
-    "Al registrar una inversión se pueden indicar: banda opcional, concepto, fecha, factura, proveedor, importe neto, IVA, total, tipo, valor residual, fondo utilizado y observaciones.",
-    "Se puede elegir entre dos métodos de amortización:",
-    "* Automática por años: CUNIMIG reparte la base amortizable entre la vida útil indicada.",
-    "* Manual por ejercicio: el ganadero decide cuánto amortizar cada año.",
-    "Gastos incorpora el botón «Amortizaciones» para ajustar la amortización manual del año seleccionado.",
-    "CUNIMIG arrastra automáticamente a cada ejercicio el importe pendiente de amortizar de inversiones de años anteriores.",
-    "Economía muestra ahora el pendiente procedente de años anteriores, la amortización automática, la amortización manual de inversiones y el pendiente al cierre.",
-    "El historial de Inversiones en Economía pasa a ser informativo. Las altas y modificaciones se realizan desde Gastos.",
-    "Las inversiones creadas con la v0.15.60 se enlazan automáticamente con Gastos al actualizar, sin duplicar su importe en los resultados.",
-    "Se mantiene separado el Fondo para futuras inversiones por kg vendido.",
-    "CRITERIO ECONÓMICO",
-    "El importe de compra de una inversión se registra como salida/inversión, pero no se suma íntegramente a los gastos corrientes del año. En los resultados entra únicamente la amortización correspondiente al ejercicio.",
-    "Ejemplo:",
-    "Inversión: 30.000 €",
-    "Vida útil: 10 años",
-    "Amortización automática: 3.000 €/año",
-    "En el segundo año, CUNIMIG parte de 27.000 € pendientes, imputa otros 3.000 € y deja 24.000 € pendientes al cierre.",
-    "En amortización manual, el saldo no amortizado también se conserva y pasa al año siguiente hasta agotarse."
+    "El importe del Fondo para futuras inversiones queda ahora claramente recuadrado y señalado como dato editable.",
+    "Campo de €/kg más grande, con borde verde y ejemplo visible (0,150 €/kg).",
+    "El botón Guardar importe pasa a destacarse como acción principal.",
+    "La confirmación tras guardar usa una ventana con fondo blanco y texto oscuro para evitar que aparezca en negro.",
+    "No se modifican las fórmulas del fondo, las inversiones ni las amortizaciones."
   ],
   "release_history": [
+    {
+      "version": "0.15.62",
+      "changes": [
+        "Mejorada la entrada del importe del Fondo para futuras inversiones: ahora aparece dentro de un recuadro propio, más visible y claramente identificado como dato configurable.",
+        "El campo de euros por kg tiene mayor tamaño, borde verde y una ayuda directa para introducir importes como 0,150 €/kg.",
+        "Corregida la confirmación al guardar el fondo para que se muestre en una ventana clara con fondo blanco y texto oscuro, evitando la pantalla negra observada en algunos equipos."
+      ]
+    },
     {
       "version": "0.15.61",
       "changes": [
