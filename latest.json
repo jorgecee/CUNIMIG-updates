@@ -1,12 +1,14 @@
 {
-  "version": "0.15.44",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.44/CUNIMIG.exe",
-  "sha256": "84623b95e60504ab03441e5a018f420c0b52db5aa5825db6d8d687e1eacf9186",
-  "notes": "• El panel lateral utiliza la imagen completa indicada por el usuario como fondo.\n• Se ha añadido la versión del programa en la parte inferior del panel lateral.\n• Ajuste visual sin cambios en cálculos ni datos.",
+  "version": "0.15.46",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.46/CUNIMIG.exe",
+  "sha256": "f300a5859632bf276a99b2a8fa8186131055f828d4b63ee4d584bb26771b889c",
+  "notes": "• Se usa la imagen limpia como fondo del panel lateral, sin la versión 0.15.40 incrustada.\n• Solo aparece una versión del programa en la parte inferior.\n• El área con scroll termina por encima del lema y la ilustración inferior para evitar solapes.\n• La barra de desplazamiento vuelve a ser visible, pequeña y gris.\n• Se conservan los efectos de resalte al pasar el ratón y al seleccionar una sección.",
   "changes": [
-    "El panel lateral utiliza la imagen completa indicada por el usuario como fondo.",
-    "Se ha añadido la versión del programa en la parte inferior del panel lateral.",
-    "Ajuste visual sin cambios en cálculos ni datos."
+    "Se usa la imagen limpia como fondo del panel lateral, sin la versión 0.15.40 incrustada.",
+    "Solo aparece una versión del programa en la parte inferior.",
+    "El área con scroll termina por encima del lema y la ilustración inferior para evitar solapes.",
+    "La barra de desplazamiento vuelve a ser visible, pequeña y gris.",
+    "Se conservan los efectos de resalte al pasar el ratón y al seleccionar una sección."
   ],
   "release_history": [
     {
