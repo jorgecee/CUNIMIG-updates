@@ -1,20 +1,92 @@
 {
-  "version": "0.15.67",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.67/CUNIMIG.exe",
-  "sha256": "c096b2f09503e03a495e9d8cb93ad45503123d46066dd03774036a52507994e5",
-  "notes": "• CORRECCIÓN\n• Solucionado el AttributeError al abrir Nueva inversión.\n• El método que controla la forma de pago/financiación estaba ubicado por error en otra clase y ahora pertenece correctamente a InvestmentExpenseDialog.\n• Recursos propios, Préstamo total y Financiación parcial vuelven a actualizar correctamente sus campos al abrir y al cambiar la selección.\n• Se mantiene toda la lógica de Economía, inversiones, amortizaciones y financiación introducida en v0.15.66.\n• COMPROBACIONES\n• Sintaxis Python verificada.\n• Verificado que InvestmentExpenseDialog contiene _financing_changed.\n• Verificado que no quedan manejadores de interfaz de esta ventana sin definir.",
+  "version": "0.15.80",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.80/CUNIMIG.exe",
+  "sha256": "5e63d4ccd052d198b3a837ed7148438a67f6a5773723bd8e4c075e5c8db98926",
+  "notes": "• Eliminado Tesorería del menú de Economía.\n• Economía queda con: Resultados económicos, Coste / kg, Financiación, Inversiones y Fondo de reservas.\n• Se conservan internamente las tablas/datos de tesorería por seguridad y compatibilidad, pero no se muestran en la navegación.\n• Sin cambios en fórmulas de resultados, coste/kg, financiación, inversiones, amortizaciones ni fondo de reservas.",
   "changes": [
-    "CORRECCIÓN",
-    "Solucionado el AttributeError al abrir Nueva inversión.",
-    "El método que controla la forma de pago/financiación estaba ubicado por error en otra clase y ahora pertenece correctamente a InvestmentExpenseDialog.",
-    "Recursos propios, Préstamo total y Financiación parcial vuelven a actualizar correctamente sus campos al abrir y al cambiar la selección.",
-    "Se mantiene toda la lógica de Economía, inversiones, amortizaciones y financiación introducida en v0.15.66.",
-    "COMPROBACIONES",
-    "Sintaxis Python verificada.",
-    "Verificado que InvestmentExpenseDialog contiene _financing_changed.",
-    "Verificado que no quedan manejadores de interfaz de esta ventana sin definir."
+    "Eliminado Tesorería del menú de Economía.",
+    "Economía queda con: Resultados económicos, Coste / kg, Financiación, Inversiones y Fondo de reservas.",
+    "Se conservan internamente las tablas/datos de tesorería por seguridad y compatibilidad, pero no se muestran en la navegación.",
+    "Sin cambios en fórmulas de resultados, coste/kg, financiación, inversiones, amortizaciones ni fondo de reservas."
   ],
   "release_history": [
+    {
+      "version": "0.15.76",
+      "changes": [
+        "Economía → Coste / kg unifica el resumen y la rentabilidad en un único bloque superior para eliminar información duplicada.",
+        "El bloque único muestra Precio medio de venta / kg, Coste real / kg, Reserva para renovación e inversiones / kg, Coste objetivo / kg con reserva, Margen económico / kg y Margen disponible con reserva / kg.",
+        "Se elimina el bloque inferior Rentabilidad por kg; debajo del resumen queda directamente la Composición del coste / kg.",
+        "Los márgenes continúan resaltándose en verde cuando son positivos y en rojo cuando son negativos, sin modificar ninguna fórmula económica."
+      ]
+    },
+    {
+      "version": "0.15.75",
+      "changes": [
+        "En Economía → Coste / kg, la tarjeta «Margen disponible / kg» pasa a llamarse «Margen disponible con reserva / kg» para dejar claro que ya descuenta la Reserva para renovación e inversiones.",
+        "El cambio es únicamente de denominación y no modifica fórmulas ni cálculos."
+      ]
+    },
+    {
+      "version": "0.15.74",
+      "changes": [
+        "Tesorería rediseña la entrada de saldos bancarios con campos claramente enmarcados, etiquetas explicativas y acciones visibles para evitar confundir valores editables con datos de solo lectura.",
+        "El saldo real de cierre queda siempre editable; al modificarlo se activa automáticamente la conciliación y puede desactivarse con una casilla clara si todavía no se quiere conciliar.",
+        "Los saldos muestran una vista previa inmediata del saldo teórico y de la diferencia con el banco antes de guardar, evitando que el saldo inicial visible parezca no formar parte del cálculo.",
+        "Otros movimientos de tesorería pasa a una posición visible y dispone de un botón principal grande «Registrar otro movimiento», tabla propia y mensaje de estado cuando todavía no existen apuntes manuales.",
+        "Tesorería incorpora desplazamiento vertical interno y agrupa el detalle de entradas y salidas en un bloque propio para que ninguna herramienta quede oculta en pantallas con menos altura."
+      ]
+    },
+    {
+      "version": "0.15.73",
+      "changes": [
+        "Coste / kg incorpora la Reserva para renovación e inversiones como coste objetivo de gestión, sin convertirla en un gasto contable.",
+        "Se añade el Coste objetivo con reserva = coste final con estiércol + importe de reserva por kg configurado.",
+        "Rentabilidad por kg muestra por separado margen económico, reserva por kg y margen disponible después de la reserva.",
+        "Resultados económicos e Inversiones aclaran que la reserva no altera el coste real ni Total Gastos, pero sí se suma al coste objetivo necesario para mantener esa política de renovación e inversión."
+      ]
+    },
+    {
+      "version": "0.15.72",
+      "changes": [
+        "El Fondo para futuras inversiones pasa a llamarse «Reserva para renovación e inversiones», un nombre más claro para indicar que puede usarse tanto para renovar equipos como para realizar nuevas inversiones.",
+        "La reserva se calcula con el importe configurado por kg vendido equivalente y sigue usando dos decimales, por ejemplo 0,15 €/kg.",
+        "La reserva continúa siendo una parte del beneficio que se aparta voluntariamente: no se contabiliza como gasto ni aumenta el coste/kg, y se muestra por separado para obtener el beneficio disponible.",
+        "Al registrar una inversión, el dinero utilizado de la reserva reduce su saldo acumulado y también el importe que queda pendiente de financiar, sin modificar la base amortizable.",
+        "Se actualizan las pantallas de Resultados económicos, Inversiones y Financiación para utilizar de forma coherente la nueva denominación de Reserva."
+      ]
+    },
+    {
+      "version": "0.15.71",
+      "changes": [
+        "El Fondo para futuras inversiones queda definido como una reserva del beneficio: no se suma a Gastos ni al coste/kg; Resultados económicos muestra por separado resultado, reserva anual y beneficio disponible.",
+        "La inversión usa primero el dinero indicado del Fondo y CUNIMIG calcula automáticamente el importe restante por financiar sobre el total de la factura.",
+        "Se elimina de la ficha de inversión la elección manual Recursos propios / Préstamo / Financiación parcial: el resto no cubierto por el Fondo queda como financiación necesaria y puede generar un préstamo asociado.",
+        "Inversiones muestra total de factura, Fondo utilizado, importe a financiar, financiación vinculada y pendiente de financiar para comprobar la cobertura de cada compra.",
+        "El importe del Fondo por kg se introduce y muestra con dos decimales, por ejemplo 0,15 €/kg."
+      ]
+    },
+    {
+      "version": "0.15.70",
+      "changes": [
+        "Economía se reorganiza en cinco subapartados del menú lateral: Resultados económicos, Coste / kg, Financiación, Inversiones y Tesorería.",
+        "Financiación e Inversiones dejan de ocupar espacio dentro de Resultados económicos y pasan a tener pantallas propias, manteniendo los mismos datos y cálculos.",
+        "Se recupera el Fondo para futuras inversiones configurable en €/kg vendido equivalente, con 1ª + particulares + 2ª equivalente y sin incluir abuelas.",
+        "Las inversiones vuelven a permitir indicar cuánto dinero se utiliza del Fondo para futuras inversiones, sin alterar la amortización ni el importe de la inversión.",
+        "Nueva Tesorería: saldo inicial, cobros registrados, financiación recibida, pagos de gastos e inversiones, cuotas completas de préstamos, otros movimientos y saldo teórico de cierre.",
+        "Tesorería incorpora conciliación bancaria: permite indicar el saldo real del banco y muestra automáticamente la diferencia frente al saldo teórico de CUNIMIG.",
+        "Tesorería permite registrar movimientos manuales de caja/banco no reflejados en Ventas, Gastos o Financiación, como aportaciones, retiradas o ajustes, evitando mezclarlos con el beneficio económico."
+      ]
+    },
+    {
+      "version": "0.15.69",
+      "changes": [
+        "Gastos integra las amortizaciones como una categoría especial llamada «Amortizaciones de inversiones», eliminando el botón independiente.",
+        "La categoría especial muestra año de compra, inversión, método, base amortizable, pendiente inicial, amortización del ejercicio y pendiente final directamente en la tabla de Gastos.",
+        "No se pueden crear gastos manuales dentro de «Amortizaciones de inversiones»: las cuotas proceden siempre de una inversión registrada.",
+        "Las amortizaciones personalizadas pueden ajustarse desde la propia categoría y se conserva el arrastre pendiente de ejercicios anteriores.",
+        "La antigua categoría «Amortización» deja de aparecer como opción de filtro o alta, aunque los registros históricos existentes se conservan para no perder datos."
+      ]
+    },
     {
       "version": "0.15.67",
       "changes": [
