@@ -1,14 +1,13 @@
 {
-  "version": "0.15.46",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.46/CUNIMIG.exe",
-  "sha256": "f300a5859632bf276a99b2a8fa8186131055f828d4b63ee4d584bb26771b889c",
-  "notes": "• Se usa la imagen limpia como fondo del panel lateral, sin la versión 0.15.40 incrustada.\n• Solo aparece una versión del programa en la parte inferior.\n• El área con scroll termina por encima del lema y la ilustración inferior para evitar solapes.\n• La barra de desplazamiento vuelve a ser visible, pequeña y gris.\n• Se conservan los efectos de resalte al pasar el ratón y al seleccionar una sección.",
+  "version": "0.15.50",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.50/CUNIMIG.exe",
+  "sha256": "a6872e77b9957b91838a84d264786280e81b000f888eb70a132c1eb329f86f6a",
+  "notes": "• Corregido de forma robusta el resaltado del menú lateral.\n• El botón activo y el subbotón activo de Indicadores reciben ahora un estilo local con fondo verde-azulado/turquesa, borde redondeado y línea lateral cian.\n• El efecto hover se aplica también mediante estilo local, evitando que el QScrollArea lo anule.\n• Se conserva el fondo limpio, el scroll gris corto y una única versión inferior.",
   "changes": [
-    "Se usa la imagen limpia como fondo del panel lateral, sin la versión 0.15.40 incrustada.",
-    "Solo aparece una versión del programa en la parte inferior.",
-    "El área con scroll termina por encima del lema y la ilustración inferior para evitar solapes.",
-    "La barra de desplazamiento vuelve a ser visible, pequeña y gris.",
-    "Se conservan los efectos de resalte al pasar el ratón y al seleccionar una sección."
+    "Corregido de forma robusta el resaltado del menú lateral.",
+    "El botón activo y el subbotón activo de Indicadores reciben ahora un estilo local con fondo verde-azulado/turquesa, borde redondeado y línea lateral cian.",
+    "El efecto hover se aplica también mediante estilo local, evitando que el QScrollArea lo anule.",
+    "Se conserva el fondo limpio, el scroll gris corto y una única versión inferior."
   ],
   "release_history": [
     {
