@@ -1,16 +1,65 @@
 {
-  "version": "0.15.62",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.62/CUNIMIG.exe",
-  "sha256": "a32b4b84251a1931d43317d2d0345830f1cc3e84d9ec4d89f1270de5dbc2c45c",
-  "notes": "• El importe del Fondo para futuras inversiones queda ahora claramente recuadrado y señalado como dato editable.\n• Campo de €/kg más grande, con borde verde y ejemplo visible (0,150 €/kg).\n• El botón Guardar importe pasa a destacarse como acción principal.\n• La confirmación tras guardar usa una ventana con fondo blanco y texto oscuro para evitar que aparezca en negro.\n• No se modifican las fórmulas del fondo, las inversiones ni las amortizaciones.",
+  "version": "0.15.67",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.67/CUNIMIG.exe",
+  "sha256": "c096b2f09503e03a495e9d8cb93ad45503123d46066dd03774036a52507994e5",
+  "notes": "• CORRECCIÓN\n• Solucionado el AttributeError al abrir Nueva inversión.\n• El método que controla la forma de pago/financiación estaba ubicado por error en otra clase y ahora pertenece correctamente a InvestmentExpenseDialog.\n• Recursos propios, Préstamo total y Financiación parcial vuelven a actualizar correctamente sus campos al abrir y al cambiar la selección.\n• Se mantiene toda la lógica de Economía, inversiones, amortizaciones y financiación introducida en v0.15.66.\n• COMPROBACIONES\n• Sintaxis Python verificada.\n• Verificado que InvestmentExpenseDialog contiene _financing_changed.\n• Verificado que no quedan manejadores de interfaz de esta ventana sin definir.",
   "changes": [
-    "El importe del Fondo para futuras inversiones queda ahora claramente recuadrado y señalado como dato editable.",
-    "Campo de €/kg más grande, con borde verde y ejemplo visible (0,150 €/kg).",
-    "El botón Guardar importe pasa a destacarse como acción principal.",
-    "La confirmación tras guardar usa una ventana con fondo blanco y texto oscuro para evitar que aparezca en negro.",
-    "No se modifican las fórmulas del fondo, las inversiones ni las amortizaciones."
+    "CORRECCIÓN",
+    "Solucionado el AttributeError al abrir Nueva inversión.",
+    "El método que controla la forma de pago/financiación estaba ubicado por error en otra clase y ahora pertenece correctamente a InvestmentExpenseDialog.",
+    "Recursos propios, Préstamo total y Financiación parcial vuelven a actualizar correctamente sus campos al abrir y al cambiar la selección.",
+    "Se mantiene toda la lógica de Economía, inversiones, amortizaciones y financiación introducida en v0.15.66.",
+    "COMPROBACIONES",
+    "Sintaxis Python verificada.",
+    "Verificado que InvestmentExpenseDialog contiene _financing_changed.",
+    "Verificado que no quedan manejadores de interfaz de esta ventana sin definir."
   ],
   "release_history": [
+    {
+      "version": "0.15.67",
+      "changes": [
+        "Corregido el error al abrir Nueva inversión: el controlador de Forma de pago y financiación vuelve a pertenecer correctamente a la ventana de inversiones.",
+        "Verificado el enlace Recursos propios / Préstamo / Financiación parcial, incluido el importe financiado y la opción de crear un préstamo asociado.",
+        "Añadida una comprobación estática de manejadores de interfaz para evitar que este tipo de error vuelva a pasar desapercibido."
+      ]
+    },
+    {
+      "version": "0.15.66",
+      "changes": [
+        "Economía integra en una sola pantalla el resultado económico, las inversiones y la financiación, sin crear un módulo separado de tesorería.",
+        "El resultado económico resta gastos corrientes, amortizaciones e intereses/comisiones, pero no vuelve a restar el capital devuelto de los préstamos.",
+        "Financiación muestra de forma destacada las cuotas completas realmente pagadas, su parte de capital, el gasto financiero y la deuda pendiente.",
+        "El detalle de préstamos separa cuotas pagadas, capital devuelto, intereses, comisiones y deuda inicial/final para que el ganadero vea tanto el pago real como su efecto económico.",
+        "Mejorados los textos explicativos para dejar claro que una cuota completa es una salida real de dinero aunque solo intereses y comisiones afecten al resultado económico."
+      ]
+    },
+    {
+      "version": "0.15.65",
+      "changes": [
+        "Añadido un sistema de financiación separado de la inversión y de su amortización: los préstamos pueden vincularse a una inversión sin alterar su base amortizable.",
+        "Las inversiones permiten indicar Recursos propios, Préstamo o Financiación parcial y el importe financiado sobre el total de la factura.",
+        "Economía incorpora Financiación con capital inicial, cuotas pagadas, capital devuelto, intereses y comisiones y deuda pendiente.",
+        "El cuadro de cuotas separa automáticamente capital e intereses; solo los intereses y comisiones de cuotas pagadas se incorporan al gasto económico, evitando duplicar el coste de la inversión.",
+        "Las cuotas pueden marcarse como pagadas o pendientes y CUNIMIG conserva la deuda bancaria como un concepto independiente del importe pendiente de amortizar de la inversión."
+      ]
+    },
+    {
+      "version": "0.15.64",
+      "changes": [
+        "Gastos adapta el alta al filtro de categoría activo: en Todas pregunta entre gasto corriente e inversión; en Inversión abre directamente la ficha de inversión; en cualquier categoría de gasto abre directamente el formulario de gasto corriente con esa categoría preseleccionada.",
+        "El botón de alta cambia de texto según el filtro activo para anticipar la acción: Nuevo movimiento, Nueva inversión o Nuevo gasto."
+      ]
+    },
+    {
+      "version": "0.15.63",
+      "changes": [
+        "Eliminado el Fondo para futuras inversiones y la reserva en euros por kg vendido: Inversiones y Amortizaciones quedan como un sistema independiente y más claro.",
+        "El IVA de las inversiones pasa a incluirse correctamente en IVA PAGADO, mientras el importe neto de la inversión continúa fuera de los gastos corrientes.",
+        "Las amortizaciones automáticas se guardan por ejercicio para conservar el histórico; al modificar una inversión se mantienen las cuotas de ejercicios cerrados y solo se recalcula lo pendiente.",
+        "La categoría Amortización deja de ofrecerse para nuevos gastos corrientes, evitando duplicar una amortización ya controlada por la ficha de inversión; los registros históricos existentes se conservan.",
+        "Economía simplifica el bloque de inversión: inversión del año, amortización del ejercicio, pendiente procedente de años anteriores y pendiente final."
+      ]
+    },
     {
       "version": "0.15.62",
       "changes": [
