@@ -1,19 +1,108 @@
 {
-  "version": "0.15.107",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.107/CUNIMIG.exe",
-  "sha256": "f38a4e2535463e4e88bd5c163c312531359d07398743f5e2afa891fb2b6c1178",
-  "notes": "• Punto 15: los cálculos monetarios críticos pasan a trabajar con Decimal y céntimos enteros para evitar errores acumulados de float.\n• Se incorporan helpers money_sum, money_add y money_subtract: cada importe se normaliza a céntimos antes de sumar o restar.\n• Los totales principales de Economía dejan de depender de SUM() sobre columnas REAL de SQLite y se agregan fila a fila en céntimos.\n• Ingresos, gastos registrados, IVA, retenciones, inversiones, financiación y saldos de préstamos usan la nueva aritmética monetaria.\n• La base amortizable, importe a financiar, reserva y cuadro francés de préstamos trabajan internamente en céntimos/Decimal.\n• Se mantiene el esquema REAL de las bases existentes por compatibilidad; los valores se normalizan al entrar en los cálculos, evitando una migración destructiva.\n• Las pruebas automáticas incluyen ahora casos clásicos de precisión como 0,1 + 0,2 y miles de importes de un céntimo.\n• No se modifican los criterios económicos acordados; solo la precisión y consistencia de la aritmética monetaria.",
+  "version": "0.15.115",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.115/CUNIMIG.exe",
+  "sha256": "b799004f585f4ec1dc519dce65732cfea14d9483f99daad31518acf684bfccd2",
+  "notes": "• Arranque más rápido: Inicio se carga primero y los módulos pesados se crean solo la primera vez que se abren.\n• Nueva pantalla de carga tras introducir la contraseña, con progreso mientras se prepara la explotación.\n• La pantalla de carga también se usa al cambiar de usuario o explotación.\n• ICA y Hoja de banda se conservan como secciones documentales de Inicio, sin cambiar archivos, claves ni comportamiento.\n• Archivo documental muestra nombres legibles sin exponer claves internas.\n• README actualizado a la versión actual.",
   "changes": [
-    "Punto 15: los cálculos monetarios críticos pasan a trabajar con Decimal y céntimos enteros para evitar errores acumulados de float.",
-    "Se incorporan helpers money_sum, money_add y money_subtract: cada importe se normaliza a céntimos antes de sumar o restar.",
-    "Los totales principales de Economía dejan de depender de SUM() sobre columnas REAL de SQLite y se agregan fila a fila en céntimos.",
-    "Ingresos, gastos registrados, IVA, retenciones, inversiones, financiación y saldos de préstamos usan la nueva aritmética monetaria.",
-    "La base amortizable, importe a financiar, reserva y cuadro francés de préstamos trabajan internamente en céntimos/Decimal.",
-    "Se mantiene el esquema REAL de las bases existentes por compatibilidad; los valores se normalizan al entrar en los cálculos, evitando una migración destructiva.",
-    "Las pruebas automáticas incluyen ahora casos clásicos de precisión como 0,1 + 0,2 y miles de importes de un céntimo.",
-    "No se modifican los criterios económicos acordados; solo la precisión y consistencia de la aritmética monetaria."
+    "Arranque más rápido: Inicio se carga primero y los módulos pesados se crean solo la primera vez que se abren.",
+    "Nueva pantalla de carga tras introducir la contraseña, con progreso mientras se prepara la explotación.",
+    "La pantalla de carga también se usa al cambiar de usuario o explotación.",
+    "ICA y Hoja de banda se conservan como secciones documentales de Inicio, sin cambiar archivos, claves ni comportamiento.",
+    "Archivo documental muestra nombres legibles sin exponer claves internas.",
+    "README actualizado a la versión actual."
   ],
   "release_history": [
+    {
+      "version": "0.15.115",
+      "changes": [
+        "Arranque más rápido: Inicio se carga primero y los módulos pesados se crean solo la primera vez que se abren.",
+        "Nueva pantalla de carga tras introducir la contraseña, con progreso mientras se prepara la explotación.",
+        "La pantalla de carga también se usa al cambiar de usuario o explotación.",
+        "ICA y Hoja de banda se conservan como secciones documentales de Inicio, sin cambiar archivos, claves ni comportamiento.",
+        "Archivo documental muestra nombres legibles sin exponer claves internas.",
+        "README actualizado a la versión actual."
+      ]
+    },
+    {
+      "version": "0.15.114",
+      "changes": [
+        "Afinada la maquetación de Informes PDF con distribución automática en dos columnas para bloques pequeños y medianos.",
+        "Los bloques largos, comparativas y listados permanecen a ancho completo para conservar legibilidad.",
+        "Una fila de dos columnas se mueve completa a la página siguiente si no cabe, evitando separar sus cuadros.",
+        "Se reajustan los márgenes físicos del PDF y los datos de explotación/CEA reciben más separación respecto al borde derecho.",
+        "La nueva composición reduce espacios desaprovechados y páginas con un único bloque pequeño."
+      ]
+    },
+    {
+      "version": "0.15.113",
+      "changes": [
+        "Revisión completa de Informes PDF: se elimina el antiguo logo rojo y se utiliza exclusivamente la identidad visual actual de CUNIMIG.",
+        "El logo del informe se genera desde assets/header_brand.png a un tamaño específico para PDF y ya no puede ocupar páginas completas por su tamaño intrínseco.",
+        "La creación del PDF pagina por bloques: un cuadro que cabe en una página empieza completo en esa página y no se corta entre dos páginas.",
+        "El Resumen anual completo incorpora la estructura actual de Bandas, Sanidad (Vacunación y Muestras) y Libro de registro (Visitas y Entrada/Salida).",
+        "Bandas del informe usa los mismos 12 indicadores y el mismo orden que la pantalla Bandas.",
+        "El detalle de bandas se divide en reproducción y producción/bajas para mejorar legibilidad sin columnas excesivamente estrechas.",
+        "Los listados variables de vacunaciones, muestras, visitas, movimientos y alertas se dividen en bloques de tamaño controlado para evitar cuadros demasiado altos.",
+        "Economía del informe usa las denominaciones actuales: Coste total, Ingreso de estiércol, Coste real, Coste objetivo, Margen económico y Margen disponible.",
+        "Se conserva A4 horizontal y las fórmulas siguen saliendo de las mismas funciones del programa, sin cálculos paralelos en el PDF."
+      ]
+    },
+    {
+      "version": "0.15.112",
+      "changes": [
+        "Corregida la pérdida de estilos visuales en los nuevos submenús de VENTAS, SANIDAD y LIBRO DE REGISTRO.",
+        "Los contenedores apilados ya no aplican un estilo genérico transparente que se heredaba por botones, tarjetas, filtros y tablas.",
+        "Cada página vuelve a recibir correctamente el estilo global de CUNIMIG y sus estilos específicos.",
+        "Se añade una prueba automática para impedir que un contenedor de submenú vuelva a sobrescribir los estilos de sus páginas hijas."
+      ]
+    },
+    {
+      "version": "0.15.111",
+      "changes": [
+        "Corregido el error al generar Informes PDF: health_status_rows devolvía cinco valores y la sección Salud productiva intentaba desempaquetar solo cuatro.",
+        "La sección Salud productiva del PDF muestra ahora también el baremo configurado de cada indicador.",
+        "Se añade una prueba automática específica para impedir que vuelva a aparecer este error de desempaquetado en Informes."
+      ]
+    },
+    {
+      "version": "0.15.110",
+      "changes": [
+        "VENTAS, SANIDAD y LIBRO DE REGISTRO dejan de mostrar pestañas internas porque sus apartados ya se seleccionan desde el menú lateral.",
+        "VENTAS usa ahora un contenedor apilado para CARNE, PARTICULARES y ESTIÉRCOL.",
+        "SANIDAD usa ahora un contenedor apilado para VACUNACIÓN y MUESTRAS.",
+        "LIBRO DE REGISTRO usa ahora un contenedor apilado para LIBRO DE VISITAS y REGISTRO ENTRADA/SALIDA.",
+        "El submenú lateral pasa a ser la única navegación visible entre esos apartados, igual que en ECONOMÍA e INDICADORES.",
+        "Se conserva la compatibilidad de los accesos antiguos de Inicio que apuntan a Muestras o Visitas."
+      ]
+    },
+    {
+      "version": "0.15.109",
+      "changes": [
+        "El menú lateral pasa a mostrarse completamente en MAYÚSCULAS.",
+        "VENTAS incorpora submenús CARNE, PARTICULARES y ESTIÉRCOL.",
+        "SANIDAD incorpora submenús VACUNACIÓN y MUESTRAS.",
+        "LIBRO DE REGISTRO incorpora submenús LIBRO DE VISITAS y REGISTRO ENTRADA/SALIDA.",
+        "Se mantiene el mismo comportamiento visual de los submenús de ECONOMÍA e INDICADORES, con resaltado del apartado activo.",
+        "Gastos añade EXTINTORES como categoría predeterminada.",
+        "Las categorías predeterminadas pasan a tratarse explícitamente como categorías del sistema de solo lectura: pueden usarse, pero no renombrarse ni eliminarse.",
+        "La migración de Gastos unifica categorías duplicadas ignorando mayúsculas/minúsculas, tildes y espacios sobrantes.",
+        "RETIRADA CADÁVERES, RETIRADA DE CADAVERES y RETIRADA DE CADÁVERES quedan consolidadas en RETIRADA DE CADÁVERES sin eliminar ningún gasto.",
+        "La creación, edición y guardado de gastos comprueban equivalencias para impedir que vuelvan a aparecer categorías duplicadas."
+      ]
+    },
+    {
+      "version": "0.15.108",
+      "changes": [
+        "Bandas sustituye las tres tarjetas económicas ocultables por indicadores productivos y ordena las 12 tarjetas según el ciclo de trabajo.",
+        "Se añaden al resumen de Bandas Vivos/parto, Bajas/nido y Bajas/cebo; Destetados y Vendidos pasan a mostrarse como Gazapos destetados y Gazapos vendidos.",
+        "Gastos normaliza todas las categorías a MAYÚSCULAS, las ordena alfabéticamente y añade ELECTRICIDAD, EXTENSIÓN DE NORMA, GESTORÍA, REPARACIONES y RETIRADA DE CADÁVERES.",
+        "Retirada de cadáveres deja de aparecer en Sanidad; los registros históricos se migran una sola vez a Gastos → RETIRADA DE CADÁVERES conservando fecha, kg, importe, año y banda cuando puede identificarse.",
+        "Resultados económicos aclara Coste total, Ingreso de estiércol, Coste real, Coste objetivo, Margen económico y Margen disponible; Punto de equilibrio deja de mostrarse como indicador duplicado.",
+        "La impresión de Resultados económicos incluye explícitamente el resumen y todos los bloques de la pantalla.",
+        "Informes PDF usa QPdfWriter con A4 horizontal explícito y validación del archivo generado para evitar el fallo detectado al crear PDFs.",
+        "Crear/Modificar inversión incorpora scroll vertical y mantiene Guardar/Cancelar siempre accesibles en pantallas de poca altura."
+      ]
+    },
     {
       "version": "0.15.107",
       "changes": [
