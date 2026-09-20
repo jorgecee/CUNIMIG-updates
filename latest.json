@@ -1,15 +1,24 @@
 {
-  "version": "0.15.118",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.118/CUNIMIG.exe",
-  "sha256": "c768a28f38091d15bbf5d36e0dba2ed978950d0662b95bcc36671b1088cf4940",
-  "notes": "• Versión de validación del ciclo completo del actualizador seguro de CUNIMIG.\n• No incorpora funciones nuevas ni modifica fórmulas, datos, migraciones o pantallas.\n• Se publica para comprobar desde v0.15.117: detección, descarga, verificación SHA-256, sustitución del EXE, reapertura y conservación de explotaciones, usuarios y datos.\n• Se mantiene el sistema de rollback introducido en v0.15.116, que conserva el EXE anterior hasta que la nueva versión confirma un arranque correcto.",
+  "version": "0.15.119",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.119/CUNIMIG.exe",
+  "sha256": "1d424256095757d340c9c2ffd8dd0108e598ea4e4812df6af633f741eea43306",
+  "notes": "• Revisión final de fórmulas: corregido Kg/dosis en la vista por banda para usar la misma base que Indicadores.\n• Kg/dosis por banda se calcula ahora con kg equivalentes vendidos (1ª + particulares + 2ª convertida a equivalente de 1ª) más kg equivalentes de abuelas, dividido entre las dosis.\n• Actualizada la explicación del campo automático de Kg/dosis para reflejar exactamente la fórmula aplicada.\n• Añadida una prueba automática de regresión para impedir que el cálculo por banda vuelva a usar únicamente los kg de 1ª.",
   "changes": [
-    "Versión de validación del ciclo completo del actualizador seguro de CUNIMIG.",
-    "No incorpora funciones nuevas ni modifica fórmulas, datos, migraciones o pantallas.",
-    "Se publica para comprobar desde v0.15.117: detección, descarga, verificación SHA-256, sustitución del EXE, reapertura y conservación de explotaciones, usuarios y datos.",
-    "Se mantiene el sistema de rollback introducido en v0.15.116, que conserva el EXE anterior hasta que la nueva versión confirma un arranque correcto."
+    "Revisión final de fórmulas: corregido Kg/dosis en la vista por banda para usar la misma base que Indicadores.",
+    "Kg/dosis por banda se calcula ahora con kg equivalentes vendidos (1ª + particulares + 2ª convertida a equivalente de 1ª) más kg equivalentes de abuelas, dividido entre las dosis.",
+    "Actualizada la explicación del campo automático de Kg/dosis para reflejar exactamente la fórmula aplicada.",
+    "Añadida una prueba automática de regresión para impedir que el cálculo por banda vuelva a usar únicamente los kg de 1ª."
   ],
   "release_history": [
+    {
+      "version": "0.15.119",
+      "changes": [
+        "Revisión final de fórmulas: corregido Kg/dosis en la vista por banda para usar la misma base que Indicadores.",
+        "Kg/dosis por banda se calcula ahora con kg equivalentes vendidos (1ª + particulares + 2ª convertida a equivalente de 1ª) más kg equivalentes de abuelas, dividido entre las dosis.",
+        "Actualizada la explicación del campo automático de Kg/dosis para reflejar exactamente la fórmula aplicada.",
+        "Añadida una prueba automática de regresión para impedir que el cálculo por banda vuelva a usar únicamente los kg de 1ª."
+      ]
+    },
     {
       "version": "0.15.118",
       "changes": [
