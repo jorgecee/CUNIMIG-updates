@@ -1,19 +1,34 @@
 {
-  "version": "0.15.116",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.116/CUNIMIG.exe",
-  "sha256": "f268d71ef7c230eb031d84ed6b510501a4c14dc85ea96c073ef524594c663f22",
-  "notes": "• Actualizador reforzado: la copia .bak no se elimina hasta que el nuevo CUNIMIG confirma un arranque básico correcto; si no confirma, se restaura automáticamente la versión anterior.\n• FarmCatalog activa foreign_keys y busy_timeout en todas sus conexiones SQLite.\n• Nuevo intervalo configurable entre bandas por explotación, con 42 días por defecto y uso automático para proponer la siguiente fecha de inseminación.\n• Los empleados dejan de ver ECONOMÍA, INDICADORES e INFORMES tanto en el menú lateral como en los accesos rápidos de Inicio.\n• Tesorería se elimina completamente del programa, incluidas interfaz, funciones, migraciones y tablas antiguas.\n• Se amplía el uso de suma monetaria por céntimos en reserva, amortizaciones y cálculos secundarios de financiación.\n• Los fallos críticos de sincronización y protección dejan de quedar totalmente silenciosos y pasan al registro interno de CUNIMIG.\n• Se añade verificar_arranque_gui.py para que el proceso de publicación en Windows pueda comprobar con PySide6 la construcción de las pantallas principales antes de generar el EXE.",
+  "version": "0.15.118",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.118/CUNIMIG.exe",
+  "sha256": "c768a28f38091d15bbf5d36e0dba2ed978950d0662b95bcc36671b1088cf4940",
+  "notes": "• Versión de validación del ciclo completo del actualizador seguro de CUNIMIG.\n• No incorpora funciones nuevas ni modifica fórmulas, datos, migraciones o pantallas.\n• Se publica para comprobar desde v0.15.117: detección, descarga, verificación SHA-256, sustitución del EXE, reapertura y conservación de explotaciones, usuarios y datos.\n• Se mantiene el sistema de rollback introducido en v0.15.116, que conserva el EXE anterior hasta que la nueva versión confirma un arranque correcto.",
   "changes": [
-    "Actualizador reforzado: la copia .bak no se elimina hasta que el nuevo CUNIMIG confirma un arranque básico correcto; si no confirma, se restaura automáticamente la versión anterior.",
-    "FarmCatalog activa foreign_keys y busy_timeout en todas sus conexiones SQLite.",
-    "Nuevo intervalo configurable entre bandas por explotación, con 42 días por defecto y uso automático para proponer la siguiente fecha de inseminación.",
-    "Los empleados dejan de ver ECONOMÍA, INDICADORES e INFORMES tanto en el menú lateral como en los accesos rápidos de Inicio.",
-    "Tesorería se elimina completamente del programa, incluidas interfaz, funciones, migraciones y tablas antiguas.",
-    "Se amplía el uso de suma monetaria por céntimos en reserva, amortizaciones y cálculos secundarios de financiación.",
-    "Los fallos críticos de sincronización y protección dejan de quedar totalmente silenciosos y pasan al registro interno de CUNIMIG.",
-    "Se añade verificar_arranque_gui.py para que el proceso de publicación en Windows pueda comprobar con PySide6 la construcción de las pantallas principales antes de generar el EXE."
+    "Versión de validación del ciclo completo del actualizador seguro de CUNIMIG.",
+    "No incorpora funciones nuevas ni modifica fórmulas, datos, migraciones o pantallas.",
+    "Se publica para comprobar desde v0.15.117: detección, descarga, verificación SHA-256, sustitución del EXE, reapertura y conservación de explotaciones, usuarios y datos.",
+    "Se mantiene el sistema de rollback introducido en v0.15.116, que conserva el EXE anterior hasta que la nueva versión confirma un arranque correcto."
   ],
   "release_history": [
+    {
+      "version": "0.15.118",
+      "changes": [
+        "Versión de validación del ciclo completo del actualizador seguro de CUNIMIG.",
+        "No incorpora funciones nuevas ni modifica fórmulas, datos, migraciones o pantallas.",
+        "Se publica para comprobar desde v0.15.117: detección, descarga, verificación SHA-256, sustitución del EXE, reapertura y conservación de explotaciones, usuarios y datos.",
+        "Se mantiene el sistema de rollback introducido en v0.15.116, que conserva el EXE anterior hasta que la nueva versión confirma un arranque correcto."
+      ]
+    },
+    {
+      "version": "0.15.117",
+      "changes": [
+        "Configuración pasa a tener submenús CONFIGURACIÓN DE EXPLOTACIÓN y CONFIGURACIÓN DEL PROGRAMA; el ajuste del intervalo entre bandas queda dentro del primero.",
+        "La elección al restaurar una copia de explotación usa ahora un diálogo propio con botones amplios y verticales para evitar textos recortados con escalado de Windows.",
+        "Después de añadir una explotación desde una copia, reemplazar la explotación actual o preparar un traslado completo, CUNIMIG se reinicia automáticamente.",
+        "Tras el reinicio de una restauración de explotación se preseleccionan el usuario administrador y la explotación afectada en la pantalla de acceso.",
+        "El reinicio limpia variables internas de PyInstaller para ser compatible con el EXE one-file y con el actualizador seguro introducido en la versión anterior."
+      ]
+    },
     {
       "version": "0.15.116",
       "changes": [
