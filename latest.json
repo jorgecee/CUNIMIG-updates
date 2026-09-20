@@ -1,17 +1,32 @@
 {
-  "version": "0.15.115",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.115/CUNIMIG.exe",
-  "sha256": "b799004f585f4ec1dc519dce65732cfea14d9483f99daad31518acf684bfccd2",
-  "notes": "• Arranque más rápido: Inicio se carga primero y los módulos pesados se crean solo la primera vez que se abren.\n• Nueva pantalla de carga tras introducir la contraseña, con progreso mientras se prepara la explotación.\n• La pantalla de carga también se usa al cambiar de usuario o explotación.\n• ICA y Hoja de banda se conservan como secciones documentales de Inicio, sin cambiar archivos, claves ni comportamiento.\n• Archivo documental muestra nombres legibles sin exponer claves internas.\n• README actualizado a la versión actual.",
+  "version": "0.15.116",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.116/CUNIMIG.exe",
+  "sha256": "f268d71ef7c230eb031d84ed6b510501a4c14dc85ea96c073ef524594c663f22",
+  "notes": "• Actualizador reforzado: la copia .bak no se elimina hasta que el nuevo CUNIMIG confirma un arranque básico correcto; si no confirma, se restaura automáticamente la versión anterior.\n• FarmCatalog activa foreign_keys y busy_timeout en todas sus conexiones SQLite.\n• Nuevo intervalo configurable entre bandas por explotación, con 42 días por defecto y uso automático para proponer la siguiente fecha de inseminación.\n• Los empleados dejan de ver ECONOMÍA, INDICADORES e INFORMES tanto en el menú lateral como en los accesos rápidos de Inicio.\n• Tesorería se elimina completamente del programa, incluidas interfaz, funciones, migraciones y tablas antiguas.\n• Se amplía el uso de suma monetaria por céntimos en reserva, amortizaciones y cálculos secundarios de financiación.\n• Los fallos críticos de sincronización y protección dejan de quedar totalmente silenciosos y pasan al registro interno de CUNIMIG.\n• Se añade verificar_arranque_gui.py para que el proceso de publicación en Windows pueda comprobar con PySide6 la construcción de las pantallas principales antes de generar el EXE.",
   "changes": [
-    "Arranque más rápido: Inicio se carga primero y los módulos pesados se crean solo la primera vez que se abren.",
-    "Nueva pantalla de carga tras introducir la contraseña, con progreso mientras se prepara la explotación.",
-    "La pantalla de carga también se usa al cambiar de usuario o explotación.",
-    "ICA y Hoja de banda se conservan como secciones documentales de Inicio, sin cambiar archivos, claves ni comportamiento.",
-    "Archivo documental muestra nombres legibles sin exponer claves internas.",
-    "README actualizado a la versión actual."
+    "Actualizador reforzado: la copia .bak no se elimina hasta que el nuevo CUNIMIG confirma un arranque básico correcto; si no confirma, se restaura automáticamente la versión anterior.",
+    "FarmCatalog activa foreign_keys y busy_timeout en todas sus conexiones SQLite.",
+    "Nuevo intervalo configurable entre bandas por explotación, con 42 días por defecto y uso automático para proponer la siguiente fecha de inseminación.",
+    "Los empleados dejan de ver ECONOMÍA, INDICADORES e INFORMES tanto en el menú lateral como en los accesos rápidos de Inicio.",
+    "Tesorería se elimina completamente del programa, incluidas interfaz, funciones, migraciones y tablas antiguas.",
+    "Se amplía el uso de suma monetaria por céntimos en reserva, amortizaciones y cálculos secundarios de financiación.",
+    "Los fallos críticos de sincronización y protección dejan de quedar totalmente silenciosos y pasan al registro interno de CUNIMIG.",
+    "Se añade verificar_arranque_gui.py para que el proceso de publicación en Windows pueda comprobar con PySide6 la construcción de las pantallas principales antes de generar el EXE."
   ],
   "release_history": [
+    {
+      "version": "0.15.116",
+      "changes": [
+        "Actualizador reforzado: la copia .bak no se elimina hasta que el nuevo CUNIMIG confirma un arranque básico correcto; si no confirma, se restaura automáticamente la versión anterior.",
+        "FarmCatalog activa foreign_keys y busy_timeout en todas sus conexiones SQLite.",
+        "Nuevo intervalo configurable entre bandas por explotación, con 42 días por defecto y uso automático para proponer la siguiente fecha de inseminación.",
+        "Los empleados dejan de ver ECONOMÍA, INDICADORES e INFORMES tanto en el menú lateral como en los accesos rápidos de Inicio.",
+        "Tesorería se elimina completamente del programa, incluidas interfaz, funciones, migraciones y tablas antiguas.",
+        "Se amplía el uso de suma monetaria por céntimos en reserva, amortizaciones y cálculos secundarios de financiación.",
+        "Los fallos críticos de sincronización y protección dejan de quedar totalmente silenciosos y pasan al registro interno de CUNIMIG.",
+        "Se añade verificar_arranque_gui.py para que el proceso de publicación en Windows pueda comprobar con PySide6 la construcción de las pantallas principales antes de generar el EXE."
+      ]
+    },
     {
       "version": "0.15.115",
       "changes": [
