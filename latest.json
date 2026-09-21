@@ -1,15 +1,45 @@
 {
-  "version": "0.15.126",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.126/CUNIMIG.exe",
-  "sha256": "bd7be96737482e33682e6e69909a7ffa33fda8cba29ecf5e4df459f417acaacd",
-  "notes": "• Limpieza real de años vacíos: los ejercicios cerrados heredados que no contienen ningún dato se eliminan de la base de datos en lugar de quedar simplemente ocultos.\n• Los años completos con cualquier dato real se conservan intactos; por ejemplo, 2024 y 2025 siguen cerrados y disponibles si contienen información.\n• Los años históricos añadidos por el usuario, los saldos de Reserva significativos, amortizaciones, préstamos, cuotas y documentos reales también protegen el ejercicio frente a la limpieza.\n• Las filas técnicas de Reserva a cero asociadas a un año vacío se eliminan junto con ese ejercicio para no dejar residuos innecesarios.",
+  "version": "0.15.129",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.129/CUNIMIG.exe",
+  "sha256": "23c02cc5425996eed2c407f2050b784ec78c2ac769b4e12255962ccd6742bb47",
+  "notes": "• Alertas: Hoy / próximas incorpora un icono de calendario propio y Realizadas hoy un icono de confirmación, evitando tarjetas sin icono.\n• La insignia de Alertas del menú lateral se posiciona antes de mostrarse y mantiene su geometría preparada aun cuando está oculta, eliminando el pequeño salto visual durante la carga inicial.",
   "changes": [
-    "Limpieza real de años vacíos: los ejercicios cerrados heredados que no contienen ningún dato se eliminan de la base de datos en lugar de quedar simplemente ocultos.",
-    "Los años completos con cualquier dato real se conservan intactos; por ejemplo, 2024 y 2025 siguen cerrados y disponibles si contienen información.",
-    "Los años históricos añadidos por el usuario, los saldos de Reserva significativos, amortizaciones, préstamos, cuotas y documentos reales también protegen el ejercicio frente a la limpieza.",
-    "Las filas técnicas de Reserva a cero asociadas a un año vacío se eliminan junto con ese ejercicio para no dejar residuos innecesarios."
+    "Alertas: Hoy / próximas incorpora un icono de calendario propio y Realizadas hoy un icono de confirmación, evitando tarjetas sin icono.",
+    "La insignia de Alertas del menú lateral se posiciona antes de mostrarse y mantiene su geometría preparada aun cuando está oculta, eliminando el pequeño salto visual durante la carga inicial."
   ],
   "release_history": [
+    {
+      "version": "0.15.129",
+      "changes": [
+        "Alertas: Hoy / próximas incorpora un icono de calendario propio y Realizadas hoy un icono de confirmación, evitando tarjetas sin icono.",
+        "La insignia de Alertas del menú lateral se posiciona antes de mostrarse y mantiene su geometría preparada aun cuando está oculta, eliminando el pequeño salto visual durante la carga inicial."
+      ]
+    },
+    {
+      "version": "0.15.128",
+      "changes": [
+        "Navegación lateral: un segundo clic sobre una sección con submenú la repliega; al pulsarla de nuevo se vuelve a desplegar sin cambiar el subapartado actual.",
+        "Alertas muestra una insignia visible en el menú lateral cuando hay actividad pendiente y el color diferencia aviso normal de prioridad alta.",
+        "La pantalla de Alertas se rediseña con tarjetas de Pendientes, Vencidas, Hoy/Próximas y Realizadas hoy, además de avisos visuales por prioridad.",
+        "Cambio de usuario: la sesión anterior cancela completamente su temporizador de inactividad, evitando bloqueos tardíos del empleado después de volver al administrador.",
+        "Economía e Indicadores incorporan un único botón de impresión general que permite elegir uno, varios o todos sus subapartados.",
+        "Resultados económicos imprime el resumen completo —gastos, ingresos, fiscalidad, resultado y análisis avanzado— en orientación vertical.",
+        "Las impresiones de registros que admiten fechas o bandas mantienen su botón propio y sus filtros avanzados.",
+        "Gastos corrige el pequeño recorte inferior de los importes en negrita de las tarjetas de detalle, sin modificar el estilo global del programa.",
+        "Indicadores productivos añade Kg productivos por hembra, incluyendo los kg equivalentes de abuelas retenidas; Kg vendidos por hembra se mantiene en Indicadores económicos como métrica comercial."
+      ]
+    },
+    {
+      "version": "0.15.127",
+      "changes": [
+        "Rendimiento: Economía crea únicamente el subapartado que el usuario abre; Coste/kg, Financiación, Inversiones y Reserva quedan en carga diferida hasta su primer acceso.",
+        "Indicadores aplica la misma carga diferida interna: Productivos, Económicos, Salud y Comparativa ya no se construyen todos al abrir el módulo.",
+        "Eliminados refrescos duplicados al navegar a Economía e Indicadores, evitando repetir inmediatamente los mismos cálculos tras crear una pantalla.",
+        "El resumen económico anual se reutiliza durante la sesión mientras no cambien los datos y la caché se invalida automáticamente tras cualquier modificación.",
+        "Los gastos del ejercicio se cargan una sola vez para construir el resumen económico, manteniendo la suma exacta por céntimos y reduciendo consultas SQLite repetidas.",
+        "Indicadores productivos reutiliza el mismo ámbito de bandas completas dentro de cada refresco en lugar de consultarlo dos veces."
+      ]
+    },
     {
       "version": "0.15.126",
       "changes": [
