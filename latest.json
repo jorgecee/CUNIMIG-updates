@@ -1,15 +1,34 @@
 {
-  "version": "0.15.124",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.124/CUNIMIG.exe",
-  "sha256": "c5c0f03ffdf3d997d4c7634a460b50929abeba872585b7441c9ece786965baba",
-  "notes": "• Indicadores productivos: Gazapos vendidos por dosis pasa a Gazapos útiles por dosis e incorpora las abuelas retenidas, porque también son producción útil de la inseminación.\n• Kg vendidos por dosis pasa a denominarse Kg productivos por dosis; la fórmula ya incluía los kg equivalentes de abuelas y ahora el nombre refleja correctamente lo que mide.\n• Los indicadores estrictamente comerciales —kg/gazapos vendidos por jaula, por parto, precio medio y peso medio vendido— siguen contando solo ventas reales.\n• La comparativa histórica mantiene Kg vendidos/dosis, sin abuelas, para poder comparar años completos con fichas históricas simplificadas usando el mismo criterio.",
+  "version": "0.15.126",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.126/CUNIMIG.exe",
+  "sha256": "bd7be96737482e33682e6e69909a7ffa33fda8cba29ecf5e4df459f417acaacd",
+  "notes": "• Limpieza real de años vacíos: los ejercicios cerrados heredados que no contienen ningún dato se eliminan de la base de datos en lugar de quedar simplemente ocultos.\n• Los años completos con cualquier dato real se conservan intactos; por ejemplo, 2024 y 2025 siguen cerrados y disponibles si contienen información.\n• Los años históricos añadidos por el usuario, los saldos de Reserva significativos, amortizaciones, préstamos, cuotas y documentos reales también protegen el ejercicio frente a la limpieza.\n• Las filas técnicas de Reserva a cero asociadas a un año vacío se eliminan junto con ese ejercicio para no dejar residuos innecesarios.",
   "changes": [
-    "Indicadores productivos: Gazapos vendidos por dosis pasa a Gazapos útiles por dosis e incorpora las abuelas retenidas, porque también son producción útil de la inseminación.",
-    "Kg vendidos por dosis pasa a denominarse Kg productivos por dosis; la fórmula ya incluía los kg equivalentes de abuelas y ahora el nombre refleja correctamente lo que mide.",
-    "Los indicadores estrictamente comerciales —kg/gazapos vendidos por jaula, por parto, precio medio y peso medio vendido— siguen contando solo ventas reales.",
-    "La comparativa histórica mantiene Kg vendidos/dosis, sin abuelas, para poder comparar años completos con fichas históricas simplificadas usando el mismo criterio."
+    "Limpieza real de años vacíos: los ejercicios cerrados heredados que no contienen ningún dato se eliminan de la base de datos en lugar de quedar simplemente ocultos.",
+    "Los años completos con cualquier dato real se conservan intactos; por ejemplo, 2024 y 2025 siguen cerrados y disponibles si contienen información.",
+    "Los años históricos añadidos por el usuario, los saldos de Reserva significativos, amortizaciones, préstamos, cuotas y documentos reales también protegen el ejercicio frente a la limpieza.",
+    "Las filas técnicas de Reserva a cero asociadas a un año vacío se eliminan junto con ese ejercicio para no dejar residuos innecesarios."
   ],
   "release_history": [
+    {
+      "version": "0.15.126",
+      "changes": [
+        "Limpieza real de años vacíos: los ejercicios cerrados heredados que no contienen ningún dato se eliminan de la base de datos en lugar de quedar simplemente ocultos.",
+        "Los años completos con cualquier dato real se conservan intactos; por ejemplo, 2024 y 2025 siguen cerrados y disponibles si contienen información.",
+        "Los años históricos añadidos por el usuario, los saldos de Reserva significativos, amortizaciones, préstamos, cuotas y documentos reales también protegen el ejercicio frente a la limpieza.",
+        "Las filas técnicas de Reserva a cero asociadas a un año vacío se eliminan junto con ese ejercicio para no dejar residuos innecesarios."
+      ]
+    },
+    {
+      "version": "0.15.125",
+      "changes": [
+        "Selector de años: desaparecen los ejercicios cerrados vacíos heredados de versiones antiguas; solo se muestran años con datos reales, años históricos añadidos por el usuario y el año abierto.",
+        "Las explotaciones nuevas dejan de precargar automáticamente 2020, 2021, 2022… y empiezan únicamente con el año actual.",
+        "Los años completos ya existentes con información se conservan intactos y cerrados cuando corresponda; por ejemplo, 2024 y 2025 siguen visibles si contienen datos.",
+        "Los años históricos simplificados añadidos desde Configuración continúan apareciendo identificados como histórico.",
+        "Comparativas económicas y Reserva ignoran también los años antiguos vacíos para que no actúen como ejercicios anteriores ficticios."
+      ]
+    },
     {
       "version": "0.15.124",
       "changes": [
