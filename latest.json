@@ -1,15 +1,47 @@
 {
-  "version": "0.15.121",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.121/CUNIMIG.exe",
-  "sha256": "d686de1684b4388594a04df801f80a75746656627d6ab05c3cc8925689204b3b",
-  "notes": "• Financiación: las cuotas de préstamos se marcan automáticamente como pagadas desde el día 1 de su mes de vencimiento.\n• Si CUNIMIG no se abre durante varios meses, al volver actualiza de una vez todas las cuotas mensuales pendientes de esos meses.\n• La fecha de pago automática queda registrada como el día 1 del mes correspondiente para mantener correctamente el ejercicio económico.\n• Si el usuario devuelve una cuota a Pendiente manualmente, CUNIMIG respeta esa corrección y no vuelve a automatizar esa misma cuota.",
+  "version": "0.15.124",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.124/CUNIMIG.exe",
+  "sha256": "c5c0f03ffdf3d997d4c7634a460b50929abeba872585b7441c9ece786965baba",
+  "notes": "• Indicadores productivos: Gazapos vendidos por dosis pasa a Gazapos útiles por dosis e incorpora las abuelas retenidas, porque también son producción útil de la inseminación.\n• Kg vendidos por dosis pasa a denominarse Kg productivos por dosis; la fórmula ya incluía los kg equivalentes de abuelas y ahora el nombre refleja correctamente lo que mide.\n• Los indicadores estrictamente comerciales —kg/gazapos vendidos por jaula, por parto, precio medio y peso medio vendido— siguen contando solo ventas reales.\n• La comparativa histórica mantiene Kg vendidos/dosis, sin abuelas, para poder comparar años completos con fichas históricas simplificadas usando el mismo criterio.",
   "changes": [
-    "Financiación: las cuotas de préstamos se marcan automáticamente como pagadas desde el día 1 de su mes de vencimiento.",
-    "Si CUNIMIG no se abre durante varios meses, al volver actualiza de una vez todas las cuotas mensuales pendientes de esos meses.",
-    "La fecha de pago automática queda registrada como el día 1 del mes correspondiente para mantener correctamente el ejercicio económico.",
-    "Si el usuario devuelve una cuota a Pendiente manualmente, CUNIMIG respeta esa corrección y no vuelve a automatizar esa misma cuota."
+    "Indicadores productivos: Gazapos vendidos por dosis pasa a Gazapos útiles por dosis e incorpora las abuelas retenidas, porque también son producción útil de la inseminación.",
+    "Kg vendidos por dosis pasa a denominarse Kg productivos por dosis; la fórmula ya incluía los kg equivalentes de abuelas y ahora el nombre refleja correctamente lo que mide.",
+    "Los indicadores estrictamente comerciales —kg/gazapos vendidos por jaula, por parto, precio medio y peso medio vendido— siguen contando solo ventas reales.",
+    "La comparativa histórica mantiene Kg vendidos/dosis, sin abuelas, para poder comparar años completos con fichas históricas simplificadas usando el mismo criterio."
   ],
   "release_history": [
+    {
+      "version": "0.15.124",
+      "changes": [
+        "Indicadores productivos: Gazapos vendidos por dosis pasa a Gazapos útiles por dosis e incorpora las abuelas retenidas, porque también son producción útil de la inseminación.",
+        "Kg vendidos por dosis pasa a denominarse Kg productivos por dosis; la fórmula ya incluía los kg equivalentes de abuelas y ahora el nombre refleja correctamente lo que mide.",
+        "Los indicadores estrictamente comerciales —kg/gazapos vendidos por jaula, por parto, precio medio y peso medio vendido— siguen contando solo ventas reales.",
+        "La comparativa histórica mantiene Kg vendidos/dosis, sin abuelas, para poder comparar años completos con fichas históricas simplificadas usando el mismo criterio."
+      ]
+    },
+    {
+      "version": "0.15.123",
+      "changes": [
+        "Indicadores productivos: “Hembras eliminadas” pasa a denominarse “Hembras suprimidas”, tanto en número como en porcentaje.",
+        "El bloque Reproducción incorpora el número de bajas de hembras y su porcentaje, calculado sobre el número de hembras de la explotación.",
+        "Hembras suprimidas y bajas de hembras se mantienen separadas para no mezclar decisiones de manejo con mortalidad de reproductoras."
+      ]
+    },
+    {
+      "version": "0.15.122",
+      "changes": [
+        "Años históricos simplificados: Configuración permite añadir ejercicios anteriores para mejorar comparativas sin crear bandas, ventas o gastos ficticios.",
+        "Los años históricos solo pueden ser anteriores al año actual, no pueden duplicar un ejercicio completo y muestran “Sin datos” cuando falta información.",
+        "El selector general de año identifica los ejercicios históricos y al seleccionarlos abre una ficha resumida específica.",
+        "Las comparativas de Indicadores utilizan los datos históricos disponibles sin convertir campos desconocidos en cero.",
+        "Reserva: un ejercicio abierto puede arrancar con un saldo inicial real introducido manualmente sin modificar el año anterior cerrado; el cierre de una ficha histórica también puede alimentar el saldo del año siguiente.",
+        "Financiación: nueva modalidad para incorporar créditos ya existentes indicando fecha original, capital pendiente al incorporarlo, cuota mensual, próxima cuota y cuotas pendientes.",
+        "Los créditos existentes reconstruyen las cuotas ya transcurridas del mismo año como históricas pagadas para que capital devuelto, deuda y cuentas anuales sean coherentes desde el primer año de uso.",
+        "Un crédito anterior no se cuenta como financiación nueva del ejercicio; si fue contratado durante el propio año, CUNIMIG reconstruye el capital inicial a partir de las cuotas ya pagadas.",
+        "Los créditos al 0 % registran las cuotas como devolución de capital sin generar gasto financiero; intereses y comisiones siguen siendo los únicos importes que afectan al resultado económico.",
+        "Las explotaciones nuevas empiezan únicamente con el año actual; los años anteriores aparecen con el uso normal o al añadir una ficha histórica."
+      ]
+    },
     {
       "version": "0.15.121",
       "changes": [
