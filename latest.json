@@ -1,13 +1,34 @@
 {
-  "version": "0.15.129",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.129/CUNIMIG.exe",
-  "sha256": "23c02cc5425996eed2c407f2050b784ec78c2ac769b4e12255962ccd6742bb47",
-  "notes": "• Alertas: Hoy / próximas incorpora un icono de calendario propio y Realizadas hoy un icono de confirmación, evitando tarjetas sin icono.\n• La insignia de Alertas del menú lateral se posiciona antes de mostrarse y mantiene su geometría preparada aun cuando está oculta, eliminando el pequeño salto visual durante la carga inicial.",
+  "version": "0.15.131",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.131/CUNIMIG.exe",
+  "sha256": "161e39a1a292b772a00215dd5e1c8f968dc1ae70944a6e26ed5887072a132a4a",
+  "notes": "• Financiación: el botón Gestionar financiación adopta un estilo específico del tema común, más integrado y estable, sin depender de un icono Unicode.\n• Impresión de Economía e Indicadores: el selector de apartados fuerza un fondo claro CUNIMIG y deja de heredar transparencia del contenedor, evitando fondos negros en Windows.\n• Los contenedores principales de Economía e Indicadores usan ahora un rol visual transparente no heredable en lugar de una hoja de estilo local que podía propagarse a sus diálogos.",
   "changes": [
-    "Alertas: Hoy / próximas incorpora un icono de calendario propio y Realizadas hoy un icono de confirmación, evitando tarjetas sin icono.",
-    "La insignia de Alertas del menú lateral se posiciona antes de mostrarse y mantiene su geometría preparada aun cuando está oculta, eliminando el pequeño salto visual durante la carga inicial."
+    "Financiación: el botón Gestionar financiación adopta un estilo específico del tema común, más integrado y estable, sin depender de un icono Unicode.",
+    "Impresión de Economía e Indicadores: el selector de apartados fuerza un fondo claro CUNIMIG y deja de heredar transparencia del contenedor, evitando fondos negros en Windows.",
+    "Los contenedores principales de Economía e Indicadores usan ahora un rol visual transparente no heredable en lugar de una hoja de estilo local que podía propagarse a sus diálogos."
   ],
   "release_history": [
+    {
+      "version": "0.15.131",
+      "changes": [
+        "Financiación: el botón Gestionar financiación adopta un estilo específico del tema común, más integrado y estable, sin depender de un icono Unicode.",
+        "Impresión de Economía e Indicadores: el selector de apartados fuerza un fondo claro CUNIMIG y deja de heredar transparencia del contenedor, evitando fondos negros en Windows.",
+        "Los contenedores principales de Economía e Indicadores usan ahora un rol visual transparente no heredable en lugar de una hoja de estilo local que podía propagarse a sus diálogos."
+      ]
+    },
+    {
+      "version": "0.15.130",
+      "changes": [
+        "Uniformidad visual: todos los botones estándar de los cuadros de diálogo reciben un estilo CUNIMIG visible y coherente; Guardar/Aceptar usan el rol principal y Cancelar/Cerrar el secundario.",
+        "Se añade un estilo secundario seguro para cualquier QPushButton que no tenga un rol explícito, evitando botones que aparezcan solo como texto en determinadas configuraciones de Windows.",
+        "Gestión de usuarios: Crear usuario, Restablecer contraseña y Activar/desactivar reciben estilos consistentes; se elimina la antigua ventana de usuarios ya no utilizada.",
+        "Las acciones destructivas Eliminar préstamo, Eliminar archivo múltiple y Eliminar año histórico usan ahora el estilo de peligro.",
+        "Los textos secundarios con identificador Muted recuperan una presentación común en gris suave en Configuración y otras ventanas.",
+        "Gestionar financiación deja de llevar un estilo local duplicado y usa únicamente el tema común de CUNIMIG.",
+        "Las fichas de Vacunación y Año histórico reducen su altura mínima y aprovechan el scroll para adaptarse mejor a pantallas pequeñas o con escalado de Windows."
+      ]
+    },
     {
       "version": "0.15.129",
       "changes": [
