@@ -1,14 +1,22 @@
 {
-  "version": "0.15.161",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.161/CUNIMIG.exe",
-  "sha256": "06132068ff50aa3bc0299d5352a682253a666ab730b39fa34b4440e5230330f6",
-  "notes": "• Alertas: el contador del menú lateral se actualiza automáticamente al terminar acciones que puedan cambiar avisos o tareas.\n• Marcar realizada, volver a pendiente, editar, eliminar o completar registros vinculados refresca la insignia sin cambiar de sección ni reiniciar CUNIMIG.\n• Se mantiene además una comprobación periódica de seguridad para recoger cambios que no procedan de una interacción directa.",
+  "version": "0.15.162",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.162/CUNIMIG.exe",
+  "sha256": "1ac9313fc67fb4d79a9d1f9257c3bd0119e6ef6f6f4f46fd0ba897a10edd1829",
+  "notes": "• Login: la tarjeta de acceso aparece centrada la primera vez que se abre CUNIMIG.\n• Si el usuario mueve la tarjeta, su posición se conserva para la siguiente apertura.\n• Si la posición guardada deja de ser visible por un cambio de resolución o pantalla, el login vuelve automáticamente al centro.",
   "changes": [
-    "Alertas: el contador del menú lateral se actualiza automáticamente al terminar acciones que puedan cambiar avisos o tareas.",
-    "Marcar realizada, volver a pendiente, editar, eliminar o completar registros vinculados refresca la insignia sin cambiar de sección ni reiniciar CUNIMIG.",
-    "Se mantiene además una comprobación periódica de seguridad para recoger cambios que no procedan de una interacción directa."
+    "Login: la tarjeta de acceso aparece centrada la primera vez que se abre CUNIMIG.",
+    "Si el usuario mueve la tarjeta, su posición se conserva para la siguiente apertura.",
+    "Si la posición guardada deja de ser visible por un cambio de resolución o pantalla, el login vuelve automáticamente al centro."
   ],
   "release_history": [
+    {
+      "version": "0.15.162",
+      "changes": [
+        "Login: la tarjeta de acceso aparece centrada la primera vez que se abre CUNIMIG.",
+        "Si el usuario mueve la tarjeta, su posición se conserva para la siguiente apertura.",
+        "Si la posición guardada deja de ser visible por un cambio de resolución o pantalla, el login vuelve automáticamente al centro."
+      ]
+    },
     {
       "version": "0.15.161",
       "changes": [
