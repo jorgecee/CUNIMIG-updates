@@ -1,14 +1,61 @@
 {
-  "version": "0.15.131",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.131/CUNIMIG.exe",
-  "sha256": "161e39a1a292b772a00215dd5e1c8f968dc1ae70944a6e26ed5887072a132a4a",
-  "notes": "• Financiación: el botón Gestionar financiación adopta un estilo específico del tema común, más integrado y estable, sin depender de un icono Unicode.\n• Impresión de Economía e Indicadores: el selector de apartados fuerza un fondo claro CUNIMIG y deja de heredar transparencia del contenedor, evitando fondos negros en Windows.\n• Los contenedores principales de Economía e Indicadores usan ahora un rol visual transparente no heredable en lugar de una hoja de estilo local que podía propagarse a sus diálogos.",
+  "version": "0.15.135",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.135/CUNIMIG.exe",
+  "sha256": "33420d6031a648588989b6000f25aa40d51ab050935a37f57dd1467461e6f964",
+  "notes": "• Alertas: cada aviso accionable incorpora un botón “Ver” para abrir directamente su origen.\n• Las tareas manuales y los plazos automáticos abren Calendario en la fecha correcta y seleccionan la tarea concreta.\n• Las vacunaciones vencidas abren Sanidad → Vacunación y seleccionan el registro correspondiente.\n• Las alertas económicas y de salud llevan directamente a Resultados económicos o Indicadores de salud.\n• Configuración de explotación: Guardar intervalo y Configurar plazos automáticos pasan a botón principal verde para que sus acciones sean claramente visibles.",
   "changes": [
-    "Financiación: el botón Gestionar financiación adopta un estilo específico del tema común, más integrado y estable, sin depender de un icono Unicode.",
-    "Impresión de Economía e Indicadores: el selector de apartados fuerza un fondo claro CUNIMIG y deja de heredar transparencia del contenedor, evitando fondos negros en Windows.",
-    "Los contenedores principales de Economía e Indicadores usan ahora un rol visual transparente no heredable en lugar de una hoja de estilo local que podía propagarse a sus diálogos."
+    "Alertas: cada aviso accionable incorpora un botón “Ver” para abrir directamente su origen.",
+    "Las tareas manuales y los plazos automáticos abren Calendario en la fecha correcta y seleccionan la tarea concreta.",
+    "Las vacunaciones vencidas abren Sanidad → Vacunación y seleccionan el registro correspondiente.",
+    "Las alertas económicas y de salud llevan directamente a Resultados económicos o Indicadores de salud.",
+    "Configuración de explotación: Guardar intervalo y Configurar plazos automáticos pasan a botón principal verde para que sus acciones sean claramente visibles."
   ],
   "release_history": [
+    {
+      "version": "0.15.135",
+      "changes": [
+        "Alertas: cada aviso accionable incorpora un botón “Ver” para abrir directamente su origen.",
+        "Las tareas manuales y los plazos automáticos abren Calendario en la fecha correcta y seleccionan la tarea concreta.",
+        "Las vacunaciones vencidas abren Sanidad → Vacunación y seleccionan el registro correspondiente.",
+        "Las alertas económicas y de salud llevan directamente a Resultados económicos o Indicadores de salud.",
+        "Configuración de explotación: Guardar intervalo y Configurar plazos automáticos pasan a botón principal verde para que sus acciones sean claramente visibles."
+      ]
+    },
+    {
+      "version": "0.15.134",
+      "changes": [
+        "Plazos personalizados: la fecha base se muestra como “Parto” en lugar de “Parto orientativo”, manteniendo el mismo vencimiento planificado del calendario.",
+        "El administrador puede elegir cualquier color mediante un selector libre, además de reutilizar la paleta predefinida.",
+        "Los colores personalizados se conservan por explotación y se aplican al día del Calendario, a la fecha de Alertas y a la lista de reglas.",
+        "La leyenda del Calendario incorpora también los plazos personalizados por su nombre y respeta sus colores elegidos."
+      ]
+    },
+    {
+      "version": "0.15.133",
+      "changes": [
+        "Calendario: se añaden plazos automáticos personalizados por explotación, gestionados por el administrador desde la configuración de plazos.",
+        "Los plazos personalizados ligados a banda pueden usar como base la inseminación o el parto y admitir varios momentos dentro de una sola regla.",
+        "Ejemplo: una única regla “Vitaminas en pienso” puede generar Parto −3 días y Parto +3 días, y cada aplicación se marca realizada de forma independiente.",
+        "Los momentos pendientes se recalculan si cambia la fecha de inseminación; los ya realizados conservan la fecha registrada.",
+        "Las reglas personalizadas ligadas a banda solo se aplican desde la fecha indicada, evitando crear alertas antiguas al darlas de alta.",
+        "También se permiten reglas periódicas personalizadas cada X días o meses con un primer/próximo vencimiento real.",
+        "Cada regla permite elegir color, días de aviso, descripción y estado activo/inactivo; Calendario y Alertas respetan ese color y el aviso específico.",
+        "La gestión incluye crear, editar, duplicar, activar/desactivar y eliminar reglas personalizadas."
+      ]
+    },
+    {
+      "version": "0.15.132",
+      "changes": [
+        "Calendario: se incorporan plazos automáticos configurables por explotación para palpación (+24 días), parto (+31), quitar nidos (+17 desde parto orientativo), destete (+35 desde parto orientativo), vacuna vírica de reposición (+29) y vacuna mixo de reposición (+36).",
+        "Sanidad general: se añaden reglas periódicas configurables para vacuna vírica y mixo de toda la explotación cada 6 meses, desparasitación de reposición cada 60 días y desparasitación general cada 90 días.",
+        "Calendario y Alertas comparten una paleta por tipo de tarea; las vacunas usan el mismo color y la fecha del aviso conserva ese color.",
+        "Los plazos automáticos pueden marcarse como realizados sin convertirse en tareas manuales; al cambiar la fecha de una banda solo se recalculan los vencimientos automáticos que continúan pendientes.",
+        "Los vencimientos ligados a una banda cruzan correctamente de año: una inseminación de diciembre puede generar parto, vacunas o destete en el calendario de enero/febrero del año siguiente.",
+        "La primera migración consolida como realizados los plazos automáticos anteriores a la instalación para evitar una avalancha de alertas históricas vencidas.",
+        "Los plazos periódicos piden un primer/próximo vencimiento real y el aviso previo es configurable; las reglas pueden activarse o desactivarse por explotación.",
+        "Configuración de explotación incorpora acceso directo a Plazos automáticos; los empleados pueden consultar el calendario pero solo los administradores pueden cambiar estas reglas."
+      ]
+    },
     {
       "version": "0.15.131",
       "changes": [
