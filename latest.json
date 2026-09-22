@@ -1,18 +1,127 @@
 {
-  "version": "0.15.147",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.147/CUNIMIG.exe",
-  "sha256": "d52e2f3b54bda7544c9831b76aee15539076c8177e342844af9ef89afd443ea6",
-  "notes": "• Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.\n• Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable.",
+  "version": "0.15.161",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.161/CUNIMIG.exe",
+  "sha256": "06132068ff50aa3bc0299d5352a682253a666ab730b39fa34b4440e5230330f6",
+  "notes": "• Alertas: el contador del menú lateral se actualiza automáticamente al terminar acciones que puedan cambiar avisos o tareas.\n• Marcar realizada, volver a pendiente, editar, eliminar o completar registros vinculados refresca la insignia sin cambiar de sección ni reiniciar CUNIMIG.\n• Se mantiene además una comprobación periódica de seguridad para recoger cambios que no procedan de una interacción directa.",
   "changes": [
-    "Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.",
-    "Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable."
+    "Alertas: el contador del menú lateral se actualiza automáticamente al terminar acciones que puedan cambiar avisos o tareas.",
+    "Marcar realizada, volver a pendiente, editar, eliminar o completar registros vinculados refresca la insignia sin cambiar de sección ni reiniciar CUNIMIG.",
+    "Se mantiene además una comprobación periódica de seguridad para recoger cambios que no procedan de una interacción directa."
   ],
   "release_history": [
     {
-      "version": "0.15.147",
+      "version": "0.15.161",
       "changes": [
-        "Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.",
-        "Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable."
+        "Alertas: el contador del menú lateral se actualiza automáticamente al terminar acciones que puedan cambiar avisos o tareas.",
+        "Marcar realizada, volver a pendiente, editar, eliminar o completar registros vinculados refresca la insignia sin cambiar de sección ni reiniciar CUNIMIG.",
+        "Se mantiene además una comprobación periódica de seguridad para recoger cambios que no procedan de una interacción directa."
+      ]
+    },
+    {
+      "version": "0.15.160",
+      "changes": [
+        "Interconexión sanitaria ampliada: Sanidad registra tanto Vacunación como Desparasitación en una única ficha de actuaciones sanitarias.",
+        "Las desparasitaciones automáticas del Calendario exigen completar y guardar su registro sanitario antes de quedar realizadas.",
+        "Las inseminaciones automáticas crean una nueva banda con la fecha precargada; si ya existe una banda con esa fecha, CUNIMIG la reconoce y evita duplicarla.",
+        "Calendario, Alertas, Bandas y Sanidad comparten el mismo dato real siempre que existe un registro estructurado."
+      ]
+    },
+    {
+      "version": "0.15.159",
+      "changes": [
+        "Interconexión ampliada: Palpación, Parto y Destete del Calendario abren y actualizan la banda real correspondiente antes de darse por realizados.",
+        "Bandas → Calendario: al registrar palpaciones positivas/nidos, partos/nacidos o destetados, los plazos automáticos correspondientes se reflejan como realizados sin duplicar datos.",
+        "Vacunación mantiene su vínculo obligatorio con Sanidad → Vacunación; la inseminación se reconoce desde la fecha real de la banda.",
+        "Los procesos sin un registro estructurado propio (por ejemplo Quitar nidos o plazos personalizados) continúan como tareas reversibles, evitando inventar datos o registros duplicados."
+      ]
+    },
+    {
+      "version": "0.15.158",
+      "changes": [
+        "Calendario: las tareas simples realizadas pueden editarse o volver a Pendiente para corregir marcados accidentales.",
+        "Destete: marcar el plazo automático como realizado abre la banda correspondiente; el destete queda realizado solo después de guardar los datos de la banda.",
+        "Interconexión: si los gazapos destetados se registran directamente en Bandas, el plazo automático de Destete se refleja como realizado sin duplicar información.",
+        "Las tareas respaldadas por un registro real, como Vacunación o Destete, no se desmarcan como un simple check: se corrige su registro de origen."
+      ]
+    },
+    {
+      "version": "0.15.157",
+      "changes": [
+        "Alertas: el botón Ver de una vacunación lleva siempre al día y tarea correspondientes del Calendario, sin abrir directamente la ficha sanitaria.",
+        "Calendario: al marcar como realizada una vacunación automática se exige guardar su ficha en Sanidad → Vacunación.",
+        "Las vacunaciones ya programadas en Sanidad también se completan desde Calendario: se abre su ficha existente como Realizada y, si se cancela, la tarea continúa pendiente."
+      ]
+    },
+    {
+      "version": "0.15.156",
+      "changes": [
+        "Calendario y Alertas: una vacunación automática no puede marcarse como realizada sin guardar antes su ficha en Sanidad → Vacunación.",
+        "La ficha se abre prerrellenada con fecha, banda y objetivo cuando pueden deducirse del aviso; al guardarla se completa también el aviso automático.",
+        "Si se cancela el registro sanitario, la vacunación permanece pendiente para evitar actuaciones realizadas sin trazabilidad sanitaria."
+      ]
+    },
+    {
+      "version": "0.15.155",
+      "changes": [
+        "Resumen anual completo: la portada centra verticalmente logo, título y datos de la explotación en la hoja.",
+        "Libro de visitas y Registro entrada/salida pasan a capítulos independientes y comienzan cada uno en una página nueva."
+      ]
+    },
+    {
+      "version": "0.15.154",
+      "changes": [
+        "Resumen anual completo: nueva portada exclusiva con logo e información de la explotación centrada y equilibrada.",
+        "El contenido se reorganiza por capítulos temáticos para evitar mezclar información no relacionada en una misma página.",
+        "Producción, Sanidad, Libro de registro, Economía, Inversiones/financiación, Fiscalidad/análisis y Evolución/alertas comienzan en páginas independientes."
+      ]
+    },
+    {
+      "version": "0.15.153",
+      "changes": [
+        "Resumen anual completo rediseñado en A4 vertical.",
+        "Los bloques principales usan todo el ancho útil para mantener una lectura clara y márgenes equilibrados.",
+        "Los bloques secundarios compactos pueden compartir fila cuando caben sin perder legibilidad, manteniéndose enteros al paginar."
+      ]
+    },
+    {
+      "version": "0.15.152",
+      "changes": [
+        "Economía: Resultados económicos adopta la misma filosofía visual que Coste/kg: KPI principales en tarjetas y listados largos en tablas compactas.",
+        "Gastos, Ingresos, Análisis avanzado e IVA/Fiscalidad dejan de ocupar páginas completas de tarjetas y aprovechan mejor el A4 vertical.",
+        "Indicadores productivos conserva el resumen en tarjetas y convierte los grupos extensos en tablas compactas para evitar cortes y mantener los bloques completos."
+      ]
+    },
+    {
+      "version": "0.15.151",
+      "changes": [
+        "Informes: márgenes izquierdo y derecho simétricos y área útil centrada.",
+        "Los resúmenes KPI se distribuyen en dos columnas para evitar que alcancen el borde derecho.",
+        "El resumen anual aprovecha mejor el espacio colocando automáticamente bloques compatibles uno al lado del otro sin partirlos entre páginas."
+      ]
+    },
+    {
+      "version": "0.15.150",
+      "changes": [
+        "Economía e Indicadores se imprimen y previsualizan en A4 vertical.",
+        "Resultados económicos e Indicadores productivos usan ahora la misma estructura visual por tarjetas y bloques que el resto del informe.",
+        "Los bloques de tarjetas se mantienen unidos al paginar para evitar cortes entre hojas siempre que el bloque completo quepa en una página."
+      ]
+    },
+    {
+      "version": "0.15.149",
+      "changes": [
+        "Vista previa de impresión extendida a todas las impresiones tabulares de CUNIMIG.",
+        "Desde la vista previa se puede imprimir o guardar directamente como PDF.",
+        "Se conserva la orientación propia de cada módulo, incluido Libro de registro en vertical."
+      ]
+    },
+    {
+      "version": "0.15.148",
+      "changes": [
+        "Nuevo sistema de impresión visual para Economía e Indicadores, conservando tarjetas y bloques en filas y columnas.",
+        "Cada subapartado seleccionado comienza en una página nueva para evitar mezclar contenidos.",
+        "Nueva vista previa de impresión con zoom, ajuste de página, impresión y guardado directo en PDF.",
+        "Economía e Indicadores se preparan en orientación horizontal para aprovechar mejor el diseño visual."
       ]
     },
     {
