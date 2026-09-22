@@ -1,16 +1,90 @@
 {
-  "version": "0.15.135",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.135/CUNIMIG.exe",
-  "sha256": "33420d6031a648588989b6000f25aa40d51ab050935a37f57dd1467461e6f964",
-  "notes": "• Alertas: cada aviso accionable incorpora un botón “Ver” para abrir directamente su origen.\n• Las tareas manuales y los plazos automáticos abren Calendario en la fecha correcta y seleccionan la tarea concreta.\n• Las vacunaciones vencidas abren Sanidad → Vacunación y seleccionan el registro correspondiente.\n• Las alertas económicas y de salud llevan directamente a Resultados económicos o Indicadores de salud.\n• Configuración de explotación: Guardar intervalo y Configurar plazos automáticos pasan a botón principal verde para que sus acciones sean claramente visibles.",
+  "version": "0.15.147",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.147/CUNIMIG.exe",
+  "sha256": "d52e2f3b54bda7544c9831b76aee15539076c8177e342844af9ef89afd443ea6",
+  "notes": "• Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.\n• Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable.",
   "changes": [
-    "Alertas: cada aviso accionable incorpora un botón “Ver” para abrir directamente su origen.",
-    "Las tareas manuales y los plazos automáticos abren Calendario en la fecha correcta y seleccionan la tarea concreta.",
-    "Las vacunaciones vencidas abren Sanidad → Vacunación y seleccionan el registro correspondiente.",
-    "Las alertas económicas y de salud llevan directamente a Resultados económicos o Indicadores de salud.",
-    "Configuración de explotación: Guardar intervalo y Configurar plazos automáticos pasan a botón principal verde para que sus acciones sean claramente visibles."
+    "Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.",
+    "Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable."
   ],
   "release_history": [
+    {
+      "version": "0.15.147",
+      "changes": [
+        "Login: sustituida únicamente la imagen de fondo por la nueva imagen aprobada con mayor definición en la pantalla del portátil.",
+        "Se mantiene el fondo a pantalla completa sin márgenes y el login real superpuesto, funcional y arrastrable."
+      ]
+    },
+    {
+      "version": "0.15.146",
+      "changes": [
+        "Login: sustituida la imagen de fondo por la versión DEMO aprobada, con «EXPLOTACIÓN DEMO», CEA vacío y «Jorge Pola Baliña» en el menú lateral del portátil.",
+        "La imagen se mantiene a pantalla completa sin márgenes y el login real permanece superpuesto, funcional y arrastrable."
+      ]
+    },
+    {
+      "version": "0.15.145",
+      "changes": [
+        "Login: aplicada exactamente la imagen aprobada por el usuario como fondo de acceso.",
+        "El fondo ocupa toda la ventana sin márgenes y el login real permanece superpuesto, funcional y arrastrable."
+      ]
+    },
+    {
+      "version": "0.15.144",
+      "changes": [
+        "Login: se conserva intacta la imagen base elegida por el usuario y se añade únicamente la franja/onda verde superior.",
+        "El fondo sigue mostrándose completo y el login funcional permanece como una única tarjeta independiente y arrastrable."
+      ]
+    },
+    {
+      "version": "0.15.143",
+      "changes": [
+        "Login: aplicada la nueva imagen de presentación elegida por el usuario como fondo.",
+        "El fondo se muestra completo manteniendo su proporción, sin recortar la parte superior."
+      ]
+    },
+    {
+      "version": "0.15.141",
+      "changes": [
+        "Login: corregido el salto lateral al comenzar a arrastrar la tarjeta.",
+        "La tarjeta mantiene exactamente el punto de agarre y puede colocarse libremente dentro de la pantalla.",
+        "La última posición del login se recuerda y se limita automáticamente a una zona visible si cambia la resolución."
+      ]
+    },
+    {
+      "version": "0.15.140",
+      "changes": [
+        "Migración definitiva de la antigua clave interna de Ficha control de explotación a FICHA_CONTROL.",
+        "Las bases y copias antiguas se normalizan automáticamente al abrirse, sin conservar la clave histórica en el funcionamiento normal.",
+        "También se migra el historial de documentos para respetar archivos eliminados y evitar que reaparezcan."
+      ]
+    },
+    {
+      "version": "0.15.139",
+      "changes": [
+        "Pantalla de acceso rediseñada: tarjeta más compacta, limpia y desplazable sobre la imagen de bienvenida.",
+        "Se añade mostrar/ocultar contraseña y recordar únicamente el usuario, nunca la contraseña.",
+        "El acceso principal pasa a «ENTRAR EN CUNIMIG» y las acciones de explotaciones quedan como opciones secundarias.",
+        "La versión visible del login usa APP_VERSION, la misma fuente central del programa y del actualizador."
+      ]
+    },
+    {
+      "version": "0.15.137",
+      "changes": [
+        "Se unifica el nombre visible «Ficha control de explotación» en toda la interfaz, incluida la ventana documental y Archivo documental.",
+        "Los selectores de archivos usan ahora el nombre visible de la sección en lugar de la clave interna HOJA_BANDA, manteniendo compatibilidad con documentos y copias existentes."
+      ]
+    },
+    {
+      "version": "0.15.136",
+      "changes": [
+        "Menú lateral: la insignia de Alertas corrige su cálculo de ancho para que no pueda crecer hasta tapar el icono y el texto en equipos con distinto DPI o escalado de Windows.",
+        "Plazos automáticos predefinidos: el círculo de color es ahora pulsable y permite elegir libremente otro color por regla y por explotación.",
+        "Calendario y Alertas usan inmediatamente los nuevos colores elegidos y la leyenda dinámica refleja los colores reales de las reglas activas.",
+        "Libro de registro: las impresiones de Libro de visitas y Registro de entrada/salida pasan a orientación vertical.",
+        "Registro de entrada/salida: se puede adjuntar un archivo al crear o modificar un registro; el documento viaja en copias de seguridad y aparece también en Archivo documental."
+      ]
+    },
     {
       "version": "0.15.135",
       "changes": [
