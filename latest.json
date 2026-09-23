@@ -1,13 +1,46 @@
 {
-  "version": "0.15.169",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.169/CUNIMIG.exe",
-  "sha256": "0149a9643b6e6517501e5d0ed991b65602675fb81bbb953ff9d7cf5e28193ea1",
-  "notes": "• Configuración de explotación: Plazos personalizados pasa a ser un bloque independiente situado justo debajo de Plazos automáticos.\n• El acceso a plazos personalizados deja de estar dentro del diálogo de plazos automáticos, manteniendo intactas las reglas existentes y su funcionamiento.",
+  "version": "0.15.173",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.173/CUNIMIG.exe",
+  "sha256": "65bdb49b844c94b92f22516b38d5604fd08190ca575bcf126d0fcbbb3860d098",
+  "notes": "• Analíticas y tratamientos: Motivo / resultado pasa a mostrarse en una columna compacta para mantener cerca las columnas finales.\n• Los motivos largos se muestran recortados visualmente con puntos suspensivos, sin modificar ni perder el texto almacenado.\n• Al situar el ratón sobre Motivo / resultado se muestra el contenido completo; al abrir o modificar el registro continúa disponible íntegramente.",
   "changes": [
-    "Configuración de explotación: Plazos personalizados pasa a ser un bloque independiente situado justo debajo de Plazos automáticos.",
-    "El acceso a plazos personalizados deja de estar dentro del diálogo de plazos automáticos, manteniendo intactas las reglas existentes y su funcionamiento."
+    "Analíticas y tratamientos: Motivo / resultado pasa a mostrarse en una columna compacta para mantener cerca las columnas finales.",
+    "Los motivos largos se muestran recortados visualmente con puntos suspensivos, sin modificar ni perder el texto almacenado.",
+    "Al situar el ratón sobre Motivo / resultado se muestra el contenido completo; al abrir o modificar el registro continúa disponible íntegramente."
   ],
   "release_history": [
+    {
+      "version": "0.15.173",
+      "changes": [
+        "Analíticas y tratamientos: Motivo / resultado pasa a mostrarse en una columna compacta para mantener cerca las columnas finales.",
+        "Los motivos largos se muestran recortados visualmente con puntos suspensivos, sin modificar ni perder el texto almacenado.",
+        "Al situar el ratón sobre Motivo / resultado se muestra el contenido completo; al abrir o modificar el registro continúa disponible íntegramente."
+      ]
+    },
+    {
+      "version": "0.15.172",
+      "changes": [
+        "Sanidad: «Toma de muestras» pasa a llamarse «Analíticas y tratamientos» y el submenú lateral adopta el mismo nombre.",
+        "El selector Tipo incorpora Tratamiento junto con Hisopos, Órganos y Agua, conservando además los tipos históricos ya utilizados.",
+        "La tabla de Analíticas y tratamientos limita el ancho inicial de Motivo / resultado y habilita desplazamiento horizontal para que los textos largos no oculten ni corten las columnas anteriores."
+      ]
+    },
+    {
+      "version": "0.15.171",
+      "changes": [
+        "Sanidad: Producto / medicamento reutiliza automáticamente los nombres ya registrados en la explotación como sugerencias de autocompletado.",
+        "Las sugerencias pueden seleccionarse con el ratón y Tab completa el producto cuando existe una única coincidencia por el texto escrito.",
+        "Las sugerencias eliminan duplicados por mayúsculas/minúsculas y espacios sin impedir escribir y guardar productos nuevos."
+      ]
+    },
+    {
+      "version": "0.15.170",
+      "changes": [
+        "Sanidad: corregida la correspondencia entre los datos y las columnas del historial; se añade la columna Actuación para evitar el desplazamiento desde Producto / medicamento.",
+        "La impresión de Sanidad usa la misma correspondencia de columnas que la pantalla.",
+        "Los registros históricos inequívocos de desparasitación guardados como Vacunación se reclasifican automáticamente como Desparasitación sin afectar al resto."
+      ]
+    },
     {
       "version": "0.15.169",
       "changes": [
