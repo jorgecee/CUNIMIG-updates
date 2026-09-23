@@ -1,18 +1,30 @@
 {
-  "version": "0.15.181",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.181/CUNIMIG.exe",
-  "sha256": "9750e6fd3cbca0c595c4fbbc1d3ab40626d44264af7ad832e8f87c52f5be84e0",
-  "notes": "• Auditoría funcional: ventas particulares incorporan fecha y vínculo interno con la banda; cierre anual amplía su resumen.\n• Alertas y Buscador ordenan por fechas reales; Realizadas hoy usa la fecha efectiva de finalización cuando está disponible.\n• Buscador incluye documentos de Inicio y permite doble clic para abrir documentos o navegar al origen.\n• Normalización heredada: ICA pasa a CEA y se consolidan denominaciones actuales sin perder compatibilidad de migración.\n• Financiación: las cuotas ya no se marcan pagadas automáticamente; al vencer generan una alerta pendiente de confirmación.\n• Economía: los ratios económicos por dosis usan todas las dosis del ejercicio y el informe incorpora esos ratios.\n• Copias: la instantánea se migra y verifica antes de empaquetar, mostrando la integridad documental.",
+  "version": "0.15.183",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.183/CUNIMIG.exe",
+  "sha256": "3d93215f61520bdf561f129f369c2df1f8ce478c101acd60a5cae4600a33c74d",
+  "notes": "• Inicio: la sección documental se muestra correctamente como «ICA» en singular.\n• CEA permanece reservado al número oficial de la explotación y la clave documental interna sigue siendo ICA.\n• Se mantiene la reparación del orden personalizado de Inicio y la recuperación de doc:CEA a doc:ICA introducida en v0.15.182.",
   "changes": [
-    "Auditoría funcional: ventas particulares incorporan fecha y vínculo interno con la banda; cierre anual amplía su resumen.",
-    "Alertas y Buscador ordenan por fechas reales; Realizadas hoy usa la fecha efectiva de finalización cuando está disponible.",
-    "Buscador incluye documentos de Inicio y permite doble clic para abrir documentos o navegar al origen.",
-    "Normalización heredada: ICA pasa a CEA y se consolidan denominaciones actuales sin perder compatibilidad de migración.",
-    "Financiación: las cuotas ya no se marcan pagadas automáticamente; al vencer generan una alerta pendiente de confirmación.",
-    "Economía: los ratios económicos por dosis usan todas las dosis del ejercicio y el informe incorpora esos ratios.",
-    "Copias: la instantánea se migra y verifica antes de empaquetar, mostrando la integridad documental."
+    "Inicio: la sección documental se muestra correctamente como «ICA» en singular.",
+    "CEA permanece reservado al número oficial de la explotación y la clave documental interna sigue siendo ICA.",
+    "Se mantiene la reparación del orden personalizado de Inicio y la recuperación de doc:CEA a doc:ICA introducida en v0.15.182."
   ],
   "release_history": [
+    {
+      "version": "0.15.183",
+      "changes": [
+        "Inicio: la sección documental se muestra correctamente como «ICA» en singular.",
+        "CEA permanece reservado al número oficial de la explotación y la clave documental interna sigue siendo ICA.",
+        "Se mantiene la reparación del orden personalizado de Inicio y la recuperación de doc:CEA a doc:ICA introducida en v0.15.182."
+      ]
+    },
+    {
+      "version": "0.15.182",
+      "changes": [
+        "Inicio: se recupera la sección documental «ICAs»; CEA queda reservado al número oficial de la explotación.",
+        "Migración correctiva: las claves documentales CEA creadas por v0.15.181 vuelven automáticamente a ICA sin perder archivos.",
+        "Inicio: se conserva y repara el orden personalizado de accesos, transformando doc:CEA a doc:ICA en la misma posición."
+      ]
+    },
     {
       "version": "0.15.181",
       "changes": [
