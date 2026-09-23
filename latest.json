@@ -1,13 +1,44 @@
 {
-  "version": "0.15.176",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.176/CUNIMIG.exe",
-  "sha256": "ccfc4c1a4ff875b114a8edcbded37345cacd7d9be27b65a318ae7940c47b74d3",
-  "notes": "• Economía → Resultados económicos → Análisis avanzado calcula los ratios por dosis usando únicamente las dosis de semen de las bandas completas.\n• Las bandas incompletas o todavía en curso no aportan dosis al denominador; si no hay dosis en bandas completas se muestra —.",
+  "version": "0.15.180",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.180/CUNIMIG.exe",
+  "sha256": "1d5ad66ec0865d3bd458d1c4f301ac1fd737287cbefb887bb691564793e1a309",
+  "notes": "• Indicadores productivos: Kg particulares / dosis muestra siempre tres decimales para que producciones pequeñas no aparezcan como 0,00.\n• El formato de precisión por dosis se aplica de forma explícita a Particulares y se mantiene también para cualquier kg/dosis positivo inferior a 0,01.",
   "changes": [
-    "Economía → Resultados económicos → Análisis avanzado calcula los ratios por dosis usando únicamente las dosis de semen de las bandas completas.",
-    "Las bandas incompletas o todavía en curso no aportan dosis al denominador; si no hay dosis en bandas completas se muestra —."
+    "Indicadores productivos: Kg particulares / dosis muestra siempre tres decimales para que producciones pequeñas no aparezcan como 0,00.",
+    "El formato de precisión por dosis se aplica de forma explícita a Particulares y se mantiene también para cualquier kg/dosis positivo inferior a 0,01."
   ],
   "release_history": [
+    {
+      "version": "0.15.180",
+      "changes": [
+        "Indicadores productivos: Kg particulares / dosis muestra siempre tres decimales para que producciones pequeñas no aparezcan como 0,00.",
+        "El formato de precisión por dosis se aplica de forma explícita a Particulares y se mantiene también para cualquier kg/dosis positivo inferior a 0,01."
+      ]
+    },
+    {
+      "version": "0.15.179",
+      "changes": [
+        "Indicadores productivos: Producción en kg y Producción por dosis se muestran enfrentadas en pantallas anchas para facilitar la comparación.",
+        "Producción por dosis añade el desglose de gazapos de 1ª, 2ª, particulares, abuelas y vendidos por cada dosis, manteniendo Gazapos útiles/dosis como total útil.",
+        "Los kg/dosis positivos inferiores a 0,01 muestran tres decimales para evitar que valores reales como los particulares aparezcan como 0,00."
+      ]
+    },
+    {
+      "version": "0.15.178",
+      "changes": [
+        "Indicadores productivos: Producción y ventas se reorganiza en Producción en kg y Producción por dosis, con desglose de 1ª, particulares, 2ª equivalente y abuelas.",
+        "Se añaden kg productivos totales y por dosis; kg productivos por jaula incluye el peso de las abuelas.",
+        "Coste por kg productivo, coste por dosis de inseminación, precio medio de pienso y precio medio vendido usan el mismo ámbito de bandas completas.",
+        "Los porcentajes de hembras suprimidas y bajas de hembras se calculan sobre las dosis de las bandas completas."
+      ]
+    },
+    {
+      "version": "0.15.177",
+      "changes": [
+        "Analíticas y tratamientos: el selector Tipo muestra una única opción «Órganos», eliminando el duplicado histórico sin tilde.",
+        "Los registros antiguos guardados como «Organos» se normalizan a «Órganos» sin perder ningún dato."
+      ]
+    },
     {
       "version": "0.15.176",
       "changes": [
