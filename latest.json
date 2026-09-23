@@ -1,14 +1,65 @@
 {
-  "version": "0.15.162",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.162/CUNIMIG.exe",
-  "sha256": "1ac9313fc67fb4d79a9d1f9257c3bd0119e6ef6f6f4f46fd0ba897a10edd1829",
-  "notes": "• Login: la tarjeta de acceso aparece centrada la primera vez que se abre CUNIMIG.\n• Si el usuario mueve la tarjeta, su posición se conserva para la siguiente apertura.\n• Si la posición guardada deja de ser visible por un cambio de resolución o pantalla, el login vuelve automáticamente al centro.",
+  "version": "0.15.169",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.169/CUNIMIG.exe",
+  "sha256": "0149a9643b6e6517501e5d0ed991b65602675fb81bbb953ff9d7cf5e28193ea1",
+  "notes": "• Configuración de explotación: Plazos personalizados pasa a ser un bloque independiente situado justo debajo de Plazos automáticos.\n• El acceso a plazos personalizados deja de estar dentro del diálogo de plazos automáticos, manteniendo intactas las reglas existentes y su funcionamiento.",
   "changes": [
-    "Login: la tarjeta de acceso aparece centrada la primera vez que se abre CUNIMIG.",
-    "Si el usuario mueve la tarjeta, su posición se conserva para la siguiente apertura.",
-    "Si la posición guardada deja de ser visible por un cambio de resolución o pantalla, el login vuelve automáticamente al centro."
+    "Configuración de explotación: Plazos personalizados pasa a ser un bloque independiente situado justo debajo de Plazos automáticos.",
+    "El acceso a plazos personalizados deja de estar dentro del diálogo de plazos automáticos, manteniendo intactas las reglas existentes y su funcionamiento."
   ],
   "release_history": [
+    {
+      "version": "0.15.169",
+      "changes": [
+        "Configuración de explotación: Plazos personalizados pasa a ser un bloque independiente situado justo debajo de Plazos automáticos.",
+        "El acceso a plazos personalizados deja de estar dentro del diálogo de plazos automáticos, manteniendo intactas las reglas existentes y su funcionamiento."
+      ]
+    },
+    {
+      "version": "0.15.168",
+      "changes": [
+        "Recetas y la visibilidad de PRESVET pasan a Configuración de explotación y se guardan de forma independiente para cada explotación."
+      ]
+    },
+    {
+      "version": "0.15.167",
+      "changes": [
+        "Las actuaciones sanitarias automáticas realizadas antes de su fecha pueden volver a pendiente eliminando de forma segura el registro creado por esa tarea.",
+        "Configuración permite cambiar la dirección web de Recetas y restaurar la predeterminada.",
+        "PRESVET puede mostrarse u ocultarse desde Configuración; el acceso de Inicio se actualiza con el ajuste."
+      ]
+    },
+    {
+      "version": "0.15.166",
+      "changes": [
+        "Login: los selectores de Usuario y Explotación vuelven a usar el mismo QComboBox y estilo general que los desplegables del resto de CUNIMIG, eliminando el estilo específico que deformaba su flecha y lista."
+      ]
+    },
+    {
+      "version": "0.15.165",
+      "changes": [
+        "Login: la tarjeta flotante parte centrada sobre el fondo de bienvenida cuando no existe una posición guardada y conserva después la posición elegida por el usuario.",
+        "Login: pulsar Intro desde Contraseña ejecuta siempre ENTRAR EN CUNIMIG; Nueva explotación y Gestionar dejan de poder convertirse en la acción predeterminada del diálogo."
+      ]
+    },
+    {
+      "version": "0.15.164",
+      "changes": [
+        "Login: el 100 % de altura se aplica exclusivamente a la ventana de fondo de bienvenida, manteniendo su proporción real sin deformarla.",
+        "La tarjeta flotante de acceso conserva su tamaño compacto independiente, puede moverse libremente y recuerda su última posición."
+      ]
+    },
+    {
+      "version": "0.15.163",
+      "changes": [
+        "Login: primera apertura a toda la altura útil con ancho proporcional; la tarjeta conserva su posición y se recentra si deja de ser válida.",
+        "Ventana principal: primera apertura grande a toda la altura útil y, desde entonces, recuerda posición, tamaño y estado de ventana.",
+        "Transición visual suave entre el acceso y CUNIMIG, sin añadir una espera artificial.",
+        "Login: desplegables normalizados con lista blanca, selección legible y zona de flecha claramente diferenciada.",
+        "Pantalla de carga: colores fijados explícitamente para evitar diferencias por tema o configuración de Windows.",
+        "Checkbox: indicadores visibles y uniformes en todo CUNIMIG, con cuadrado blanco cuando están desmarcados."
+      ]
+    },
     {
       "version": "0.15.162",
       "changes": [
