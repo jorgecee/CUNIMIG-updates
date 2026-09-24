@@ -1,14 +1,24 @@
 {
-  "version": "0.15.183",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.183/CUNIMIG.exe",
-  "sha256": "3d93215f61520bdf561f129f369c2df1f8ce478c101acd60a5cae4600a33c74d",
-  "notes": "• Inicio: la sección documental se muestra correctamente como «ICA» en singular.\n• CEA permanece reservado al número oficial de la explotación y la clave documental interna sigue siendo ICA.\n• Se mantiene la reparación del orden personalizado de Inicio y la recuperación de doc:CEA a doc:ICA introducida en v0.15.182.",
+  "version": "0.15.184",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.184/CUNIMIG.exe",
+  "sha256": "df25a7f9d83fcef8f46086531fe71919c18b97fad36b22daa33e6e6dbdec0e93",
+  "notes": "• Copias de seguridad: la instantánea ya no ejecuta migraciones ni normalizaciones al crearla, evitando que un dato pueda cambiar durante el empaquetado.\n• Verificación integral: cada copia guarda y comprueba una huella de todas las tablas y valores de usuario; incluye específicamente los datos de Bandas como Peso medio abuela.\n• Adjuntos: se incorporan también los documentos de Vacunación y se verifican tamaño y SHA-256 de cada archivo incluido.\n• Traslado completo: aplica la misma comprobación de integridad de datos y adjuntos explotación por explotación.",
   "changes": [
-    "Inicio: la sección documental se muestra correctamente como «ICA» en singular.",
-    "CEA permanece reservado al número oficial de la explotación y la clave documental interna sigue siendo ICA.",
-    "Se mantiene la reparación del orden personalizado de Inicio y la recuperación de doc:CEA a doc:ICA introducida en v0.15.182."
+    "Copias de seguridad: la instantánea ya no ejecuta migraciones ni normalizaciones al crearla, evitando que un dato pueda cambiar durante el empaquetado.",
+    "Verificación integral: cada copia guarda y comprueba una huella de todas las tablas y valores de usuario; incluye específicamente los datos de Bandas como Peso medio abuela.",
+    "Adjuntos: se incorporan también los documentos de Vacunación y se verifican tamaño y SHA-256 de cada archivo incluido.",
+    "Traslado completo: aplica la misma comprobación de integridad de datos y adjuntos explotación por explotación."
   ],
   "release_history": [
+    {
+      "version": "0.15.184",
+      "changes": [
+        "Copias de seguridad: la instantánea ya no ejecuta migraciones ni normalizaciones al crearla, evitando que un dato pueda cambiar durante el empaquetado.",
+        "Verificación integral: cada copia guarda y comprueba una huella de todas las tablas y valores de usuario; incluye específicamente los datos de Bandas como Peso medio abuela.",
+        "Adjuntos: se incorporan también los documentos de Vacunación y se verifican tamaño y SHA-256 de cada archivo incluido.",
+        "Traslado completo: aplica la misma comprobación de integridad de datos y adjuntos explotación por explotación."
+      ]
+    },
     {
       "version": "0.15.183",
       "changes": [
