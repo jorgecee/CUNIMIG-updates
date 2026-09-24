@@ -1,14 +1,31 @@
 {
-  "version": "0.15.186",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.186/CUNIMIG.exe",
-  "sha256": "5e33f36b456df8a3ee7d5354ee052d0e42e519bcd9c40ca7ff0b54d5f771958e",
-  "notes": "• Economía → Resultados económicos → Análisis avanzado: todos los ratios por dosis usan exclusivamente las dosis de las bandas cerradas/completas del ejercicio.\n• Las dosis de bandas abiertas o incompletas quedan fuera del denominador para no distorsionar €/dosis, kg/dosis, ingresos/dosis, gastos/dosis, beneficio/dosis y gasto sanitario/dosis.\n• Si no existen dosis en bandas cerradas, los ratios por dosis se muestran sin valor en lugar de dividir entre dosis de bandas todavía en curso.",
+  "version": "0.15.189",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.189/CUNIMIG.exe",
+  "sha256": "8e99b9a4ff58fa26de4915bc0b482f80965cce5f27da78125902db1c2eb56cc6",
+  "notes": "• Transición comercial integral al esquema limpio con copia de emergencia, validación previa y rollback automático.\n• Las bases antiguas se convierten una sola vez antes de abrir CUNIMIG; las instalaciones ya limpias no se modifican.\n• Se mantienen fuera del runtime normal las estructuras históricas ya archivadas.",
   "changes": [
-    "Economía → Resultados económicos → Análisis avanzado: todos los ratios por dosis usan exclusivamente las dosis de las bandas cerradas/completas del ejercicio.",
-    "Las dosis de bandas abiertas o incompletas quedan fuera del denominador para no distorsionar €/dosis, kg/dosis, ingresos/dosis, gastos/dosis, beneficio/dosis y gasto sanitario/dosis.",
-    "Si no existen dosis en bandas cerradas, los ratios por dosis se muestran sin valor en lugar de dividir entre dosis de bandas todavía en curso."
+    "Transición comercial integral al esquema limpio con copia de emergencia, validación previa y rollback automático.",
+    "Las bases antiguas se convierten una sola vez antes de abrir CUNIMIG; las instalaciones ya limpias no se modifican.",
+    "Se mantienen fuera del runtime normal las estructuras históricas ya archivadas."
   ],
   "release_history": [
+    {
+      "version": "0.15.189",
+      "changes": [
+        "Transición comercial integral al esquema limpio con copia de emergencia, validación previa y rollback automático.",
+        "Las bases antiguas se convierten una sola vez antes de abrir CUNIMIG; las instalaciones ya limpias no se modifican.",
+        "Se mantienen fuera del runtime normal las estructuras históricas ya archivadas."
+      ]
+    },
+    {
+      "version": "0.15.188",
+      "changes": [
+        "Candidata comercial de esquema limpio: las explotaciones nuevas nacen directamente con CEA, Analíticas y tratamientos y la estructura documental definitiva.",
+        "Se retiran del runtime comercial las tablas y rutinas históricas ya separadas en herramientas de migración.",
+        "Copias de seguridad: corregida la detección de rutas antiguas de adjuntos sin adivinar cuando existe ambigüedad.",
+        "Preparada la transición controlada de explotaciones existentes mediante copia de emergencia, conversión sobre copia, verificación exacta y sustitución atómica únicamente tras validación."
+      ]
+    },
     {
       "version": "0.15.186",
       "changes": [
