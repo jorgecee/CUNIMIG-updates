@@ -1,13 +1,20 @@
 {
-  "version": "0.15.201",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.201/CUNIMIG.exe",
-  "sha256": "5f9703f993d0e365ee177ec9c3b801567219a257fbe9ed31b904b12eecea8736",
-  "notes": "• Corrección: los iconos importados se copian y verifican dentro de la base de datos; ya no dependen del archivo original del PC.\n• Al guardar un icono importado CUNIMIG comprueba su copia binaria interna antes de confirmar el registro.",
+  "version": "0.15.202",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.202/CUNIMIG.exe",
+  "sha256": "b0eda05ead6917a0d86b9086abbf7b18f58ffcc2f0b48ac53f6571334ee6eeb9",
+  "notes": "• Corrección reforzada de iconos importados: CUNIMIG convierte la imagen elegida a una copia PNG binaria propia y la guarda dentro de la base de datos.\n• Inicio y el editor reconstruyen siempre los iconos importados desde la copia interna; la ruta del archivo original no se conserva ni se consulta.",
   "changes": [
-    "Corrección: los iconos importados se copian y verifican dentro de la base de datos; ya no dependen del archivo original del PC.",
-    "Al guardar un icono importado CUNIMIG comprueba su copia binaria interna antes de confirmar el registro."
+    "Corrección reforzada de iconos importados: CUNIMIG convierte la imagen elegida a una copia PNG binaria propia y la guarda dentro de la base de datos.",
+    "Inicio y el editor reconstruyen siempre los iconos importados desde la copia interna; la ruta del archivo original no se conserva ni se consulta."
   ],
   "release_history": [
+    {
+      "version": "0.15.202",
+      "changes": [
+        "Corrección reforzada de iconos importados: CUNIMIG convierte la imagen elegida a una copia PNG binaria propia y la guarda dentro de la base de datos.",
+        "Inicio y el editor reconstruyen siempre los iconos importados desde la copia interna; la ruta del archivo original no se conserva ni se consulta."
+      ]
+    },
     {
       "version": "0.15.201",
       "changes": [
