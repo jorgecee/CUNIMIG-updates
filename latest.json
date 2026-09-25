@@ -1,12 +1,49 @@
 {
-  "version": "0.15.196",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.196/CUNIMIG.exe",
-  "sha256": "90338fdce910da101640429e0f285a289ecf583201731dea27c9a53c952a65cf",
-  "notes": "• Indicadores → Producción en kg: añadida tarjeta Kg productivos / parto = (kg equivalentes vendidos + kg equivalentes de abuelas) / partos, usando bandas completas.",
+  "version": "0.15.200",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.200/CUNIMIG.exe",
+  "sha256": "c8e10ae552dc8353c58feac1cb8f7f8461a90d1ef7fe6c7a5f4bbf67fccdbe2d",
+  "notes": "• Inicio: los iconos genéricos pasan a ser imágenes gráficas reales, sin recuadros de letras.\n• Crear o modificar icono permite importar PNG, JPG/JPEG, WEBP o ICO desde el PC y muestra una vista previa.\n• Los iconos importados se guardan dentro de la base de datos de la explotación, por lo que siguen disponibles aunque se mueva o elimine el archivo original y quedan incluidos en las copias/restauraciones.\n• Al eliminar el acceso personalizado se elimina también su icono importado almacenado en CUNIMIG.",
   "changes": [
-    "Indicadores → Producción en kg: añadida tarjeta Kg productivos / parto = (kg equivalentes vendidos + kg equivalentes de abuelas) / partos, usando bandas completas."
+    "Inicio: los iconos genéricos pasan a ser imágenes gráficas reales, sin recuadros de letras.",
+    "Crear o modificar icono permite importar PNG, JPG/JPEG, WEBP o ICO desde el PC y muestra una vista previa.",
+    "Los iconos importados se guardan dentro de la base de datos de la explotación, por lo que siguen disponibles aunque se mueva o elimine el archivo original y quedan incluidos en las copias/restauraciones.",
+    "Al eliminar el acceso personalizado se elimina también su icono importado almacenado en CUNIMIG."
   ],
   "release_history": [
+    {
+      "version": "0.15.200",
+      "changes": [
+        "Inicio: los iconos genéricos pasan a ser imágenes gráficas reales, sin recuadros de letras.",
+        "Crear o modificar icono permite importar PNG, JPG/JPEG, WEBP o ICO desde el PC y muestra una vista previa.",
+        "Los iconos importados se guardan dentro de la base de datos de la explotación, por lo que siguen disponibles aunque se mueva o elimine el archivo original y quedan incluidos en las copias/restauraciones.",
+        "Al eliminar el acceso personalizado se elimina también su icono importado almacenado en CUNIMIG."
+      ]
+    },
+    {
+      "version": "0.15.199",
+      "changes": [
+        "Inicio: «Organizar iconos» pasa a «Organizar o modificar iconos» y el gestor permite crear, modificar y eliminar accesos web.",
+        "La biblioteca de iconos incorpora opciones genéricas adicionales independientes de los iconos propios de CUNIMIG.",
+        "Recetas y Presvet se migran una sola vez al gestor de iconos web, conservando su URL/visibilidad previa; pueden modificarse o eliminarse sin restauración automática.",
+        "Configuración: eliminados los controles específicos de URL de Recetas y visibilidad de Presvet."
+      ]
+    },
+    {
+      "version": "0.15.198",
+      "changes": [
+        "Inicio: al organizar iconos aparece «Crear icono» para añadir accesos web personalizados.",
+        "Cada acceso personalizado permite elegir icono, nombre y URL, y se integra en el orden arrastrable de Inicio.",
+        "La ventana de creación incluye un desplegable con los iconos personalizados existentes y permite eliminarlos."
+      ]
+    },
+    {
+      "version": "0.15.197",
+      "changes": [
+        "Inicio: eliminadas por completo las secciones documentales ICA, Guías y Facturar.",
+        "Se eliminan de las bases sus registros documentales y las copias gestionadas de esos tres módulos; los adjuntos específicos continúan disponibles en los registros donde correspondan.",
+        "Albarán y Ficha control de explotación permanecen como secciones documentales de Inicio."
+      ]
+    },
     {
       "version": "0.15.196",
       "changes": [
