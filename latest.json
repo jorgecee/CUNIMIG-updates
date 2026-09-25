@@ -1,15 +1,20 @@
 {
-  "version": "0.15.200",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.200/CUNIMIG.exe",
-  "sha256": "c8e10ae552dc8353c58feac1cb8f7f8461a90d1ef7fe6c7a5f4bbf67fccdbe2d",
-  "notes": "• Inicio: los iconos genéricos pasan a ser imágenes gráficas reales, sin recuadros de letras.\n• Crear o modificar icono permite importar PNG, JPG/JPEG, WEBP o ICO desde el PC y muestra una vista previa.\n• Los iconos importados se guardan dentro de la base de datos de la explotación, por lo que siguen disponibles aunque se mueva o elimine el archivo original y quedan incluidos en las copias/restauraciones.\n• Al eliminar el acceso personalizado se elimina también su icono importado almacenado en CUNIMIG.",
+  "version": "0.15.201",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.201/CUNIMIG.exe",
+  "sha256": "5f9703f993d0e365ee177ec9c3b801567219a257fbe9ed31b904b12eecea8736",
+  "notes": "• Corrección: los iconos importados se copian y verifican dentro de la base de datos; ya no dependen del archivo original del PC.\n• Al guardar un icono importado CUNIMIG comprueba su copia binaria interna antes de confirmar el registro.",
   "changes": [
-    "Inicio: los iconos genéricos pasan a ser imágenes gráficas reales, sin recuadros de letras.",
-    "Crear o modificar icono permite importar PNG, JPG/JPEG, WEBP o ICO desde el PC y muestra una vista previa.",
-    "Los iconos importados se guardan dentro de la base de datos de la explotación, por lo que siguen disponibles aunque se mueva o elimine el archivo original y quedan incluidos en las copias/restauraciones.",
-    "Al eliminar el acceso personalizado se elimina también su icono importado almacenado en CUNIMIG."
+    "Corrección: los iconos importados se copian y verifican dentro de la base de datos; ya no dependen del archivo original del PC.",
+    "Al guardar un icono importado CUNIMIG comprueba su copia binaria interna antes de confirmar el registro."
   ],
   "release_history": [
+    {
+      "version": "0.15.201",
+      "changes": [
+        "Corrección: los iconos importados se copian y verifican dentro de la base de datos; ya no dependen del archivo original del PC.",
+        "Al guardar un icono importado CUNIMIG comprueba su copia binaria interna antes de confirmar el registro."
+      ]
+    },
     {
       "version": "0.15.200",
       "changes": [
