@@ -1,13 +1,28 @@
 {
-  "version": "0.15.202",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.202/CUNIMIG.exe",
-  "sha256": "b0eda05ead6917a0d86b9086abbf7b18f58ffcc2f0b48ac53f6571334ee6eeb9",
-  "notes": "• Corrección reforzada de iconos importados: CUNIMIG convierte la imagen elegida a una copia PNG binaria propia y la guarda dentro de la base de datos.\n• Inicio y el editor reconstruyen siempre los iconos importados desde la copia interna; la ruta del archivo original no se conserva ni se consulta.",
+  "version": "0.15.205",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.205/CUNIMIG.exe",
+  "sha256": "ce8f3b2873e7882a65cdbf71ac061bafe0170e8fb3e999c846c5f20e7fe80232",
+  "notes": "• Inicio: corregida la carga de iconos personalizados al arrancar CUNIMIG; las tarjetas reciben y reconstruyen el icono almacenado internamente en la base de datos.\n• Los iconos importados permanecen visibles tras cerrar y volver a abrir CUNIMIG aunque el archivo original del PC ya no exista.",
   "changes": [
-    "Corrección reforzada de iconos importados: CUNIMIG convierte la imagen elegida a una copia PNG binaria propia y la guarda dentro de la base de datos.",
-    "Inicio y el editor reconstruyen siempre los iconos importados desde la copia interna; la ruta del archivo original no se conserva ni se consulta."
+    "Inicio: corregida la carga de iconos personalizados al arrancar CUNIMIG; las tarjetas reciben y reconstruyen el icono almacenado internamente en la base de datos.",
+    "Los iconos importados permanecen visibles tras cerrar y volver a abrir CUNIMIG aunque el archivo original del PC ya no exista."
   ],
   "release_history": [
+    {
+      "version": "0.15.205",
+      "changes": [
+        "Inicio: corregida la carga de iconos personalizados al arrancar CUNIMIG; las tarjetas reciben y reconstruyen el icono almacenado internamente en la base de datos.",
+        "Los iconos importados permanecen visibles tras cerrar y volver a abrir CUNIMIG aunque el archivo original del PC ya no exista."
+      ]
+    },
+    {
+      "version": "0.15.204",
+      "changes": [
+        "Iconos importados: CUNIMIG crea una copia física propia dentro de la carpeta interna de la explotación además de conservarla en SQLite.",
+        "Inicio carga el icono exclusivamente desde datos/copia gestionados por CUNIMIG y nunca desde el archivo original elegido por el usuario.",
+        "La copia interna se regenera desde la base de datos cuando falta y se elimina únicamente al borrar el acceso personalizado."
+      ]
+    },
     {
       "version": "0.15.202",
       "changes": [
