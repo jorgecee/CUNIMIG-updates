@@ -1,18 +1,53 @@
 {
-  "version": "0.15.207",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.207/CUNIMIG.exe",
-  "sha256": "ab122cfc1ea9227017e52f159c8b16bc90fc55125c12761b9dc8d9cf5b9d8ebe",
-  "notes": "• Economía → IVA/Fiscalidad incorpora el cierre anual de la Declaración de la Renta atribuible a la explotación.\n• Se puede registrar un resultado a pagar o a devolver; las retenciones de Ventas se incorporan automáticamente como pagos a cuenta.\n• Las retenciones siguen separadas de gastos e ingresos y no reducen el beneficio económico antes de IRPF.\n• Ventas de carne distingue expresamente Neto antes de retención y Total cobrado con la retención ya descontada; Economía utiliza siempre el neto antes de retención.\n• Nuevo cálculo informativo de IRPF efectivo atribuible y Beneficio después de IRPF, con el IVA separado.\n• Economía añade debajo de Resultados un bloque Resultados después de IRPF con beneficio post-IRPF, la misma reserva, disponible tras reserva e IRPF y beneficio post-IRPF por kg vendido.\n• La Declaración de la Renta permanece editable en ejercicios cerrados para poder completar o corregir el cierre fiscal sin reabrir el año.",
+  "version": "0.15.211",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.211/CUNIMIG.exe",
+  "sha256": "9bdd4d3acb18574a4ff316c71378e7da20fe87852e56e00c4869d4a1a3bd1a86",
+  "notes": "• Inseminación automática: la banda creada queda vinculada internamente con la actuación que la originó.\n• Si se elimina esa banda, se elimina también su estado automático de realizada y la próxima inseminación vuelve a pendiente.\n• Al borrar la banda se recalcula la referencia desde la última inseminación real que siga existiendo, manteniendo Calendario y Alertas sincronizados.\n• Abrir una inseminación realizada desde el historial lleva directamente a su registro en Bandas; si una próxima inseminación ya tiene banda, abre esa banda sin ventana flotante.",
   "changes": [
-    "Economía → IVA/Fiscalidad incorpora el cierre anual de la Declaración de la Renta atribuible a la explotación.",
-    "Se puede registrar un resultado a pagar o a devolver; las retenciones de Ventas se incorporan automáticamente como pagos a cuenta.",
-    "Las retenciones siguen separadas de gastos e ingresos y no reducen el beneficio económico antes de IRPF.",
-    "Ventas de carne distingue expresamente Neto antes de retención y Total cobrado con la retención ya descontada; Economía utiliza siempre el neto antes de retención.",
-    "Nuevo cálculo informativo de IRPF efectivo atribuible y Beneficio después de IRPF, con el IVA separado.",
-    "Economía añade debajo de Resultados un bloque Resultados después de IRPF con beneficio post-IRPF, la misma reserva, disponible tras reserva e IRPF y beneficio post-IRPF por kg vendido.",
-    "La Declaración de la Renta permanece editable en ejercicios cerrados para poder completar o corregir el cierre fiscal sin reabrir el año."
+    "Inseminación automática: la banda creada queda vinculada internamente con la actuación que la originó.",
+    "Si se elimina esa banda, se elimina también su estado automático de realizada y la próxima inseminación vuelve a pendiente.",
+    "Al borrar la banda se recalcula la referencia desde la última inseminación real que siga existiendo, manteniendo Calendario y Alertas sincronizados.",
+    "Abrir una inseminación realizada desde el historial lleva directamente a su registro en Bandas; si una próxima inseminación ya tiene banda, abre esa banda sin ventana flotante."
   ],
   "release_history": [
+    {
+      "version": "0.15.211",
+      "changes": [
+        "Inseminación automática: la banda creada queda vinculada internamente con la actuación que la originó.",
+        "Si se elimina esa banda, se elimina también su estado automático de realizada y la próxima inseminación vuelve a pendiente.",
+        "Al borrar la banda se recalcula la referencia desde la última inseminación real que siga existiendo, manteniendo Calendario y Alertas sincronizados.",
+        "Abrir una inseminación realizada desde el historial lleva directamente a su registro en Bandas; si una próxima inseminación ya tiene banda, abre esa banda sin ventana flotante."
+      ]
+    },
+    {
+      "version": "0.15.210",
+      "changes": [
+        "Inseminación automática: las bandas ya registradas sustituyen al plazo automático correspondiente y dejan de aparecer duplicadas como pendientes.",
+        "El historial muestra las inseminaciones realizadas como “Banda X · Inseminación” y en Notas indica las dosis inseminadas de la banda.",
+        "Cuando aún no existe la banda, se muestra únicamente “Próxima inseminación” como pendiente, con el intervalo configurado en Notas.",
+        "Al abrir la próxima inseminación CUNIMIG comprueba si ya existe una banda para esa fecha; si existe la abre y si no existe permite crearla."
+      ]
+    },
+    {
+      "version": "0.15.209",
+      "changes": [
+        "Calendario: nuevo plazo automático periódico “Inseminación después de inseminar”, con primer/próximo vencimiento e intervalo configurable.",
+        "Al realizar o abrir una inseminación automática se abre Nueva banda con la fecha propuesta; solo se marca realizada después de guardar.",
+        "Si ya existe una banda para esa fecha, CUNIMIG evita duplicarla y abre el registro existente.",
+        "La fecha realmente guardada en la nueva banda pasa a ser la referencia para calcular la siguiente inseminación automática."
+      ]
+    },
+    {
+      "version": "0.15.208",
+      "changes": [
+        "Calendario: los plazos automáticos y personalizados se gestionan exclusivamente desde Calendario; se retiran sus accesos duplicados de Configuración.",
+        "Historial: un clic lleva al día exacto del Calendario y un doble clic en un plazo personalizado abre su regla de origen.",
+        "Los plazos personalizados muestran en Notas únicamente el detalle escrito por el usuario.",
+        "Próximas actuaciones sanitarias: Notas usa producto, objetivo real, observaciones y fecha de procedencia del registro de Sanidad, sin mostrar veterinario.",
+        "Registros sanitarios creados desde Calendario conservan la descripción útil de la actuación pero eliminan la coletilla técnica «Registrada desde Calendario/Alertas».",
+        "Leyenda del Calendario: el indicador de color y su texto permanecen unidos al cambiar de línea."
+      ]
+    },
     {
       "version": "0.15.207",
       "changes": [
