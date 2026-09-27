@@ -1,14 +1,106 @@
 {
-  "version": "0.15.221",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.221/CUNIMIG.exe",
-  "sha256": "32a77b9103551fd4f3d73d82224f519b78a4cd95b7c0e2892502730e85518bba",
-  "notes": "• Indicadores: «Nº INSEMINACIONES» pasa a «Nº DOSIS DE INSEMINACIÓN».\n• Gastos · Inseminación: guardar sin banda exige elegir expresamente «gasto general» y confirmarlo.\n• Coste/dosis mantiene su fórmula; los gastos generales no se atribuyen artificialmente a bandas completas.",
+  "version": "0.15.233",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.233/CUNIMIG.exe",
+  "sha256": "f1990f77465b1fbed0046d34dccdec772ee5506c872c7f1f64e7b8f8b23b9e35",
+  "notes": "• Migración directa validada desde CUNIMIG 0.15.221 al nuevo esquema acumulado sin necesidad de instalar versiones intermedias.\n• La migración conserva las tablas y registros existentes y añade de forma compatible financiación anticipada y ciclo de vida de inversiones.",
   "changes": [
-    "Indicadores: «Nº INSEMINACIONES» pasa a «Nº DOSIS DE INSEMINACIÓN».",
-    "Gastos · Inseminación: guardar sin banda exige elegir expresamente «gasto general» y confirmarlo.",
-    "Coste/dosis mantiene su fórmula; los gastos generales no se atribuyen artificialmente a bandas completas."
+    "Migración directa validada desde CUNIMIG 0.15.221 al nuevo esquema acumulado sin necesidad de instalar versiones intermedias.",
+    "La migración conserva las tablas y registros existentes y añade de forma compatible financiación anticipada y ciclo de vida de inversiones."
   ],
   "release_history": [
+    {
+      "version": "0.15.233",
+      "changes": [
+        "Migración directa validada desde CUNIMIG 0.15.221 al nuevo esquema acumulado sin necesidad de instalar versiones intermedias.",
+        "La migración conserva las tablas y registros existentes y añade de forma compatible financiación anticipada y ciclo de vida de inversiones."
+      ]
+    },
+    {
+      "version": "0.15.232",
+      "changes": [
+        "Coherencia de inversiones: una inversión vendida o dada de baja queda bloqueada como histórico y ya no puede editarse como activa.",
+        "Las amortizaciones personalizadas de una inversión cerrada tampoco pueden modificarse después de su baja/venta."
+      ]
+    },
+    {
+      "version": "0.15.231",
+      "changes": [
+        "Pruebas de integridad: al eliminar una inversión creada por error, el Fondo aplicado vuelve exactamente al saldo disponible.",
+        "Si su préstamo no tiene movimientos reales, se conserva y queda desvinculado; si ya tiene pagos o amortizaciones anticipadas, la eliminación queda bloqueada."
+      ]
+    },
+    {
+      "version": "0.15.230",
+      "changes": [
+        "Pruebas de integridad: validada liquidación total de financiación con Fondo y conservación de cuotas pagadas.",
+        "Copias de seguridad: validada conservación exacta de amortizaciones anticipadas y nuevos campos de baja/venta de inversiones."
+      ]
+    },
+    {
+      "version": "0.15.229",
+      "changes": [
+        "Protección de ejercicios cerrados: no permite registrar amortizaciones anticipadas ni bajas/ventas de inversiones con fecha de un año cerrado.",
+        "Auditoría: las amortizaciones anticipadas quedan identificadas expresamente en el historial de cambios."
+      ]
+    },
+    {
+      "version": "0.15.228",
+      "changes": [
+        "Venta de inversiones: el valor contable de salida descuenta correctamente la amortización del año de baja.",
+        "Evita contabilizar dos veces la pérdida al vender una inversión durante un ejercicio con amortización."
+      ]
+    },
+    {
+      "version": "0.15.227",
+      "changes": [
+        "Economía: muestra por separado venta, valor contable y resultado de las inversiones vendidas.",
+        "Financiación: estado ACTIVO/LIQUIDADO visible y detalle anual de amortizaciones anticipadas y Fondo utilizado.",
+        "Fondo de reservas: historial de usos distingue compras de inversión y amortizaciones anticipadas de financiación."
+      ]
+    },
+    {
+      "version": "0.15.226",
+      "changes": [
+        "Economía: la venta de una inversión se separa de las ventas productivas y no altera el precio medio/kg.",
+        "El resultado económico incorpora por separado la diferencia entre importe de venta y valor contable pendiente.",
+        "La venta de activos no genera Fondo de reserva por kg ni modifica los ratios productivos por kg."
+      ]
+    },
+    {
+      "version": "0.15.225",
+      "changes": [
+        "Inversiones: se diferencia eliminar un registro creado por error de dar de baja o vender una inversión real.",
+        "Las bajas y ventas conservan el histórico, la financiación vinculada y el Fondo utilizado.",
+        "Una inversión dada de baja deja de generar amortizaciones futuras posteriores a su fecha de baja sin alterar ejercicios cerrados.",
+        "La ficha de inversiones muestra estado, fecha/motivo de baja e importe de venta.",
+        "Se protege la eliminación de inversiones cuya financiación ya tenga pagos reales o amortizaciones anticipadas."
+      ]
+    },
+    {
+      "version": "0.15.224",
+      "changes": [
+        "Financiación: amortización anticipada de capital, con opción de reducir plazo o reducir cuota.",
+        "Las amortizaciones anticipadas conservan intactas las cuotas ya pagadas y recalculan solo el calendario futuro.",
+        "Los préstamos vinculados a inversiones pueden usar Fondo de reserva; el uso queda registrado por separado.",
+        "La deuda pendiente descuenta amortizaciones anticipadas y los préstamos a cero se muestran como LIQUIDADOS.",
+        "Los préstamos con pagos o amortizaciones anticipadas ya no pueden eliminarse, protegiendo el histórico real."
+      ]
+    },
+    {
+      "version": "0.15.223",
+      "changes": [
+        "Financiación: los préstamos con cuotas pagadas pueden modificar sus condiciones futuras sin alterar el histórico.",
+        "Al guardar cambios se conservan todas las cuotas pagadas y se recalcula únicamente el calendario pendiente desde el capital restante.",
+        "Antes de recalcular, CUNIMIG muestra una confirmación indicando cuántas cuotas pagadas se conservan y cuántas pendientes se sustituirán."
+      ]
+    },
+    {
+      "version": "0.15.222",
+      "changes": [
+        "Financiación: se corrige el texto informativo para reflejar el comportamiento real de las cuotas.",
+        "Las cuotas vencidas permanecen pendientes hasta que el usuario confirma su pago desde «Cuotas»; CUNIMIG no marca pagos automáticamente."
+      ]
+    },
     {
       "version": "0.15.221",
       "changes": [
