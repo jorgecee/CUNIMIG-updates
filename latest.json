@@ -1,14 +1,24 @@
 {
-  "version": "0.15.217",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.217/CUNIMIG.exe",
-  "sha256": "37117f57b1165e6bef04b07d5bac97e00016dff89e2f1f2b6616de0c5cdc7cd3",
-  "notes": "• Verificación de publicación actualizada a la lógica vigente de campañas e inseminaciones.\n• Las pruebas antiguas dejan de exigir que el año natural de una actuación determine la campaña.\n• Preparada como actualización acumulativa para saltar desde 0.15.211 sin publicar 0.15.212-0.15.216 por separado.",
+  "version": "0.15.218",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.218/CUNIMIG.exe",
+  "sha256": "56793b96836955e878ea245b9d3e9911b9bea4c2eb9f75b538729eda1150687a",
+  "notes": "• Adjuntos: corregida la comprobación global de referencias que podía impedir borrar físicamente un archivo sustituido.\n• Al sustituir o eliminar un adjunto, el archivo anterior se elimina solo si ninguna sección de CUNIMIG continúa utilizándolo.\n• Limpieza segura: tras crear las copias automáticas de arranque se eliminan archivos huérfanos únicamente dentro de la carpeta documentos gestionada por CUNIMIG.\n• Se mantienen protegidos los archivos externos del usuario y los documentos todavía referenciados, incluida compatibilidad con la tabla documental histórica.",
   "changes": [
-    "Verificación de publicación actualizada a la lógica vigente de campañas e inseminaciones.",
-    "Las pruebas antiguas dejan de exigir que el año natural de una actuación determine la campaña.",
-    "Preparada como actualización acumulativa para saltar desde 0.15.211 sin publicar 0.15.212-0.15.216 por separado."
+    "Adjuntos: corregida la comprobación global de referencias que podía impedir borrar físicamente un archivo sustituido.",
+    "Al sustituir o eliminar un adjunto, el archivo anterior se elimina solo si ninguna sección de CUNIMIG continúa utilizándolo.",
+    "Limpieza segura: tras crear las copias automáticas de arranque se eliminan archivos huérfanos únicamente dentro de la carpeta documentos gestionada por CUNIMIG.",
+    "Se mantienen protegidos los archivos externos del usuario y los documentos todavía referenciados, incluida compatibilidad con la tabla documental histórica."
   ],
   "release_history": [
+    {
+      "version": "0.15.218",
+      "changes": [
+        "Adjuntos: corregida la comprobación global de referencias que podía impedir borrar físicamente un archivo sustituido.",
+        "Al sustituir o eliminar un adjunto, el archivo anterior se elimina solo si ninguna sección de CUNIMIG continúa utilizándolo.",
+        "Limpieza segura: tras crear las copias automáticas de arranque se eliminan archivos huérfanos únicamente dentro de la carpeta documentos gestionada por CUNIMIG.",
+        "Se mantienen protegidos los archivos externos del usuario y los documentos todavía referenciados, incluida compatibilidad con la tabla documental histórica."
+      ]
+    },
     {
       "version": "0.15.217",
       "changes": [
