@@ -1,15 +1,22 @@
 {
-  "version": "0.15.219",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.219/CUNIMIG.exe",
-  "sha256": "446a933eb5428780be0302c070623eaee886c6a9973834c9b62eb93f3472c830",
-  "notes": "• Mantenimiento seguro de AppData: elimina ejecutables y marcadores de actualizaciones antiguas una vez que no hay una actualización en curso.\n• Retira restos de rollback de bases precomerciales ya superadas y la carpeta smoke_test únicamente si está vacía y no pertenece al catálogo.\n• Añade rotación conservadora del registro interno cuando supera 5 MB.\n• La limpieza excluye expresamente explotaciones reales, documentos, catálogo, licencia, claves de copia, copias de seguridad y transicion_comercial.",
+  "version": "0.15.220",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.220/CUNIMIG.exe",
+  "sha256": "e465090ca710387c10e886de8a16e275dd401e9d9ed901cedc9e4d24df5fc559",
+  "notes": "• Mantenimiento: corregido el enganche real al arranque tras actualizar; la variable de confirmación ya no bloquea la limpieza una vez confirmado el nuevo EXE.\n• Updates: se eliminan residuos antiguos sin tocar el marcador activo ni el script mientras todavía está confirmando el arranque.\n• Añadidas pruebas específicas de arranque confirmado, arranque aún no confirmado y arranque normal.",
   "changes": [
-    "Mantenimiento seguro de AppData: elimina ejecutables y marcadores de actualizaciones antiguas una vez que no hay una actualización en curso.",
-    "Retira restos de rollback de bases precomerciales ya superadas y la carpeta smoke_test únicamente si está vacía y no pertenece al catálogo.",
-    "Añade rotación conservadora del registro interno cuando supera 5 MB.",
-    "La limpieza excluye expresamente explotaciones reales, documentos, catálogo, licencia, claves de copia, copias de seguridad y transicion_comercial."
+    "Mantenimiento: corregido el enganche real al arranque tras actualizar; la variable de confirmación ya no bloquea la limpieza una vez confirmado el nuevo EXE.",
+    "Updates: se eliminan residuos antiguos sin tocar el marcador activo ni el script mientras todavía está confirmando el arranque.",
+    "Añadidas pruebas específicas de arranque confirmado, arranque aún no confirmado y arranque normal."
   ],
   "release_history": [
+    {
+      "version": "0.15.220",
+      "changes": [
+        "Mantenimiento: corregido el enganche real al arranque tras actualizar; la variable de confirmación ya no bloquea la limpieza una vez confirmado el nuevo EXE.",
+        "Updates: se eliminan residuos antiguos sin tocar el marcador activo ni el script mientras todavía está confirmando el arranque.",
+        "Añadidas pruebas específicas de arranque confirmado, arranque aún no confirmado y arranque normal."
+      ]
+    },
     {
       "version": "0.15.219",
       "changes": [
