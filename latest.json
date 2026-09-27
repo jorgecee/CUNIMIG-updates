@@ -1,14 +1,22 @@
 {
-  "version": "0.15.220",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.220/CUNIMIG.exe",
-  "sha256": "e465090ca710387c10e886de8a16e275dd401e9d9ed901cedc9e4d24df5fc559",
-  "notes": "• Mantenimiento: corregido el enganche real al arranque tras actualizar; la variable de confirmación ya no bloquea la limpieza una vez confirmado el nuevo EXE.\n• Updates: se eliminan residuos antiguos sin tocar el marcador activo ni el script mientras todavía está confirmando el arranque.\n• Añadidas pruebas específicas de arranque confirmado, arranque aún no confirmado y arranque normal.",
+  "version": "0.15.221",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.221/CUNIMIG.exe",
+  "sha256": "32a77b9103551fd4f3d73d82224f519b78a4cd95b7c0e2892502730e85518bba",
+  "notes": "• Indicadores: «Nº INSEMINACIONES» pasa a «Nº DOSIS DE INSEMINACIÓN».\n• Gastos · Inseminación: guardar sin banda exige elegir expresamente «gasto general» y confirmarlo.\n• Coste/dosis mantiene su fórmula; los gastos generales no se atribuyen artificialmente a bandas completas.",
   "changes": [
-    "Mantenimiento: corregido el enganche real al arranque tras actualizar; la variable de confirmación ya no bloquea la limpieza una vez confirmado el nuevo EXE.",
-    "Updates: se eliminan residuos antiguos sin tocar el marcador activo ni el script mientras todavía está confirmando el arranque.",
-    "Añadidas pruebas específicas de arranque confirmado, arranque aún no confirmado y arranque normal."
+    "Indicadores: «Nº INSEMINACIONES» pasa a «Nº DOSIS DE INSEMINACIÓN».",
+    "Gastos · Inseminación: guardar sin banda exige elegir expresamente «gasto general» y confirmarlo.",
+    "Coste/dosis mantiene su fórmula; los gastos generales no se atribuyen artificialmente a bandas completas."
   ],
   "release_history": [
+    {
+      "version": "0.15.221",
+      "changes": [
+        "Indicadores: «Nº INSEMINACIONES» pasa a «Nº DOSIS DE INSEMINACIÓN».",
+        "Gastos · Inseminación: guardar sin banda exige elegir expresamente «gasto general» y confirmarlo.",
+        "Coste/dosis mantiene su fórmula; los gastos generales no se atribuyen artificialmente a bandas completas."
+      ]
+    },
     {
       "version": "0.15.220",
       "changes": [
