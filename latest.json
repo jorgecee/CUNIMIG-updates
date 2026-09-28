@@ -1,13 +1,58 @@
 {
-  "version": "0.15.233",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.233/CUNIMIG.exe",
-  "sha256": "f1990f77465b1fbed0046d34dccdec772ee5506c872c7f1f64e7b8f8b23b9e35",
-  "notes": "• Migración directa validada desde CUNIMIG 0.15.221 al nuevo esquema acumulado sin necesidad de instalar versiones intermedias.\n• La migración conserva las tablas y registros existentes y añade de forma compatible financiación anticipada y ciclo de vida de inversiones.",
+  "version": "0.15.244",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.244/CUNIMIG.exe",
+  "sha256": "2c12e42740214ca30a2e29f65fdcb616cbe787d54b52e9a5d3db4489f94101c0",
+  "notes": "• Indicadores económicos · Estructura del coste muestra dinámicamente las cuatro partidas con mayor peso del ejercicio.\n• Cada tarjeta de Estructura del coste muestra únicamente el nombre real de la partida y su porcentaje sobre el Total gastos económicos, sin importes ni texto adicional.",
   "changes": [
-    "Migración directa validada desde CUNIMIG 0.15.221 al nuevo esquema acumulado sin necesidad de instalar versiones intermedias.",
-    "La migración conserva las tablas y registros existentes y añade de forma compatible financiación anticipada y ciclo de vida de inversiones."
+    "Indicadores económicos · Estructura del coste muestra dinámicamente las cuatro partidas con mayor peso del ejercicio.",
+    "Cada tarjeta de Estructura del coste muestra únicamente el nombre real de la partida y su porcentaje sobre el Total gastos económicos, sin importes ni texto adicional."
   ],
   "release_history": [
+    {
+      "version": "0.15.244",
+      "changes": [
+        "Indicadores económicos · Estructura del coste muestra dinámicamente las cuatro partidas con mayor peso del ejercicio.",
+        "Cada tarjeta de Estructura del coste muestra únicamente el nombre real de la partida y su porcentaje sobre el Total gastos económicos, sin importes ni texto adicional."
+      ]
+    },
+    {
+      "version": "0.15.243",
+      "changes": [
+        "Indicadores económicos añade el bloque Productividad económica por dosis con Ingresos/dosis, Gastos/dosis, Resultado/dosis y Kg productivos/dosis.",
+        "Los ratios económicos usan el total real del ejercicio dividido entre las dosis de bandas completas; el bloque avisa de forma visible mientras existan bandas sin completar.",
+        "Cuando todas las bandas del ejercicio están completas, el bloque identifica automáticamente los datos como definitivos y se incluye también en la impresión de Indicadores económicos."
+      ]
+    },
+    {
+      "version": "0.15.242",
+      "changes": [
+        "Comparativas e informes unifican Kg productivos/dosis con Indicadores: incluyen Reposición y usan únicamente dosis de bandas completas.",
+        "Se elimina la fórmula residual de Kg vendidos/dosis para evitar resultados distintos entre Indicadores, Comparativas e Informes."
+      ]
+    },
+    {
+      "version": "0.15.241",
+      "changes": [
+        "Auditoría recuperada de Gestionar bandas anuales: los ratios por dosis usan únicamente dosis de bandas completas, sin diluirse con bandas aún abiertas.",
+        "Indicadores históricos: hembras y jaulas quedan congeladas por ejercicio al cerrarlo; los años cerrados existentes se inicializan una sola vez.",
+        "Financiación: editar un préstamo conserva también las amortizaciones anticipadas y bloquea trasladarlo/desvincularlo si ya tiene movimientos reales.",
+        "Préstamos históricos: la comisión de apertura solo entra en el ejercicio para préstamos realmente nuevos, no para deuda antigua incorporada.",
+        "Inversiones: una baja sin venta reconoce como pérdida el valor contable pendiente; una venta mantiene precio de venta menos valor contable.",
+        "IRPF: una devolución nunca puede llevar el IRPF efectivo atribuible a la explotación por debajo de 0 €.",
+        "Se integra además el bloque Calendario/Campañas de la 0.15.234 sobre una numeración posterior a las versiones internas 0.15.235–0.15.240."
+      ]
+    },
+    {
+      "version": "0.15.234",
+      "changes": [
+        "Calendario: una tarea vinculada a Banda puede verse por su fecha natural y también desde la campaña productiva de la Banda, compartiendo un único estado.",
+        "Al corregir la fecha de inseminación se recalculan los hitos persistidos de esa Banda y se mantienen sus vínculos sin crear duplicados.",
+        "Palpación, Parto y Destete toman el estado realizado directamente de los datos de Banda, evitando estados contradictorios en Calendario.",
+        "Plazos personalizados de Banda conservan la campaña real; los realizados permanecen como histórico aunque después se elimine o modifique la regla.",
+        "Sanidad incorpora vínculo estable band_id y evita duplicar actuaciones automáticas en el contador de Realizadas hoy.",
+        "Cierre de campaña: avisa si quedan tareas de Banda pendientes, pero permite confirmar el cierre sin falsear su estado."
+      ]
+    },
     {
       "version": "0.15.233",
       "changes": [
