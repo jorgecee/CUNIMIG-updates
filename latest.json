@@ -1,13 +1,26 @@
 {
-  "version": "0.15.244",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.244/CUNIMIG.exe",
-  "sha256": "2c12e42740214ca30a2e29f65fdcb616cbe787d54b52e9a5d3db4489f94101c0",
-  "notes": "• Indicadores económicos · Estructura del coste muestra dinámicamente las cuatro partidas con mayor peso del ejercicio.\n• Cada tarjeta de Estructura del coste muestra únicamente el nombre real de la partida y su porcentaje sobre el Total gastos económicos, sin importes ni texto adicional.",
+  "version": "0.15.245",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.245/CUNIMIG.exe",
+  "sha256": "1d2d9e64387603dc8077730c69f77cf1ad95c15917b768fc8af54d54534764b7",
+  "notes": "• Cierre de auditoría funcional: Informes pasa a describir correctamente el formato A4 vertical.\n• Informe económico incorpora Productividad económica por dosis con Ingresos/dosis, Gastos/dosis, Resultado/dosis y Kg productivos/dosis, usando dosis de bandas completas y estado provisional/definitivo.\n• Comparativa histórica unifica la etiqueta visible como Kg productivos/dosis y se elimina la fórmula residual Kg vendidos/dosis del cálculo económico.\n• Informes de ejercicios cerrados usan las hembras y jaulas históricas congeladas del ejercicio, manteniendo la identidad actual de la explotación.\n• La previsualización de IRPF aplica el mismo mínimo de 0 € que el cálculo definitivo, evitando resultados efectivos negativos.",
   "changes": [
-    "Indicadores económicos · Estructura del coste muestra dinámicamente las cuatro partidas con mayor peso del ejercicio.",
-    "Cada tarjeta de Estructura del coste muestra únicamente el nombre real de la partida y su porcentaje sobre el Total gastos económicos, sin importes ni texto adicional."
+    "Cierre de auditoría funcional: Informes pasa a describir correctamente el formato A4 vertical.",
+    "Informe económico incorpora Productividad económica por dosis con Ingresos/dosis, Gastos/dosis, Resultado/dosis y Kg productivos/dosis, usando dosis de bandas completas y estado provisional/definitivo.",
+    "Comparativa histórica unifica la etiqueta visible como Kg productivos/dosis y se elimina la fórmula residual Kg vendidos/dosis del cálculo económico.",
+    "Informes de ejercicios cerrados usan las hembras y jaulas históricas congeladas del ejercicio, manteniendo la identidad actual de la explotación.",
+    "La previsualización de IRPF aplica el mismo mínimo de 0 € que el cálculo definitivo, evitando resultados efectivos negativos."
   ],
   "release_history": [
+    {
+      "version": "0.15.245",
+      "changes": [
+        "Cierre de auditoría funcional: Informes pasa a describir correctamente el formato A4 vertical.",
+        "Informe económico incorpora Productividad económica por dosis con Ingresos/dosis, Gastos/dosis, Resultado/dosis y Kg productivos/dosis, usando dosis de bandas completas y estado provisional/definitivo.",
+        "Comparativa histórica unifica la etiqueta visible como Kg productivos/dosis y se elimina la fórmula residual Kg vendidos/dosis del cálculo económico.",
+        "Informes de ejercicios cerrados usan las hembras y jaulas históricas congeladas del ejercicio, manteniendo la identidad actual de la explotación.",
+        "La previsualización de IRPF aplica el mismo mínimo de 0 € que el cálculo definitivo, evitando resultados efectivos negativos."
+      ]
+    },
     {
       "version": "0.15.244",
       "changes": [
