@@ -1,15 +1,24 @@
 {
-  "version": "0.15.253",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.253/CUNIMIG.exe",
-  "sha256": "b7466e105571e9110d98cce847aeec8df520ab3a67dd67cca30911d1eb77d9cc",
-  "notes": "• Cloud Backup automático: al abrir una explotación con el servicio activo, CUNIMIG crea como máximo una copia automática Cloud por día.\n• Cloud Backup automático se ejecuta en segundo plano para no retrasar la apertura ni bloquear el trabajo si Internet no está disponible.\n• Retención Cloud: se mantienen separadas 30 copias automáticas rotativas y hasta 10 copias manuales; unas nunca eliminan las otras.\n• Las copias automáticas Cloud reutilizan la copia completa verificada de explotación, incluyendo los adjuntos localizados.",
+  "version": "0.15.254",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.254/CUNIMIG.exe",
+  "sha256": "70a3bd4ef44ef75228729facf1a0458a85a35e8aa0e2d020e29ee093a1e08500",
+  "notes": "• Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.\n• Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.\n• Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.\n• Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253.",
   "changes": [
-    "Cloud Backup automático: al abrir una explotación con el servicio activo, CUNIMIG crea como máximo una copia automática Cloud por día.",
-    "Cloud Backup automático se ejecuta en segundo plano para no retrasar la apertura ni bloquear el trabajo si Internet no está disponible.",
-    "Retención Cloud: se mantienen separadas 30 copias automáticas rotativas y hasta 10 copias manuales; unas nunca eliminan las otras.",
-    "Las copias automáticas Cloud reutilizan la copia completa verificada de explotación, incluyendo los adjuntos localizados."
+    "Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.",
+    "Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.",
+    "Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.",
+    "Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253."
   ],
   "release_history": [
+    {
+      "version": "0.15.254",
+      "changes": [
+        "Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.",
+        "Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.",
+        "Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.",
+        "Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253."
+      ]
+    },
     {
       "version": "0.15.253",
       "changes": [
