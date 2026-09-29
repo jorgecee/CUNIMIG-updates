@@ -1,15 +1,71 @@
 {
-  "version": "0.15.246",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.246/CUNIMIG.exe",
-  "sha256": "84bb601bdc4062c00ab34ab06f4c3fbb67e077f949c6cd72849e120a99a18aad",
-  "notes": "• Preparación comercial: la base inicial se consolida directamente con el esquema actual para instalaciones nuevas.\n• Primer arranque: cada explotación nueva recibe un identificador de instalación propio, evitando reutilizar el identificador incluido en la plantilla.\n• Distribución: se refuerza la separación entre proyecto maestro y paquete cliente; las herramientas privadas de desarrollo/licencias no forman parte del paquete comercial.\n• Se mantiene la ruta de actualización desde 0.15.244 para las dos instalaciones actuales, sin diseñar compatibilidad adicional con ramas de desarrollo anteriores.",
+  "version": "0.15.253",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.253/CUNIMIG.exe",
+  "sha256": "b7466e105571e9110d98cce847aeec8df520ab3a67dd67cca30911d1eb77d9cc",
+  "notes": "• Cloud Backup automático: al abrir una explotación con el servicio activo, CUNIMIG crea como máximo una copia automática Cloud por día.\n• Cloud Backup automático se ejecuta en segundo plano para no retrasar la apertura ni bloquear el trabajo si Internet no está disponible.\n• Retención Cloud: se mantienen separadas 30 copias automáticas rotativas y hasta 10 copias manuales; unas nunca eliminan las otras.\n• Las copias automáticas Cloud reutilizan la copia completa verificada de explotación, incluyendo los adjuntos localizados.",
   "changes": [
-    "Preparación comercial: la base inicial se consolida directamente con el esquema actual para instalaciones nuevas.",
-    "Primer arranque: cada explotación nueva recibe un identificador de instalación propio, evitando reutilizar el identificador incluido en la plantilla.",
-    "Distribución: se refuerza la separación entre proyecto maestro y paquete cliente; las herramientas privadas de desarrollo/licencias no forman parte del paquete comercial.",
-    "Se mantiene la ruta de actualización desde 0.15.244 para las dos instalaciones actuales, sin diseñar compatibilidad adicional con ramas de desarrollo anteriores."
+    "Cloud Backup automático: al abrir una explotación con el servicio activo, CUNIMIG crea como máximo una copia automática Cloud por día.",
+    "Cloud Backup automático se ejecuta en segundo plano para no retrasar la apertura ni bloquear el trabajo si Internet no está disponible.",
+    "Retención Cloud: se mantienen separadas 30 copias automáticas rotativas y hasta 10 copias manuales; unas nunca eliminan las otras.",
+    "Las copias automáticas Cloud reutilizan la copia completa verificada de explotación, incluyendo los adjuntos localizados."
   ],
   "release_history": [
+    {
+      "version": "0.15.253",
+      "changes": [
+        "Cloud Backup automático: al abrir una explotación con el servicio activo, CUNIMIG crea como máximo una copia automática Cloud por día.",
+        "Cloud Backup automático se ejecuta en segundo plano para no retrasar la apertura ni bloquear el trabajo si Internet no está disponible.",
+        "Retención Cloud: se mantienen separadas 30 copias automáticas rotativas y hasta 10 copias manuales; unas nunca eliminan las otras.",
+        "Las copias automáticas Cloud reutilizan la copia completa verificada de explotación, incluyendo los adjuntos localizados."
+      ]
+    },
+    {
+      "version": "0.15.252",
+      "changes": [
+        "Cloud Backup: al restaurar una copia vuelve a preguntarse si se quiere añadir como nueva explotación o reemplazar la explotación actual.",
+        "Copias de emergencia: todas se guardan en una única carpeta general de CUNIMIG, accesible desde Configuración.",
+        "Adjuntos: antes de completar una restauración se comprueba que todos los archivos incluidos en la copia se hayan copiado físicamente y mantengan tamaño y huella.",
+        "Configuración: se separan los accesos para abrir copias automáticas y copias de emergencia."
+      ]
+    },
+    {
+      "version": "0.15.250",
+      "changes": [
+        "Licencias online v2: CUNIMIG adapta la activación y validación al nuevo servidor con caducidad, renovación y gestión individual de equipos.",
+        "Compatibilidad de equipos: cada validación comunica la versión de CUNIMIG y la versión del protocolo, preparando la futura sincronización entre PCs compatibles.",
+        "Estado de licencia: se guardan localmente vencimiento, PCs contratados/autorizados, servicios Cloud/App y explotaciones recibidos del servidor.",
+        "Mensajes de licencia: se distinguen claramente caducidad, equipo liberado o bloqueado, límite de PCs y equipo vinculado a otra licencia.",
+        "Trabajo sin conexión: se conserva el margen offline configurable de la v0.15.249 usando la última validación online correcta."
+      ]
+    },
+    {
+      "version": "0.15.249",
+      "changes": [
+        "Licencias online: el margen de trabajo sin conexión pasa a ser configurable individualmente para cada licencia desde el panel de administración.",
+        "CUNIMIG guarda el valor offline_days recibido en cada validación correcta y lo utiliza en los siguientes arranques sin conexión.",
+        "Compatibilidad: si un servidor antiguo no envía offline_days, se mantienen 7 días como valor de seguridad.",
+        "Revocaciones y equipos liberados siguen bloqueándose inmediatamente cuando CUNIMIG consigue contactar con el servidor."
+      ]
+    },
+    {
+      "version": "0.15.248",
+      "changes": [
+        "Licencias online: CUNIMIG puede activarse con el código de licencia emitido desde el panel privado y lo vincula al código único del equipo.",
+        "Validación remota: al arrancar se comprueba license_id + machine_id contra el servicio oficial de licencias de CUNIMIG.",
+        "Revocación y traslados: una licencia revocada o trasladada deja de ser válida en el equipo anterior en cuanto el servidor lo confirma.",
+        "Trabajo sin conexión: después de una validación online correcta se permite una gracia temporal máxima de 7 días si el servidor no está disponible.",
+        "Licenciamiento unificado: desde esta versión CUNIMIG utiliza exclusivamente activación y validación online; se retira el sistema anterior de archivos .cunimiglic."
+      ]
+    },
+    {
+      "version": "0.15.247",
+      "changes": [
+        "Licencias comerciales: todas las licencias emitidas deben quedar vinculadas a un código de equipo; se elimina la modalidad LIBRE.",
+        "Validación local: CUNIMIG rechaza licencias sin machine_id además de comprobar firma, vigencia y equipo en cada arranque.",
+        "Distribución: el verificador comercial bloquea paquetes con claves privadas, licencias emitidas, backups, bases no autorizadas, logs o indicios de credenciales/secretos.",
+        "Se prepara la arquitectura para incorporar validación online periódica y revocación cuando exista el servicio de licencias, sin fingir una comprobación remota inexistente."
+      ]
+    },
     {
       "version": "0.15.246",
       "changes": [
