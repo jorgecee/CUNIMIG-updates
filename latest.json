@@ -1,15 +1,22 @@
 {
-  "version": "0.15.264",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.264/CUNIMIG.exe",
-  "sha256": "13af4de79624760a00ce5191f6b97295b2fb3122ba2f877d08ce03824a6372e2",
-  "notes": "• Desvincular de verdad: al retirar este PC de una explotación se elimina también su vínculo Cloud local, conservando intactos los datos de la granja.\n• Eliminar de Cloud puede hacerse aunque exista una copia local: tras la confirmación se elimina el espacio Cloud y la copia local queda conservada pero desvinculada.\n• Limpieza de instalaciones antiguas: una vinculación local residual ya no bloquea el borrado de explotaciones Cloud que el administrador ha confirmado explícitamente.\n• Gestionar explotaciones muestra cualquier error de apertura en pantalla en lugar de fallar silenciosamente.",
+  "version": "0.15.265",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.265/CUNIMIG.exe",
+  "sha256": "5fb07a751e579020c887e4921bfcbf5c47905c8d19d60392d1dd3df4fbf45b82",
+  "notes": "• Gestión de explotaciones corregida: vuelve a abrirse con normalidad desde la pantalla de acceso.\n• El botón Eliminar explotación se actualiza correctamente según la selección y sigue protegiendo la última explotación.\n• La prueba real de arranque comprueba ahora también la ventana Gestionar explotaciones antes de permitir publicar una versión.",
   "changes": [
-    "Desvincular de verdad: al retirar este PC de una explotación se elimina también su vínculo Cloud local, conservando intactos los datos de la granja.",
-    "Eliminar de Cloud puede hacerse aunque exista una copia local: tras la confirmación se elimina el espacio Cloud y la copia local queda conservada pero desvinculada.",
-    "Limpieza de instalaciones antiguas: una vinculación local residual ya no bloquea el borrado de explotaciones Cloud que el administrador ha confirmado explícitamente.",
-    "Gestionar explotaciones muestra cualquier error de apertura en pantalla en lugar de fallar silenciosamente."
+    "Gestión de explotaciones corregida: vuelve a abrirse con normalidad desde la pantalla de acceso.",
+    "El botón Eliminar explotación se actualiza correctamente según la selección y sigue protegiendo la última explotación.",
+    "La prueba real de arranque comprueba ahora también la ventana Gestionar explotaciones antes de permitir publicar una versión."
   ],
   "release_history": [
+    {
+      "version": "0.15.265",
+      "changes": [
+        "Gestión de explotaciones corregida: vuelve a abrirse con normalidad desde la pantalla de acceso.",
+        "El botón Eliminar explotación se actualiza correctamente según la selección y sigue protegiendo la última explotación.",
+        "La prueba real de arranque comprueba ahora también la ventana Gestionar explotaciones antes de permitir publicar una versión."
+      ]
+    },
     {
       "version": "0.15.264",
       "changes": [
