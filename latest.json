@@ -1,15 +1,24 @@
 {
-  "version": "0.15.261",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.261/CUNIMIG.exe",
-  "sha256": "ba14bf50117db31062d64613fe23f2b4d95fa47d8b8720e92fb5912b4fdc3b0d",
-  "notes": "• Reconciliación Sync al entrar: CUNIMIG compara el estado local con la foto canónica de Cloud al abrir una explotación sincronizada y después de recuperar Internet.\n• Divergencias persistentes: si el mismo registro conserva contenidos distintos en dos PCs, se crea un conflicto resoluble aunque la cola incremental ya no vuelva a entregar aquel cambio.\n• Conflictos visibles al instante: los conflictos ya guardados se abren al entrar y una reconciliación nueva lleva directamente a Sincronización → Conflictos.\n• La sincronización normal sigue siendo incremental; la comparación completa se limita al arranque y a la reconexión para no añadir carga continua.",
+  "version": "0.15.262",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.262/CUNIMIG.exe",
+  "sha256": "abd718ae9a55c79e3fe7c0caa36c86fccf84ae6629b69567ac1337cc789fd4ec",
+  "notes": "• Sync al entrar reforzado: la identidad Cloud de la explotación se recupera también directamente desde su base de datos si el catálogo local todavía no está alineado.\n• Limpieza segura de colas: si el estado local ya coincide exactamente con Cloud, los cambios pendientes o conflictos antiguos de ese registro se dan por resueltos sin volver a publicarlos.\n• Categorías de gastos: la normalización de arranque deja de generar altas y bajas de Sync cada vez que se abre CUNIMIG, evitando colas y conflictos artificiales.\n• Diagnóstico de Sync más visible: los estados de equipo no vinculado o no autorizado dejan constancia clara para no confundir una sincronización pausada con una sincronización correcta.",
   "changes": [
-    "Reconciliación Sync al entrar: CUNIMIG compara el estado local con la foto canónica de Cloud al abrir una explotación sincronizada y después de recuperar Internet.",
-    "Divergencias persistentes: si el mismo registro conserva contenidos distintos en dos PCs, se crea un conflicto resoluble aunque la cola incremental ya no vuelva a entregar aquel cambio.",
-    "Conflictos visibles al instante: los conflictos ya guardados se abren al entrar y una reconciliación nueva lleva directamente a Sincronización → Conflictos.",
-    "La sincronización normal sigue siendo incremental; la comparación completa se limita al arranque y a la reconexión para no añadir carga continua."
+    "Sync al entrar reforzado: la identidad Cloud de la explotación se recupera también directamente desde su base de datos si el catálogo local todavía no está alineado.",
+    "Limpieza segura de colas: si el estado local ya coincide exactamente con Cloud, los cambios pendientes o conflictos antiguos de ese registro se dan por resueltos sin volver a publicarlos.",
+    "Categorías de gastos: la normalización de arranque deja de generar altas y bajas de Sync cada vez que se abre CUNIMIG, evitando colas y conflictos artificiales.",
+    "Diagnóstico de Sync más visible: los estados de equipo no vinculado o no autorizado dejan constancia clara para no confundir una sincronización pausada con una sincronización correcta."
   ],
   "release_history": [
+    {
+      "version": "0.15.262",
+      "changes": [
+        "Sync al entrar reforzado: la identidad Cloud de la explotación se recupera también directamente desde su base de datos si el catálogo local todavía no está alineado.",
+        "Limpieza segura de colas: si el estado local ya coincide exactamente con Cloud, los cambios pendientes o conflictos antiguos de ese registro se dan por resueltos sin volver a publicarlos.",
+        "Categorías de gastos: la normalización de arranque deja de generar altas y bajas de Sync cada vez que se abre CUNIMIG, evitando colas y conflictos artificiales.",
+        "Diagnóstico de Sync más visible: los estados de equipo no vinculado o no autorizado dejan constancia clara para no confundir una sincronización pausada con una sincronización correcta."
+      ]
+    },
     {
       "version": "0.15.261",
       "changes": [
