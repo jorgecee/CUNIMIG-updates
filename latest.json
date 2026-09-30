@@ -1,15 +1,20 @@
 {
-  "version": "0.15.258",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.258/CUNIMIG.exe",
-  "sha256": "d80b1ba2ec0bc304af5c9f82827e8b178578b895d3abcfa80815d675e81c0728",
-  "notes": "• Avisos globales de provisionalidad: Indicadores productivos, Indicadores económicos y Resultados económicos muestran cuántas bandas quedan sin completar y avisan de cuándo los datos serán definitivos.\n• Resultados después de IRPF: nuevo indicador «Coste de IRPF/kg productivo», calculado con los kg productivos de las bandas completas del año.\n• Libro de visitas y Registro de entrada/salida: autocompletado con valores históricos del mismo campo, priorizando los más usados y recientes.\n• Sanidad: «Desparasitación» está disponible también en el desplegable Tipo y las desparasitaciones creadas desde Calendario quedan clasificadas con ese tipo.",
+  "version": "0.15.259",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.259/CUNIMIG.exe",
+  "sha256": "24d078e41c5438ab58638d833bd3d688692b6021154ce56ff3498e0984d99e47",
+  "notes": "• Conflictos Sync inmediatos: al detectar que dos equipos modificaron el mismo registro durante una desconexión, CUNIMIG abre directamente Sincronización → Conflictos para resolverlo en el momento.\n• La resolución sigue siendo explícita: nunca se elige una versión automáticamente y el usuario puede cerrar la pantalla y resolver el conflicto más tarde sin perder ninguna de las dos versiones.",
   "changes": [
-    "Avisos globales de provisionalidad: Indicadores productivos, Indicadores económicos y Resultados económicos muestran cuántas bandas quedan sin completar y avisan de cuándo los datos serán definitivos.",
-    "Resultados después de IRPF: nuevo indicador «Coste de IRPF/kg productivo», calculado con los kg productivos de las bandas completas del año.",
-    "Libro de visitas y Registro de entrada/salida: autocompletado con valores históricos del mismo campo, priorizando los más usados y recientes.",
-    "Sanidad: «Desparasitación» está disponible también en el desplegable Tipo y las desparasitaciones creadas desde Calendario quedan clasificadas con ese tipo."
+    "Conflictos Sync inmediatos: al detectar que dos equipos modificaron el mismo registro durante una desconexión, CUNIMIG abre directamente Sincronización → Conflictos para resolverlo en el momento.",
+    "La resolución sigue siendo explícita: nunca se elige una versión automáticamente y el usuario puede cerrar la pantalla y resolver el conflicto más tarde sin perder ninguna de las dos versiones."
   ],
   "release_history": [
+    {
+      "version": "0.15.259",
+      "changes": [
+        "Conflictos Sync inmediatos: al detectar que dos equipos modificaron el mismo registro durante una desconexión, CUNIMIG abre directamente Sincronización → Conflictos para resolverlo en el momento.",
+        "La resolución sigue siendo explícita: nunca se elige una versión automáticamente y el usuario puede cerrar la pantalla y resolver el conflicto más tarde sin perder ninguna de las dos versiones."
+      ]
+    },
     {
       "version": "0.15.258",
       "changes": [
