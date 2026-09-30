@@ -1,15 +1,32 @@
 {
-  "version": "0.15.262",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.262/CUNIMIG.exe",
-  "sha256": "abd718ae9a55c79e3fe7c0caa36c86fccf84ae6629b69567ac1337cc789fd4ec",
-  "notes": "• Sync al entrar reforzado: la identidad Cloud de la explotación se recupera también directamente desde su base de datos si el catálogo local todavía no está alineado.\n• Limpieza segura de colas: si el estado local ya coincide exactamente con Cloud, los cambios pendientes o conflictos antiguos de ese registro se dan por resueltos sin volver a publicarlos.\n• Categorías de gastos: la normalización de arranque deja de generar altas y bajas de Sync cada vez que se abre CUNIMIG, evitando colas y conflictos artificiales.\n• Diagnóstico de Sync más visible: los estados de equipo no vinculado o no autorizado dejan constancia clara para no confundir una sincronización pausada con una sincronización correcta.",
+  "version": "0.15.263",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.263/CUNIMIG.exe",
+  "sha256": "8a627e6fbbda77c6121b932e5d223c3b0491ffb601a88a79e3069896416d4c01",
+  "notes": "• Estado de sincronización visible en Inicio: nuevo botón junto al año activo, con color según el estado real y acceso directo a la gestión de Sync.\n• Detalle al pasar el ratón: CUNIMIG muestra equipos vinculados, última sincronización, cambios pendientes y conflictos sin obligar a entrar en Configuración.\n• Estado multi-PC verificable: cada equipo informa a Cloud de su cursor, cambios pendientes y conflictos; el verde exige que todos los equipos vinculados estén al día.\n• Vinculación por licencia: un PC nuevo con la misma licencia puede elegir una explotación Cloud disponible y descargarla sin códigos temporales ni depender de qué PC fue el origen.\n• Copia base de incorporación: los equipos sincronizados publican una copia verificada para poder añadir un tercer, cuarto o más PCs directamente desde Cloud.\n• Restaurar como nueva explotación limpia siempre la identidad Sync heredada: nuevo farm_id Cloud, nuevas colas y UUIDs, sin reactivar accidentalmente la explotación original.\n• Gestión Cloud desde el acceso: permite limpiar una explotación Cloud huérfana, incluidos cambios, dispositivos, conflictos, copias y archivos Sync, con confirmación explícita.\n• Los conflictos continúan abriéndose automáticamente en cuanto se detectan; el indicador de estado solo añade visibilidad y no sustituye ese aviso inmediato.",
   "changes": [
-    "Sync al entrar reforzado: la identidad Cloud de la explotación se recupera también directamente desde su base de datos si el catálogo local todavía no está alineado.",
-    "Limpieza segura de colas: si el estado local ya coincide exactamente con Cloud, los cambios pendientes o conflictos antiguos de ese registro se dan por resueltos sin volver a publicarlos.",
-    "Categorías de gastos: la normalización de arranque deja de generar altas y bajas de Sync cada vez que se abre CUNIMIG, evitando colas y conflictos artificiales.",
-    "Diagnóstico de Sync más visible: los estados de equipo no vinculado o no autorizado dejan constancia clara para no confundir una sincronización pausada con una sincronización correcta."
+    "Estado de sincronización visible en Inicio: nuevo botón junto al año activo, con color según el estado real y acceso directo a la gestión de Sync.",
+    "Detalle al pasar el ratón: CUNIMIG muestra equipos vinculados, última sincronización, cambios pendientes y conflictos sin obligar a entrar en Configuración.",
+    "Estado multi-PC verificable: cada equipo informa a Cloud de su cursor, cambios pendientes y conflictos; el verde exige que todos los equipos vinculados estén al día.",
+    "Vinculación por licencia: un PC nuevo con la misma licencia puede elegir una explotación Cloud disponible y descargarla sin códigos temporales ni depender de qué PC fue el origen.",
+    "Copia base de incorporación: los equipos sincronizados publican una copia verificada para poder añadir un tercer, cuarto o más PCs directamente desde Cloud.",
+    "Restaurar como nueva explotación limpia siempre la identidad Sync heredada: nuevo farm_id Cloud, nuevas colas y UUIDs, sin reactivar accidentalmente la explotación original.",
+    "Gestión Cloud desde el acceso: permite limpiar una explotación Cloud huérfana, incluidos cambios, dispositivos, conflictos, copias y archivos Sync, con confirmación explícita.",
+    "Los conflictos continúan abriéndose automáticamente en cuanto se detectan; el indicador de estado solo añade visibilidad y no sustituye ese aviso inmediato."
   ],
   "release_history": [
+    {
+      "version": "0.15.263",
+      "changes": [
+        "Estado de sincronización visible en Inicio: nuevo botón junto al año activo, con color según el estado real y acceso directo a la gestión de Sync.",
+        "Detalle al pasar el ratón: CUNIMIG muestra equipos vinculados, última sincronización, cambios pendientes y conflictos sin obligar a entrar en Configuración.",
+        "Estado multi-PC verificable: cada equipo informa a Cloud de su cursor, cambios pendientes y conflictos; el verde exige que todos los equipos vinculados estén al día.",
+        "Vinculación por licencia: un PC nuevo con la misma licencia puede elegir una explotación Cloud disponible y descargarla sin códigos temporales ni depender de qué PC fue el origen.",
+        "Copia base de incorporación: los equipos sincronizados publican una copia verificada para poder añadir un tercer, cuarto o más PCs directamente desde Cloud.",
+        "Restaurar como nueva explotación limpia siempre la identidad Sync heredada: nuevo farm_id Cloud, nuevas colas y UUIDs, sin reactivar accidentalmente la explotación original.",
+        "Gestión Cloud desde el acceso: permite limpiar una explotación Cloud huérfana, incluidos cambios, dispositivos, conflictos, copias y archivos Sync, con confirmación explícita.",
+        "Los conflictos continúan abriéndose automáticamente en cuanto se detectan; el indicador de estado solo añade visibilidad y no sustituye ese aviso inmediato."
+      ]
+    },
     {
       "version": "0.15.262",
       "changes": [
