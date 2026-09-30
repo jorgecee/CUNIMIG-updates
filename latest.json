@@ -1,22 +1,64 @@
 {
-  "version": "0.15.254",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.254/CUNIMIG.exe",
-  "sha256": "70a3bd4ef44ef75228729facf1a0458a85a35e8aa0e2d020e29ee093a1e08500",
-  "notes": "• Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.\n• Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.\n• Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.\n• Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253.",
+  "version": "0.15.258",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.258/CUNIMIG.exe",
+  "sha256": "d80b1ba2ec0bc304af5c9f82827e8b178578b895d3abcfa80815d675e81c0728",
+  "notes": "• Avisos globales de provisionalidad: Indicadores productivos, Indicadores económicos y Resultados económicos muestran cuántas bandas quedan sin completar y avisan de cuándo los datos serán definitivos.\n• Resultados después de IRPF: nuevo indicador «Coste de IRPF/kg productivo», calculado con los kg productivos de las bandas completas del año.\n• Libro de visitas y Registro de entrada/salida: autocompletado con valores históricos del mismo campo, priorizando los más usados y recientes.\n• Sanidad: «Desparasitación» está disponible también en el desplegable Tipo y las desparasitaciones creadas desde Calendario quedan clasificadas con ese tipo.",
   "changes": [
-    "Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.",
-    "Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.",
-    "Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.",
-    "Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253."
+    "Avisos globales de provisionalidad: Indicadores productivos, Indicadores económicos y Resultados económicos muestran cuántas bandas quedan sin completar y avisan de cuándo los datos serán definitivos.",
+    "Resultados después de IRPF: nuevo indicador «Coste de IRPF/kg productivo», calculado con los kg productivos de las bandas completas del año.",
+    "Libro de visitas y Registro de entrada/salida: autocompletado con valores históricos del mismo campo, priorizando los más usados y recientes.",
+    "Sanidad: «Desparasitación» está disponible también en el desplegable Tipo y las desparasitaciones creadas desde Calendario quedan clasificadas con ese tipo."
   ],
   "release_history": [
     {
+      "version": "0.15.258",
+      "changes": [
+        "Avisos globales de provisionalidad: Indicadores productivos, Indicadores económicos y Resultados económicos muestran cuántas bandas quedan sin completar y avisan de cuándo los datos serán definitivos.",
+        "Resultados después de IRPF: nuevo indicador «Coste de IRPF/kg productivo», calculado con los kg productivos de las bandas completas del año.",
+        "Libro de visitas y Registro de entrada/salida: autocompletado con valores históricos del mismo campo, priorizando los más usados y recientes.",
+        "Sanidad: «Desparasitación» está disponible también en el desplegable Tipo y las desparasitaciones creadas desde Calendario quedan clasificadas con ese tipo."
+      ]
+    },
+    {
+      "version": "0.15.257",
+      "changes": [
+        "Equipos identificables: cada PC autorizado puede tener un nombre editable, por ejemplo «PC Jorge» o «PC Padre», sin cambiar su device_id técnico.",
+        "Sincronización más clara: los selectores y estados muestran primero el nombre del equipo y mantienen el identificador técnico solo como respaldo.",
+        "Administración: renombrar un equipo queda registrado en el historial de la licencia y puede revertirse dejando la etiqueta vacía."
+      ]
+    },
+    {
+      "version": "0.15.256",
+      "changes": [
+        "Sincronización auditada: la aplicación de cambios remotos es atómica y revierte por completo si cualquier paso falla.",
+        "Trabajo offline reforzado: varias ediciones consecutivas del mismo registro conservan su orden real y se encadenan al reconectar sin generar conflictos contra el propio equipo.",
+        "Inicialización más robusta: confirmar dos veces una sesión ya completada es idempotente y permite recuperarse de cierres o pérdidas de respuesta en el último paso.",
+        "Esquema Cloud estable: D1 solo modifica índices/tablas cuando detecta realmente una estructura antigua; las consultas normales ya no rehacen el esquema.",
+        "Perfil de explotación sincronizado: los cambios remotos de nombre o CEA se reflejan también en el catálogo y selector local correctos.",
+        "Restauración protegida: una explotación sincronizada no puede sustituirse por una copia antigua en ese PC hasta desvincular primero el equipo, evitando retrocesos de revisiones.",
+        "Creación de destino corregida: la protección de archivos se aplica a la explotación recién creada y no a otra explotación que estuviera activa."
+      ]
+    },
+    {
+      "version": "0.15.255",
+      "changes": [
+        "Sincronización entre equipos: varios PCs autorizados de la misma licencia pueden compartir una explotación manteniendo cada farm_id completamente separado.",
+        "Primera igualación segura: se eligen origen y destino por explotación; el destino se crea automáticamente o puede sustituirse de forma explícita tras generar una copia de emergencia completa.",
+        "Compatibilidad estricta: la sincronización solo funciona entre equipos con la misma versión exacta de CUNIMIG y el mismo protocolo de sincronización.",
+        "Trabajo simultáneo protegido: cada registro usa un UUID global, los formularios se bloquean temporalmente en otros equipos durante la edición y los cambios distintos se integran sin depender del ID local.",
+        "Conflictos controlados: si dos equipos modifican el mismo registro desde la misma revisión, CUNIMIG no sobrescribe en silencio y permite elegir qué versión conservar.",
+        "Adjuntos sincronizados: los archivos viajan con verificación de tamaño y SHA-256; altas distintas se conservan y una copia restaurada como nueva regenera su identidad Sync para no mezclarse con la original.",
+        "Sincronización en segundo plano: los cambios recibidos refrescan la interfaz sin reiniciar CUNIMIG y un equipo que estuvo sin conexión puede ponerse al día al volver a conectarse."
+      ]
+    },
+    {
       "version": "0.15.254",
       "changes": [
-        "Punto de control estable previo al bloque de sincronización multi-explotación; conserva el funcionamiento validado de la v0.15.253.",
-        "Actualización: se admite el salto directo desde la v0.15.246 mediante el actualizador normal, sin necesidad de instalar versiones intermedias.",
-        "Licencias: una instalación procedente de la v0.15.246 no convierte la licencia local antigua; si no existe licencia online válida, CUNIMIG solicitará una nueva activación online.",
-        "Cloud Backup, restauración, copias de emergencia, adjuntos y copia automática diaria se mantienen sin cambios funcionales respecto a la v0.15.253."
+        "Cloud multi-explotación: cada explotación guarda un vínculo estable con su farm_id Cloud, por lo que cambiar nombre o CEA ya no crea otra explotación en la nube.",
+        "El vínculo Cloud se guarda tanto en el catálogo local como dentro de la propia base de la explotación para que viaje en las copias completas y pueda recuperarse al restaurar en otro equipo.",
+        "Explotaciones nuevas con el mismo nombre se mantienen separadas: el nombre deja de actuar como identidad una vez completada la migración desde versiones anteriores.",
+        "Nombre y CEA pasan a sincronizarse como datos editables del perfil Cloud sin modificar el farm_id ni mezclar sus copias.",
+        "Restaurar una copia como nueva en el mismo PC desacopla automáticamente su identidad Cloud si el farm_id original ya está en uso, evitando que una copia de prueba suba backups a la explotación real."
       ]
     },
     {
