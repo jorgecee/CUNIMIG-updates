@@ -1,15 +1,24 @@
 {
-  "version": "0.15.266",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.266/CUNIMIG.exe",
-  "sha256": "4a84b9c08b93f10642ff32ae238d3e0bb1552254e65a5e400c4223c359b018f0",
-  "notes": "• Envío anticipado de sincronización: el equipo origen puede dejar una explotación preparada en Cloud aunque el PC destino todavía use una versión anterior.\n• Recepción protegida: el destino no puede descargar ni aplicar la copia hasta actualizar CUNIMIG a la misma versión y protocolo con los que se creó el paquete.\n• La copia pendiente conserva la versión/protocolo de creación para que actualizar después el equipo origen no cambie los requisitos de una transferencia ya preparada.\n• La sincronización normal mantiene la compatibilidad estricta: después de recibir, todos los equipos vinculados deben usar la misma versión/protocolo para trabajar simultáneamente.",
+  "version": "0.15.267",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.267/CUNIMIG.exe",
+  "sha256": "0aa0a9a2d3c6875f75e9b64b9913233824354587a2e0b65c9a4116dbdcfee131",
+  "notes": "• Cloud Backup independiente de Sync: una explotación desvinculada de Sincronización puede volver a usar sus copias en la nube sin activar sincronización entre equipos.\n• Recuperación explícita de identidad Cloud: si el farm_id anterior fue eliminado de Cloud, CUNIMIG ofrece crear uno nuevo antes de abrir Cloud Backup.\n• La recuperación limpia solo la identidad/runtime Sync obsoleto y conserva intactos todos los datos funcionales de la explotación.\n• La copia automática diaria no recrea silenciosamente una explotación que el usuario haya eliminado de Cloud; la revinculación requiere confirmación manual.",
   "changes": [
-    "Envío anticipado de sincronización: el equipo origen puede dejar una explotación preparada en Cloud aunque el PC destino todavía use una versión anterior.",
-    "Recepción protegida: el destino no puede descargar ni aplicar la copia hasta actualizar CUNIMIG a la misma versión y protocolo con los que se creó el paquete.",
-    "La copia pendiente conserva la versión/protocolo de creación para que actualizar después el equipo origen no cambie los requisitos de una transferencia ya preparada.",
-    "La sincronización normal mantiene la compatibilidad estricta: después de recibir, todos los equipos vinculados deben usar la misma versión/protocolo para trabajar simultáneamente."
+    "Cloud Backup independiente de Sync: una explotación desvinculada de Sincronización puede volver a usar sus copias en la nube sin activar sincronización entre equipos.",
+    "Recuperación explícita de identidad Cloud: si el farm_id anterior fue eliminado de Cloud, CUNIMIG ofrece crear uno nuevo antes de abrir Cloud Backup.",
+    "La recuperación limpia solo la identidad/runtime Sync obsoleto y conserva intactos todos los datos funcionales de la explotación.",
+    "La copia automática diaria no recrea silenciosamente una explotación que el usuario haya eliminado de Cloud; la revinculación requiere confirmación manual."
   ],
   "release_history": [
+    {
+      "version": "0.15.267",
+      "changes": [
+        "Cloud Backup independiente de Sync: una explotación desvinculada de Sincronización puede volver a usar sus copias en la nube sin activar sincronización entre equipos.",
+        "Recuperación explícita de identidad Cloud: si el farm_id anterior fue eliminado de Cloud, CUNIMIG ofrece crear uno nuevo antes de abrir Cloud Backup.",
+        "La recuperación limpia solo la identidad/runtime Sync obsoleto y conserva intactos todos los datos funcionales de la explotación.",
+        "La copia automática diaria no recrea silenciosamente una explotación que el usuario haya eliminado de Cloud; la revinculación requiere confirmación manual."
+      ]
+    },
     {
       "version": "0.15.266",
       "changes": [
