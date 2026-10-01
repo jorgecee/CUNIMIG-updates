@@ -1,15 +1,22 @@
 {
-  "version": "0.15.267",
-  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.267/CUNIMIG.exe",
-  "sha256": "0aa0a9a2d3c6875f75e9b64b9913233824354587a2e0b65c9a4116dbdcfee131",
-  "notes": "• Cloud Backup independiente de Sync: una explotación desvinculada de Sincronización puede volver a usar sus copias en la nube sin activar sincronización entre equipos.\n• Recuperación explícita de identidad Cloud: si el farm_id anterior fue eliminado de Cloud, CUNIMIG ofrece crear uno nuevo antes de abrir Cloud Backup.\n• La recuperación limpia solo la identidad/runtime Sync obsoleto y conserva intactos todos los datos funcionales de la explotación.\n• La copia automática diaria no recrea silenciosamente una explotación que el usuario haya eliminado de Cloud; la revinculación requiere confirmación manual.",
+  "version": "0.15.268",
+  "download_url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v0.15.268/CUNIMIG.exe",
+  "sha256": "007a1ccfe50bf491d1965d65045518940726ea71e040e949fd7258b3041eb797",
+  "notes": "• Sincronización multi-PC: el equipo que origina un cambio avanza correctamente su cursor tras el pull aunque Cloud no le reenvíe su propio cambio.\n• El estado global deja de quedar bloqueado en «Sincronización pendiente» cuando ambos equipos ya tienen los mismos datos, no existen cambios locales pendientes y no hay conflictos.\n• El avance usa el cursor confirmado por la lectura incremental de Cloud y no el número de secuencia del push, evitando saltar cambios intermedios de otros equipos.",
   "changes": [
-    "Cloud Backup independiente de Sync: una explotación desvinculada de Sincronización puede volver a usar sus copias en la nube sin activar sincronización entre equipos.",
-    "Recuperación explícita de identidad Cloud: si el farm_id anterior fue eliminado de Cloud, CUNIMIG ofrece crear uno nuevo antes de abrir Cloud Backup.",
-    "La recuperación limpia solo la identidad/runtime Sync obsoleto y conserva intactos todos los datos funcionales de la explotación.",
-    "La copia automática diaria no recrea silenciosamente una explotación que el usuario haya eliminado de Cloud; la revinculación requiere confirmación manual."
+    "Sincronización multi-PC: el equipo que origina un cambio avanza correctamente su cursor tras el pull aunque Cloud no le reenvíe su propio cambio.",
+    "El estado global deja de quedar bloqueado en «Sincronización pendiente» cuando ambos equipos ya tienen los mismos datos, no existen cambios locales pendientes y no hay conflictos.",
+    "El avance usa el cursor confirmado por la lectura incremental de Cloud y no el número de secuencia del push, evitando saltar cambios intermedios de otros equipos."
   ],
   "release_history": [
+    {
+      "version": "0.15.268",
+      "changes": [
+        "Sincronización multi-PC: el equipo que origina un cambio avanza correctamente su cursor tras el pull aunque Cloud no le reenvíe su propio cambio.",
+        "El estado global deja de quedar bloqueado en «Sincronización pendiente» cuando ambos equipos ya tienen los mismos datos, no existen cambios locales pendientes y no hay conflictos.",
+        "El avance usa el cursor confirmado por la lectura incremental de Cloud y no el número de secuencia del push, evitando saltar cambios intermedios de otros equipos."
+      ]
+    },
     {
       "version": "0.15.267",
       "changes": [
