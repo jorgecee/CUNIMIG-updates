@@ -1,7 +1,9 @@
 {
+  "version": "3.0.1-r41",
   "channel": "R41_COMERCIAL",
-  "version": "0.0.0",
-  "status": "sin_publicacion_comercial",
-  "published": false,
-  "notes": "Canal preparado para una versión comercial verificada. Sin instalador publicado."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.1/Instalador_CUNIMIG_3.0.1-r41.exe",
+  "sha256": "3a05788ec08c02baad6c3650fe2158e7e74d52713646934449ed357d33dc30b8",
+  "size_bytes": 44575166,
+  "release_tag": "r41-prueba-v3.0.1",
+  "notes": "Ensayo exclusivo del mecanismo de actualización. Sin cambios funcionales."
 }
