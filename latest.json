@@ -1,9 +1,9 @@
 {
-  "version": "3.0.2-r41",
+  "version": "3.0.4-r41",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.2/Instalador_CUNIMIG_3.0.2-r41.exe",
-  "sha256": "7bf12961bb0e7cde67dfb6bfa1af4503dc680524749762e4632f6a1dc3faf81d",
-  "size_bytes": 44583202,
-  "release_tag": "r41-prueba-v3.0.2",
-  "notes": "Ensayo de reparación de actualizaciones E64, compatible con E63 y sin cambios productivos de granja."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.4/Instalador_CUNIMIG_3.0.4-r41.exe",
+  "sha256": "b50edfe40efed24e30fe2652e0aa0f968a52009e198e5065460f4081506d527f",
+  "size_bytes": 44585449,
+  "release_tag": "r41-prueba-v3.0.4",
+  "notes": "Prueba de descarga visible desde CUNIMIG 3.0.3-r41. El instalador 3.0.4 conserva funciones, interfaz, ACK, datos y protocolo de E65."
 }
