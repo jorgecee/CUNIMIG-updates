@@ -1,9 +1,9 @@
 {
-  "version": "3.0.5-r41",
+  "version": "3.0.7-r41",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.5/Instalador_CUNIMIG_3.0.5-r41.exe",
-  "sha256": "331d943d7d176354e5cfc088df1c46739eae94a7262482d30c4b8dfcb2c5a7d8",
-  "size_bytes": 44596501,
-  "release_tag": "r41-prueba-v3.0.5",
-  "notes": "CUNIMIG R41 3.0.5. Propietario: contraseña de portal WEB en Windows, verificador local offline tras vinculación online. Empleados: claves locales. Mismos datos, sincronización, cierre ACK y barra de descarga."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.7/Instalador_CUNIMIG_3.0.7-r41.exe",
+  "sha256": "183bf43f7813e60f7b481c359bafdfd211822907d504b688c7ef3a02825d5c1e",
+  "size_bytes": 44604281,
+  "release_tag": "r41-prueba-v3.0.7",
+  "notes": "E70: usuarios y empleados unificados, copias simplificadas y restauración de explotación confirmada antes de sincronizar. Captura extraordinaria Cloud Plus cuando esté contratado. Inicio de sesión Windows con Internet; acceso offline aplazado."
 }
