@@ -1,9 +1,9 @@
 {
-  "version": "3.0.4-r41",
+  "version": "3.0.5-r41",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.4/Instalador_CUNIMIG_3.0.4-r41.exe",
-  "sha256": "b50edfe40efed24e30fe2652e0aa0f968a52009e198e5065460f4081506d527f",
-  "size_bytes": 44585449,
-  "release_tag": "r41-prueba-v3.0.4",
-  "notes": "Prueba de descarga visible desde CUNIMIG 3.0.3-r41. El instalador 3.0.4 conserva funciones, interfaz, ACK, datos y protocolo de E65."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.5/Instalador_CUNIMIG_3.0.5-r41.exe",
+  "sha256": "331d943d7d176354e5cfc088df1c46739eae94a7262482d30c4b8dfcb2c5a7d8",
+  "size_bytes": 44596501,
+  "release_tag": "r41-prueba-v3.0.5",
+  "notes": "CUNIMIG R41 3.0.5. Propietario: contraseña de portal WEB en Windows, verificador local offline tras vinculación online. Empleados: claves locales. Mismos datos, sincronización, cierre ACK y barra de descarga."
 }
