@@ -1,9 +1,9 @@
 {
-  "version": "3.0.7-r41",
+  "version": "3.0.9-r41",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.7/Instalador_CUNIMIG_3.0.7-r41.exe",
-  "sha256": "183bf43f7813e60f7b481c359bafdfd211822907d504b688c7ef3a02825d5c1e",
-  "size_bytes": 44604281,
-  "release_tag": "r41-prueba-v3.0.7",
-  "notes": "E70: usuarios y empleados unificados, copias simplificadas y restauración de explotación confirmada antes de sincronizar. Captura extraordinaria Cloud Plus cuando esté contratado. Inicio de sesión Windows con Internet; acceso offline aplazado."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.9/Instalador_CUNIMIG_3.0.9-r41.exe",
+  "sha256": "f5d71a9e55d21646e62fa4a3a59a906b696523151fd29236cd532c25f0ae509f",
+  "size_bytes": 44612836,
+  "release_tag": "r41-prueba-v3.0.9",
+  "notes": "- Barra de progreso visible al entrar y salir, con porcentaje real durante la transferencia y fases de confirmación.\n- Comprobación automática de actualizaciones al abrir CUNIMIG: Descargar ahora o Posponer; sigue disponible Buscar actualizaciones.\n- Avisos por correo de novedades al publicarse una versión verificada en GitHub; envío de prueba identificado como PRUEBA.\n- Sin cambios en los cálculos, formularios productivos, sesiones, copias, licencias ni permisos."
 }
