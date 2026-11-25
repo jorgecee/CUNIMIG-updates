@@ -1,9 +1,9 @@
 {
-  "version": "3.0.10-r41",
+  "version": "3.0.11",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.10/Instalador_CUNIMIG_3.0.10-r41.exe",
-  "sha256": "b590f251792b0aede3a3d642c66112db373f20316bd44691c0fe2e41ddec5c01",
-  "size_bytes": 44612255,
-  "release_tag": "r41-prueba-v3.0.10",
-  "notes": "- Calendario y Sanidad: reutilización de actuaciones vinculadas y corrección de avisos sanitarios redundantes sin borrar el histórico.\n- Entrada decimal con punto o coma, respetando la precisión de cada campo.\n- Barras de progreso azules uniformes en sincronización y descarga de actualizaciones.\n- Próxima inseminación: se conserva el próximo vencimiento hasta registrar otra inseminación real en Bandas."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/v3.0.11/Instalador_CUNIMIG_3.0.11.exe",
+  "sha256": "31757bac851ed9ed8cf532f4f3b755c158ff272c6d1166d45b11b7d2e57b1c3c",
+  "size_bytes": 44627702,
+  "release_tag": "v3.0.11",
+  "notes": "- Numeración comercial simplificada.\n- Completar CEA vacío de la explotación desde el servidor sin sustituir uno existente."
 }
