@@ -1,9 +1,9 @@
 {
-  "version": "3.0.9-r41",
+  "version": "3.0.10-r41",
   "channel": "R41_COMERCIAL",
-  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.9/Instalador_CUNIMIG_3.0.9-r41.exe",
-  "sha256": "f5d71a9e55d21646e62fa4a3a59a906b696523151fd29236cd532c25f0ae509f",
-  "size_bytes": 44612836,
-  "release_tag": "r41-prueba-v3.0.9",
-  "notes": "- Barra de progreso visible al entrar y salir, con porcentaje real durante la transferencia y fases de confirmación.\n- Comprobación automática de actualizaciones al abrir CUNIMIG: Descargar ahora o Posponer; sigue disponible Buscar actualizaciones.\n- Avisos por correo de novedades al publicarse una versión verificada en GitHub; envío de prueba identificado como PRUEBA.\n- Sin cambios en los cálculos, formularios productivos, sesiones, copias, licencias ni permisos."
+  "url": "https://github.com/jorgecee/CUNIMIG-updates/releases/download/r41-prueba-v3.0.10/Instalador_CUNIMIG_3.0.10-r41.exe",
+  "sha256": "b590f251792b0aede3a3d642c66112db373f20316bd44691c0fe2e41ddec5c01",
+  "size_bytes": 44612255,
+  "release_tag": "r41-prueba-v3.0.10",
+  "notes": "- Calendario y Sanidad: reutilización de actuaciones vinculadas y corrección de avisos sanitarios redundantes sin borrar el histórico.\n- Entrada decimal con punto o coma, respetando la precisión de cada campo.\n- Barras de progreso azules uniformes en sincronización y descarga de actualizaciones.\n- Próxima inseminación: se conserva el próximo vencimiento hasta registrar otra inseminación real en Bandas."
 }
